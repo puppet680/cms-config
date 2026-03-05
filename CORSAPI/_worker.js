@@ -1,9 +1,5 @@
 /**
- * 🛠️ API Database Control Center
- * 路由：
- * - /ouonnkitv           : 原始格式
- * - /kvideo              : KVideo格式
- * - 子路径代理：/ouonnkitv/p/... 或 /kvideo/p/...
+ * 🛠️ API 数据库控制中心
  */
 
 export default {
@@ -22,31 +18,15 @@ const CORS_HEADERS = {
   'Access-Control-Max-Age': '86400',
 };
 
-// --- 配置：请确保与 GitHub 文件名一致 ---
-const REPO_BASE = "https://raw.githubusercontent.com/puppet680/KVideo-config/refs/heads/main";
+const REPO_BASE = "https://raw.githubusercontent.com/puppet680/cms-config/refs/heads/main";
 
 const DATABASE_CONFIG = {
-  'lite': {
-    name: 'CLEAN_DATABASE',
-    file: 'clean_status.json',
-    type: 'SAFE',
-    color: '#10b981'
-  },
-  'adult': {
-    name: 'NSFW_DATABASE',
-    file: 'nsfw_status.json',
-    type: 'RESTRICTED',
-    color: '#f43f5e'
-  },
-  'full': {
-    name: 'GLOBAL_DATABASE',
-    file: 'full_status.json',
-    type: 'ALL',
-    color: '#3b82f6'
-  }
+  'lite': { id: 'CLEAN_DB', file: 'clean_status.json', type: '安全', color: '#10b981' },
+  'adult': { id: 'NSFW_DB', file: 'nsfw_status.json', type: '受限', color: '#f43f5e' },
+  'full': { id: 'GLOBAL_DB', file: 'full_status.json', type: '完整', color: '#3b82f6' }
 };
 
-// --- 核心工具函数 ---
+// --- 工具函数 ---
 function extractSourceId(apiUrl) {
   try {
     const url = new URL(apiUrl);
@@ -59,15 +39,12 @@ async function getCachedJSON(fileName) {
   const url = `${REPO_BASE}/${fileName}`;
   const kvAvailable = typeof globalThis.KV !== 'undefined' && globalThis.KV;
   const cacheKey = 'CACHE_' + fileName;
-  
   if (kvAvailable) {
     const cached = await globalThis.KV.get(cacheKey);
     if (cached) return JSON.parse(cached);
   }
-  
   const res = await fetch(url);
   const data = await res.json();
-  
   if (kvAvailable) await globalThis.KV.put(cacheKey, JSON.stringify(data), { expirationTtl: 300 });
   return data;
 }
@@ -79,23 +56,23 @@ async function handleRequest(request) {
   const currentOrigin = reqUrl.origin;
   const sourceParam = reqUrl.searchParams.get('source') || 'full';
   const targetUrlParam = reqUrl.searchParams.get('url');
+  // 新增：判断是否启用代理，默认为 true (为了兼容旧链接)
+  const useProxy = reqUrl.searchParams.get('proxy') !== 'false';
 
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS_HEADERS });
 
-  // 代理转发逻辑：检测子路径包含 /p/
   if (pathname.includes('/p/') && targetUrlParam) {
     return handleProxyRequest(request, targetUrlParam);
   }
 
-  // 格式转换逻辑
-  if (pathname === '/kvideo') return handleFormat(sourceParam, `${currentOrigin}/kvideo`, 'kvideo');
-  if (pathname === '/ouonnkitv') return handleFormat(sourceParam, `${currentOrigin}/ouonnkitv`, 'ouonnki');
+  // 格式转换输出：传入 useProxy 参数
+  if (pathname === '/kvideo') return handleFormat(sourceParam, `${currentOrigin}/kvideo`, 'kvideo', useProxy);
+  if (pathname === '/ouonnkitv') return handleFormat(sourceParam, `${currentOrigin}/ouonnkitv`, 'ouonnki', useProxy);
 
   return handleHomePage(currentOrigin);
 }
 
-// --- 业务处理器 ---
-async function handleFormat(sourceKey, prefix, formatType) {
+async function handleFormat(sourceKey, prefix, formatType, useProxy) {
   try {
     const config = DATABASE_CONFIG[sourceKey] || DATABASE_CONFIG['full'];
     const data = await getCachedJSON(config.file);
@@ -103,7 +80,8 @@ async function handleFormat(sourceKey, prefix, formatType) {
     if (formatType === 'kvideo') {
       const res = data.map((item, index) => {
         let rawUrl = item.url || item.baseUrl || "";
-        if (rawUrl.startsWith('http')) {
+        // 逻辑修改：只有在 useProxy 为 true 时才包裹代理前缀
+        if (useProxy && rawUrl.startsWith('http')) {
           const sid = extractSourceId(rawUrl);
           rawUrl = `${prefix}/p/${sid}?url=${encodeURIComponent(rawUrl)}`;
         }
@@ -116,22 +94,21 @@ async function handleFormat(sourceKey, prefix, formatType) {
           ...(isNSFW ? { enabled: true } : { priority: index + 1 })
         };
       });
-      return new Response(JSON.stringify(res), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
+      return new Response(JSON.stringify(res), { headers: { 'Content-Type': 'application/json;charset=UTF-8', ...CORS_HEADERS } });
     } else {
-      // Ouonnki 保持原格式并重写 URL
       const process = (obj) => {
         if (typeof obj !== 'object' || obj === null) return obj;
         if (Array.isArray(obj)) return obj.map(process);
         const newObj = {};
         for (const k in obj) {
-          if ((k === 'url' || k === 'baseUrl') && typeof obj[k] === 'string' && obj[k].startsWith('http')) {
+          if (useProxy && (k === 'url' || k === 'baseUrl') && typeof obj[k] === 'string' && obj[k].startsWith('http')) {
             const sid = extractSourceId(obj[k]);
             newObj[k] = `${prefix}/p/${sid}?url=${encodeURIComponent(obj[k])}`;
           } else { newObj[k] = process(obj[k]); }
         }
         return newObj;
       };
-      return new Response(JSON.stringify(process(data)), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
+      return new Response(JSON.stringify(process(data)), { headers: { 'Content-Type': 'application/json;charset=UTF-8', ...CORS_HEADERS } });
     }
   } catch (e) { return new Response(JSON.stringify({error: e.message}), { status: 500 }); }
 }
@@ -146,62 +123,64 @@ async function handleProxyRequest(request, targetUrl) {
   return new Response(response.body, { status: response.status, headers });
 }
 
-// --- 数据库样式 UI ---
+// --- UI ---
 async function handleHomePage(origin) {
-  const rows = Object.entries(DATABASE_CONFIG).map(([key, item]) => `
-    <tr>
-      <td><span class="status-dot"></span></td>
-      <td><code class="db-name">${item.name}</code></td>
-      <td><span class="tag" style="background: ${item.color}22; color: ${item.color}">${item.type}</span></td>
-      <td><button class="action-btn" onclick="copy('${origin}/ouonnkitv?source=${key}')">FETCH RAW</button></td>
-      <td><button class="action-btn k-btn" onclick="copy('${origin}/kvideo?source=${key}')">MAP KVIDEO</button></td>
-    </tr>
-  `).join('');
+  const generateRows = (isKVideo) => {
+    const path = isKVideo ? 'kvideo' : 'ouonnkitv';
+    return Object.entries(DATABASE_CONFIG).map(([key, item]) => `
+      <tr>
+        <td><span class="status-dot"></span></td>
+        <td><code class="db-name">${item.id}</code></td>
+        <td><span class="tag" style="background: ${item.color}22; color: ${item.color}">${item.type}</span></td>
+        <td><button class="action-btn" onclick="copy('${origin}/${path}?source=${key}&proxy=false')">RAW 直连</button></td>
+        <td><button class="action-btn ${isKVideo ? 'k-btn' : 'o-btn'}" onclick="copy('${origin}/${path}?source=${key}')">获取代理订阅</button></td>
+      </tr>
+    `).join('');
+  };
 
   const html = `<!DOCTYPE html>
-  <html>
+  <html lang="zh-CN">
   <head>
     <meta charset="UTF-8">
-    <title>API Database UI</title>
+    <title>API 订阅分发控制台</title>
     <style>
-      :root { --bg: #0b0e14; --panel: #151921; --border: #2d333b; --text: #adbac7; --blue: #539bf5; }
-      body { background: var(--bg); color: var(--text); font-family: 'SFMono-Regular', Consolas, monospace; padding: 40px; }
-      .db-container { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; max-width: 900px; margin: auto; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
-      .db-header { padding: 16px 24px; background: #1c2128; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-      .db-title { font-size: 14px; font-weight: bold; color: #cdd9e5; }
-      table { width: 100%; border-collapse: collapse; font-size: 13px; }
-      th { text-align: left; padding: 12px 24px; background: #1c2128; color: #768390; border-bottom: 1px solid var(--border); }
-      td { padding: 14px 24px; border-bottom: 1px solid var(--border); }
-      .status-dot { height: 8px; width: 8px; background: #22c55e; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #22c55e; }
-      .db-name { color: var(--blue); }
-      .tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }
-      .action-btn { background: #2d333b; border: 1px solid #444c56; color: #adbac7; padding: 6px 12px; border-radius: 6px; cursor: pointer; width: 100%; }
-      .action-btn:hover { background: #373e47; border-color: #768390; }
-      .k-btn { color: #f69d50; border-color: rgba(246,157,80,0.3); }
-      .toast { position: fixed; top: 20px; right: 20px; background: #2ea043; color: white; padding: 10px 20px; border-radius: 6px; display: none; }
+      :root { --bg: #0d1117; --panel: #161b22; --border: #30363d; --text: #c9d1d9; --blue: #58a6ff; --green: #238636; --orange: #d29922; }
+      body { background: var(--bg); color: var(--text); font-family: -apple-system, "Microsoft YaHei", sans-serif; padding: 20px; margin: 0; }
+      .container { max-width: 1100px; margin: auto; }
+      .header { padding: 40px 0; text-align: center; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+      .header h1 { margin: 0; font-size: 26px; color: #f0f6fc; letter-spacing: 2px; }
+      .db-section { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 40px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      .db-header { padding: 14px 24px; background: #21262d; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th { text-align: left; padding: 12px 24px; background: #161b22; color: #8b949e; border-bottom: 1px solid var(--border); font-size: 12px; }
+      td { padding: 16px 24px; border-bottom: 1px solid var(--border); }
+      .status-dot { height: 8px; width: 8px; background: #3fb950; border-radius: 50%; display: inline-block; box-shadow: 0 0 5px #3fb950; margin-right: 8px; }
+      .db-name { color: var(--blue); font-family: Consolas, monospace; font-weight: bold; }
+      .tag { padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: bold; }
+      .action-btn { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: 0.2s; width: 100%; font-size: 12px; font-weight: bold; }
+      .action-btn:hover { background: #30363d; border-color: #8b949e; }
+      .o-btn { color: #3fb950; border-color: rgba(63,185,80,0.4); }
+      .k-btn { color: #dbab09; border-color: rgba(219,171,9,0.4); }
+      #toast { position: fixed; bottom: 30px; right: 30px; background: #238636; color: white; padding: 12px 24px; border-radius: 8px; display: none; z-index: 1000; }
     </style>
   </head>
   <body>
-    <div id="toast" class="toast">LINK COPIED TO CLIPBOARD</div>
-    <div class="db-container">
-      <div class="db-header">
-        <div class="db-title">🗄️ SUBSCRIPTION_DATABASE_V3</div>
-        <div style="font-size: 11px; color: #57606a;">STATUS: ACTIVE</div>
+    <div id="toast">✅ 已成功复制到剪贴板</div>
+    <div class="container">
+      <div class="header"><h1>🛰️ 视频资源订阅分发集群</h1></div>
+      <div class="db-section">
+        <div class="db-header"><span style="color: var(--green)">【节点集群 A】 OuonnkiTV 结构</span></div>
+        <table>
+          <thead><tr><th width="40"></th><th>数据节点标识</th><th>访问等级</th><th width="180">RAW 直连地址</th><th width="180">代理订阅地址</th></tr></thead>
+          <tbody>${generateRows(false)}</tbody>
+        </table>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th width="40"></th>
-            <th>DATABASE_ID</th>
-            <th>ACL_LEVEL</th>
-            <th>ACTION_RAW</th>
-            <th>ACTION_KVIDEO</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-      <div style="padding: 15px; font-size: 11px; color: #57606a; background: #1c2128;">
-        [INFO] PROXY_SUB_PATHING ENABLED. AUTO_REORDER AT 00:00 GMT+8.
+      <div class="db-section" style="border-color: rgba(210,153,34,0.3)">
+        <div class="db-header"><span style="color: var(--orange)">【节点集群 B】 KVideo 结构</span></div>
+        <table>
+          <thead><tr><th width="40"></th><th>数据节点标识</th><th>访问等级</th><th width="180">RAW 直连地址</th><th width="180">代理订阅地址</th></tr></thead>
+          <tbody>${generateRows(true)}</tbody>
+        </table>
       </div>
     </div>
     <script>
@@ -209,7 +188,7 @@ async function handleHomePage(origin) {
         navigator.clipboard.writeText(t).then(() => {
           const s = document.getElementById('toast');
           s.style.display = 'block';
-          setTimeout(() => s.style.display = 'none', 2000);
+          setTimeout(() => s.style.display = 'none', 1500);
         });
       }
     </script>
