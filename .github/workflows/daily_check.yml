@@ -34,7 +34,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           # 添加生成的所有文件
-          git add clean_status.json full_status.json README.md
+          git add clean_status.json nsfw_status.json full_status.json README.md
           # 检查是否有变更，有变更则提交，没变更跳过
           if git diff --staged --quiet; then
             echo "No changes to commit"
