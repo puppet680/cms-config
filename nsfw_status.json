@@ -1,0 +1,93 @@
+[
+  {
+    "id": "yyzy_com",
+    "name": "[NSFW] 秘密通道 01",
+    "originalName": "优优资源",
+    "url": "https://www.yyzywcj.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 594,
+    "score": 506
+  },
+  {
+    "id": "apilj_com",
+    "name": "[NSFW] 秘密通道 02",
+    "originalName": "辣椒资源",
+    "url": "https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 791,
+    "score": 309
+  },
+  {
+    "id": "thzy_me",
+    "name": "[NSFW] 秘密通道 03",
+    "originalName": "桃花资源",
+    "url": "https://thzy1.me/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 971,
+    "score": 129
+  },
+  {
+    "id": "heiliaozy_cc",
+    "name": "[NSFW] 秘密通道 04",
+    "originalName": "黑料资源",
+    "url": "https://www.heiliaozyapi.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1249,
+    "score": 100
+  },
+  {
+    "id": "shayuapi_com",
+    "name": "[NSFW] 秘密通道 05",
+    "originalName": "鲨鱼资源",
+    "url": "https://shayuapi.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1139,
+    "score": 100
+  },
+  {
+    "id": "91md_me",
+    "name": "[NSFW] 秘密通道 06",
+    "originalName": "麻豆视频",
+    "url": "https://91md.me/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": false,
+    "searchable": false,
+    "delay": 9999,
+    "score": -99999
+  },
+  {
+    "id": "hsckzy_xyz",
+    "name": "[NSFW] 秘密通道 07",
+    "originalName": "黄色仓库",
+    "url": "https://hsckzy.xyz/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": false,
+    "searchable": false,
+    "delay": 9999,
+    "score": -99999
+  }
+]
