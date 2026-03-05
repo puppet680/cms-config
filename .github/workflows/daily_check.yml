@@ -1,0 +1,44 @@
+name: Daily API Status Update
+
+on:
+  schedule:
+    # 北京时间 00:00 = UTC 时间 16:00
+    - cron: '0 16 * * *'
+  workflow_dispatch: # 支持手动点击运行，方便调试
+
+jobs:
+  build_and_update:
+    runs-on: ubuntu-latest
+    
+    # 授予写入权限，以便更新 JSON 和 README
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run API Checker
+        run: python check_api.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          # 添加生成的所有文件
+          git add clean_status.json full_status.json README.md
+          # 检查是否有变更，有变更则提交，没变更跳过
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📅 每日自动更新: API 状态与排名 [$(date '+%Y-%m-%d %H:%M')]"
+            git push
+          fi
