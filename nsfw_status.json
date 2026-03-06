@@ -1,20 +1,7 @@
 [
   {
-    "id": "yyzy_com",
-    "name": "[NSFW] 秘密通道 01",
-    "originalName": "优优资源",
-    "url": "https://www.yyzywcj.com/api.php/provide/vod",
-    "category": "NSFW",
-    "adContext": "成人内容",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 361,
-    "score": 739
-  },
-  {
     "id": "91md_me",
-    "name": "[NSFW] 秘密通道 02",
+    "name": "[NSFW] 秘密通道 01",
     "originalName": "麻豆视频",
     "url": "https://91md.me/api.php/provide/vod",
     "category": "NSFW",
@@ -22,8 +9,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 543,
-    "score": 557
+    "delay": 426,
+    "score": 674
+  },
+  {
+    "id": "yyzy_com",
+    "name": "[NSFW] 秘密通道 02",
+    "originalName": "优优资源",
+    "url": "https://www.yyzywcj.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 717,
+    "score": 383
   },
   {
     "id": "shayuapi_com",
@@ -35,8 +35,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 551,
-    "score": 549
+    "delay": 788,
+    "score": 312
   },
   {
     "id": "thzy_me",
@@ -48,8 +48,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 603,
-    "score": 497
+    "delay": 824,
+    "score": 276
   },
   {
     "id": "apilj_com",
@@ -61,8 +61,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 777,
-    "score": 323
+    "delay": 985,
+    "score": 115
   },
   {
     "id": "heiliaozy_cc",
@@ -74,20 +74,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 868,
-    "score": 232
-  },
-  {
-    "id": "hsckzy_xyz",
-    "name": "[NSFW] 秘密通道 07",
-    "originalName": "黄色仓库",
-    "url": "https://hsckzy.xyz/api.php/provide/vod",
-    "category": "NSFW",
-    "adContext": "成人内容",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1146,
+    "delay": 1461,
     "score": 100
   }
 ]
