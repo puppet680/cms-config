@@ -122,23 +122,24 @@ def main():
     with open(ORIGINAL_FILE, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
-    # 并发检测 (默认 15 线程)
     with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
         results = list(executor.map(check_source, raw_data))
 
-    # 全局按分数排序
-    results.sort(key=lambda x: -x['score'])
-
-    # 统一命名计数器
-    counters = {"极速直连": 1, "优质线路": 1, "备用线路": 1, "[NSFW] 秘密通道": 1}
+    # 1. 基础过滤：只有 [能连通] 且 [能搜索] 的才进入后续流程
+    # 如果你希望保留不能搜索但能直连的，可以去掉 and i['searchable']
+    valid_results = [i for i in results if i['isEnabled'] and i['searchable']]
     
+    # 2. 全局按分数排序
+    valid_results.sort(key=lambda x: -x['score'])
+
+    counters = {"极速直连": 1, "优质线路": 1, "备用线路": 1, "[NSFW] 秘密通道": 1}
     final_ordered_results = []
 
-    for item in results:
-        # 1. 确定分组与广告语预处理
+    for item in valid_results:
         raw_ad = item.get('adContext', '')
         processed_ad = "未知" if ("无广告" in raw_ad or not raw_ad) else raw_ad
         
+        # 分类逻辑
         if item.get('category') == 'NSFW':
             p = "[NSFW] 秘密通道"
         elif item.get('isOfficial') and "跑马灯" not in raw_ad:
@@ -148,28 +149,28 @@ def main():
         else:
             p = "备用线路"
         
+        # --- 策略修改：备用线路逻辑控制 ---
+        # 如果是备用线路，且序号已经排到 5 以后，则强制设为不启用状态（isEnabled = False）
+        # 这样订阅里会有这条数据，但客户端默认不会调用它
+        if p == "备用线路" and counters[p] > 5:
+            item['isEnabled'] = False
+
         target_name = f"{p} {counters[p]:02d}"
         counters[p] += 1
 
-        # 2. 核心逻辑：重新构造字典以控制 name 插入 originalName 上方
+        # 重新构造字典
         new_item = {}
-        inserted = False
-        
-        # 移除旧的 name（如果存在），防止重复
         item.pop('name', None)
-
+        inserted = False
         for key, value in item.items():
             if key == 'originalName':
                 new_item['name'] = target_name
                 inserted = True
-            
-            # 更新广告语字段
             if key == 'adContext':
                 new_item[key] = processed_ad
             else:
                 new_item[key] = value
         
-        # 如果原始数据里压根没 originalName，则补在最后
         if not inserted:
             new_item['name'] = target_name
             
