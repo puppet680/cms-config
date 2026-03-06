@@ -1,20 +1,7 @@
 [
   {
-    "id": "91md_me",
-    "name": "[NSFW] 秘密通道 01",
-    "originalName": "麻豆视频",
-    "url": "https://91md.me/api.php/provide/vod",
-    "category": "NSFW",
-    "adContext": "成人内容",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 426,
-    "score": 674
-  },
-  {
     "id": "yyzy_com",
-    "name": "[NSFW] 秘密通道 02",
+    "name": "[NSFW] 秘密通道 01",
     "originalName": "优优资源",
     "url": "https://www.yyzywcj.com/api.php/provide/vod",
     "category": "NSFW",
@@ -22,8 +9,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 717,
-    "score": 383
+    "delay": 606,
+    "score": 494
+  },
+  {
+    "id": "91md_me",
+    "name": "[NSFW] 秘密通道 02",
+    "originalName": "麻豆视频",
+    "url": "https://91md.me/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 667,
+    "score": 433
   },
   {
     "id": "shayuapi_com",
@@ -35,8 +35,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 788,
-    "score": 312
+    "delay": 739,
+    "score": 361
   },
   {
     "id": "thzy_me",
@@ -48,21 +48,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 824,
-    "score": 276
+    "delay": 860,
+    "score": 240
   },
   {
-    "id": "apilj_com",
+    "id": "hsckzy_xyz",
     "name": "[NSFW] 秘密通道 05",
-    "originalName": "辣椒资源",
-    "url": "https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod",
+    "originalName": "黄色仓库",
+    "url": "https://hsckzy.xyz/api.php/provide/vod",
     "category": "NSFW",
     "adContext": "成人内容",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 985,
-    "score": 115
+    "delay": 1034,
+    "score": 100
   },
   {
     "id": "heiliaozy_cc",
@@ -74,7 +74,20 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1461,
+    "delay": 1367,
+    "score": 100
+  },
+  {
+    "id": "apilj_com",
+    "name": "[NSFW] 秘密通道 07",
+    "originalName": "辣椒资源",
+    "url": "https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1076,
     "score": 100
   }
 ]

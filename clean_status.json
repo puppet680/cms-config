@@ -9,21 +9,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 403,
-    "score": 1197
-  },
-  {
-    "id": "1080zyk_com",
-    "name": "极速直连 01",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yzzy-api.com/inc/api_mac10.php",
-    "category": "Official",
-    "adContext": "未知",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1592,
-    "score": 800
+    "delay": 521,
+    "score": 1079
   },
   {
     "id": "lzcaiji_com",
@@ -35,8 +22,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 907,
-    "score": 693
+    "delay": 731,
+    "score": 869
+  },
+  {
+    "id": "1080zyk_com",
+    "name": "极速直连 01",
+    "originalName": "优质资源库1080zyk",
+    "url": "https://api.yzzy-api.com/inc/api_mac10.php",
+    "category": "Official",
+    "adContext": "未知",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1285,
+    "score": 800
   },
   {
     "id": "mtzy_me",
@@ -48,7 +48,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2217,
+    "delay": 2309,
     "score": 100
   },
   {
@@ -61,7 +61,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1054,
+    "delay": 1170,
     "score": 100
   },
   {
@@ -74,7 +74,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1439,
+    "delay": 1164,
     "score": 100
   },
   {
@@ -87,7 +87,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1582,
+    "delay": 1482,
     "score": 100
   },
   {
@@ -100,7 +100,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1800,
+    "delay": 1766,
     "score": 100
   },
   {
@@ -113,7 +113,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 3336,
+    "delay": 1552,
     "score": 100
   },
   {
@@ -126,7 +126,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 3134,
+    "delay": 1451,
     "score": -900
   },
   {
@@ -139,7 +139,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 2318,
+    "delay": 2375,
     "score": -900
   },
   {
@@ -152,7 +152,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 1104,
+    "delay": 1244,
     "score": -900
   }
 ]
