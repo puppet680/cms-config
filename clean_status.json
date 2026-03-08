@@ -9,8 +9,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 536,
-    "score": 1064
+    "delay": 474,
+    "score": 1126
   },
   {
     "id": "lzcaiji_com",
@@ -22,8 +22,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 782,
-    "score": 818
+    "delay": 737,
+    "score": 863
   },
   {
     "id": "1080zyk_com",
@@ -35,7 +35,7 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1932,
+    "delay": 1205,
     "score": 800
   },
   {
@@ -48,25 +48,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 424,
-    "score": 676
-  },
-  {
-    "id": "mtzy_me",
-    "name": "备用线路 02",
-    "originalName": "茅台资源站",
-    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "category": "General",
-    "adContext": "开头广告/蓝光秒拖/顶级画质",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 2207,
-    "score": 100
+    "delay": 311,
+    "score": 789
   },
   {
     "id": "wujinzy_me",
-    "name": "备用线路 03",
+    "name": "备用线路 02",
     "originalName": "无尽资源站",
     "url": "https://api.wujinapi.me/api.php/provide/vod",
     "category": "General",
@@ -74,7 +61,20 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1148,
+    "delay": 895,
+    "score": 205
+  },
+  {
+    "id": "mtzy_me",
+    "name": "备用线路 03",
+    "originalName": "茅台资源站",
+    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
+    "category": "General",
+    "adContext": "开头广告/蓝光秒拖/顶级画质",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2311,
     "score": 100
   },
   {
@@ -87,7 +87,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1860,
+    "delay": 1262,
     "score": 100
   },
   {
@@ -100,7 +100,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1734,
+    "delay": 1822,
     "score": 100
   },
   {
@@ -113,7 +113,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 1242,
+    "delay": 1544,
     "score": 100
   },
   {
@@ -126,7 +126,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 1467,
+    "delay": 1294,
     "score": -900
   },
   {
@@ -139,7 +139,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 2257,
+    "delay": 2627,
     "score": -900
   },
   {
@@ -152,7 +152,7 @@
     "isOfficial": false,
     "isEnabled": false,
     "searchable": true,
-    "delay": 1105,
+    "delay": 1025,
     "score": -900
   }
 ]

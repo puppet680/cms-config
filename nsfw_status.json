@@ -9,8 +9,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 538,
-    "score": 562
+    "delay": 368,
+    "score": 732
   },
   {
     "id": "yyzy_com",
@@ -22,8 +22,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 593,
-    "score": 507
+    "delay": 448,
+    "score": 652
   },
   {
     "id": "shayuapi_com",
@@ -35,8 +35,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 705,
-    "score": 395
+    "delay": 605,
+    "score": 495
   },
   {
     "id": "thzy_me",
@@ -48,8 +48,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 899,
-    "score": 201
+    "delay": 732,
+    "score": 368
   },
   {
     "id": "hsckzy_xyz",
@@ -61,7 +61,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1115,
+    "delay": 1028,
     "score": 100
   },
   {
@@ -74,7 +74,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1133,
+    "delay": 1036,
     "score": 100
   },
   {
@@ -87,7 +87,7 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1173,
+    "delay": 5669,
     "score": 100
   }
 ]
