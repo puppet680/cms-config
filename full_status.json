@@ -1,44 +1,44 @@
 [
   {
-    "id": "xiangjiaozyw_com",
-    "name": "NSFW 秘密通道 01",
-    "url": "https://www.xiangjiaozyw.com/api.php/provide/vod",
-    "category": "NSFW",
-    "adContext": "成人内容/跳转频繁",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 599,
-    "m3u8_accessible": true,
-    "m3u8_domain": "xibaom6.top",
-    "score": 24015
-  },
-  {
     "id": "kxgav_com",
-    "name": "NSFW 秘密通道 02",
+    "name": "NSFW 秘密通道 01",
     "url": "https://www.kxgav.com/api/json.php",
     "category": "NSFW",
     "adContext": "成人内容/白嫖风格/跳转多",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 716,
+    "delay": 513,
     "m3u8_accessible": true,
     "m3u8_domain": "video60.bpzy1.com",
-    "score": 22260
+    "score": 25305
   },
   {
     "id": "xxibaozyw_com",
-    "name": "NSFW 秘密通道 03",
+    "name": "NSFW 秘密通道 02",
     "url": "https://www.xxibaozyw.com/api.php/provide/vod",
     "category": "NSFW",
     "adContext": "成人内容/资源多/广告中等",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1027,
+    "delay": 665,
     "m3u8_accessible": true,
     "m3u8_domain": "xibaom6.top",
-    "score": 16595
+    "score": 22025
+  },
+  {
+    "id": "xiangjiaozyw_com",
+    "name": "NSFW 秘密通道 03",
+    "url": "https://www.xiangjiaozyw.com/api.php/provide/vod",
+    "category": "NSFW",
+    "adContext": "成人内容/跳转频繁",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 766,
+    "m3u8_accessible": true,
+    "m3u8_domain": "xibaom6.top",
+    "score": 21510
   }
 ]
