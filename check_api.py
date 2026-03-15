@@ -200,18 +200,21 @@ def main():
     print(f"常规版 (clean_status.json) : {len(clean_data)} 条")
     print(f"成人版 (nsfw_status.json)  : {len(nsfw_data)} 条")
     print(f"全量版 (full_status.json)   : {len(final_ordered_results)} 条")
-    generate_readme(clean_data, nsfw_data, final_ordered_results)
+    generate_readme(clean_data, nsfw_data, final_ordered_results, raw_data)
 
 # ────────────────────────────────────────────────
 # 生成 README.md 看板
 # ────────────────────────────────────────────────
 
-def generate_readme(clean_data, nsfw_data, full_data):
+def generate_readme(clean_data, nsfw_data, full_data, raw_data=None):
     lines = []
     lines.append("# 🎬 影视资源接口可用性检测看板\n")
     lines.append(f"最后更新：{time.strftime('%Y-%m-%d %H:%M:%S')}（HKT）\n")
     lines.append(f"检测关键词：**{NORMAL_KEYWORD}**（NSFW 用 **{NSFW_KEYWORD}**）\n")
-    lines.append(f"总检测源：**{len(raw_data)}** 条\n")  # 注意这里用 raw_data 的总数
+    
+    # 使用传入的 raw_data，如果没有就用可用总数
+    total_detected = len(raw_data) if raw_data is not None else (len(clean_data) + len(nsfw_data))
+    lines.append(f"原始检测源：**{total_detected}** 条\n")
     lines.append(f"可用源：**{len(full_data)}** 条（常规 {len(clean_data)} + NSFW {len(nsfw_data)}）\n\n")
 
     lines.append("## 📊 统计概览\n\n")
