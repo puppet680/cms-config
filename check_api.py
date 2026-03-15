@@ -13,7 +13,7 @@ FULL_OUTPUT = 'full_status.json'     # 全量版
 README_FILE = 'README.md'
 TIMEOUT = 10
 
-# 搜索关键词（用热门剧更容易出结果）
+# 搜索关键词
 NORMAL_KEYWORD = "庆余年"
 NSFW_KEYWORD = "臀"
 
@@ -59,7 +59,7 @@ def check_source(item):
     return res_item
 
 def main():
-    print("🚀 启动检测 ...")
+    print("🚀 启动检测（已去除 m3u8 检查）...")
     print(f"搜索关键词：{NORMAL_KEYWORD} (NSFW: {NSFW_KEYWORD})")
 
     if not os.path.exists(ORIGINAL_FILE):
@@ -78,11 +78,8 @@ def main():
     print(f"有效源数量：{len(valid_results)} 条")
 
     if not valid_results:
-        print("警告：没有有效源！可能原因：")
-        print("1. 所有源接口超时/403/502")
-        print("2. 搜索关键词在这些源中完全搜不到内容")
-        print("3. 返回结构不匹配（缺少 list/vod_list 等字段）")
-        print("\n前 5 条诊断信息：")
+        print("警告：没有有效源！可能原因：1. 接口超时/403/502  2. 搜索无结果  3. 返回结构不匹配")
+        print("\n前5条诊断：")
         for item in results[:5]:
             print(f"{item.get('url')} | Enabled: {item['isEnabled']} | Searchable: {item['searchable']} | Delay: {item['delay']}ms")
         return
@@ -107,16 +104,22 @@ def main():
 
         if p == "备用线路" and counters[p] > 5:
             item['isEnabled'] = False
-            # 继续计数，但不加入结果
-            counters[p] += 1
-            continue
+            continue  # 跳过，不计数、不加入结果
 
         target_name = f"{p} {counters[p]:02d}"
         counters[p] += 1
 
-        new_item = item.copy()
-        new_item['name'] = target_name
-        new_item['adContext'] = processed_ad  # 更新为 processed_ad
+        # 最高效方式：先放 name，保证顺序最前
+        new_item = {
+            'name': target_name,
+            'adContext': processed_ad,
+        }
+        new_item.update(item)  # 展开原始所有字段
+
+        # 如果担心原始 item 有 name 键，强制再放一次（实际你的 sources.json 没有）
+        if 'name' in new_item and new_item['name'] != target_name:
+            name_value = new_item.pop('name')
+            new_item = {'name': target_name, **new_item}
 
         final_ordered_results.append(new_item)
 
@@ -133,11 +136,11 @@ def main():
         json.dump(final_ordered_results, f, ensure_ascii=False, indent=2)
 
     print("\n✅ 完成！")
-    print(f"常规版 (clean_status.json) : {len(clean_data)} 条")
-    print(f"成人版 (nsfw_status.json)  : {len(nsfw_data)} 条")
-    print(f"全量版 (full_status.json)   : {len(final_ordered_results)} 条")
+    print(f"常规版: {len(clean_data)} 条")
+    print(f"成人版: {len(nsfw_data)} 条")
+    print(f"全量版: {len(final_ordered_results)} 条")
 
-    # 生成你指定的 README 样式
+    # 生成 README（你指定的样式）
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     lines = []
     lines.append("# 🛰️ API 实时监控中心\n\n")
@@ -173,7 +176,7 @@ def main():
             lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
         lines.append("\n")
 
-    # 备用线路（包括被禁用的也显示出来）
+    # 备用线路
     beiyong = [x for x in clean_data if '备用线路' in x.get('name', '')]
     if beiyong:
         lines.append("### 🛠️ 备用线路\n")
@@ -188,7 +191,7 @@ def main():
             lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
         lines.append("\n")
 
-    # NSFW 部分 - 折叠
+    # NSFW 折叠
     if nsfw_data:
         lines.append("### 🔞 NSFW 秘密通道\n")
         lines.append("<details>\n<summary>点击展开</summary>\n\n")
