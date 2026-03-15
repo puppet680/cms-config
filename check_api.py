@@ -13,8 +13,8 @@ FULL_OUTPUT = 'full_status.json'     # 全量版
 README_FILE = 'README.md'
 TIMEOUT = 10
 
-# 搜索关键词（用热门剧更容易出结果）
-NORMAL_KEYWORD = "庆余年"           # 可自行改回 "我的团长我的团"
+# 搜索关键词
+NORMAL_KEYWORD = "庆余年"
 NSFW_KEYWORD = "臀"
 
 def calculate_score(item):
@@ -76,6 +76,53 @@ def check_source(item):
     res_item['score'] = calculate_score(res_item)
     return res_item
 
+def generate_status_readme(final_ordered_results, clean_data, nsfw_data):
+    """【新增功能】生成状态看板"""
+    curr_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    
+    def build_table(data_list, filter_prefix, limit=10):
+        # 筛选符合前缀名称的线路 (例如: "极速直连")
+        items = [i for i in data_list if filter_prefix in i.get('name', '')]
+        if not items: return "*当前分类暂无可用线路*\n"
+        
+        table = ["| 线路名称 | 延迟 | 广告状态 | 负载状态 |", "| :--- | :--- | :--- | :--- |"]
+        for item in items[:limit]:
+            delay = item.get('delay', 9999)
+            # 状态灯逻辑
+            status_icon = "🟢 极速" if delay < 500 else "🟡 正常"
+            if delay > 2000: status_icon = "🔴 拥堵"
+            
+            table.append(f"| {item['name']} | `{delay}ms` | {item.get('adContext', '未知')} | {status_icon} |")
+        return "\n".join(table) + "\n"
+
+    readme_content = f"""# 📺 视频源在线状态监测
+
+> **更新时间**: `{curr_time}`  
+> **监控策略**: 极速直连按延迟排序，优质路线保持低延迟稳定。
+
+---
+
+## 🚀 极速直连 (按延迟最优排序)
+{build_table(clean_data, "极速直连")}
+
+## 💎 优质线路 (长期稳定推荐)
+{build_table(clean_data, "优质线路")}
+
+## 🔞 NSFW 秘密通道 (成人专属)
+{build_table(nsfw_data, "NSFW")}
+
+---
+
+## 📥 订阅地址
+- **常规版 (Clean)**: `clean_status.json`
+- **成人版 (NSFW)**: `nsfw_status.json`
+- **全量版 (Full)**: `full_status.json`
+
+---
+*由检测脚本自动生成，请勿手动修改。*
+"""
+    with open(README_FILE, 'w', encoding='utf-8') as f:
+        f.write(readme_content)
 
 def main():
     print("🚀 启动检测（已去除 m3u8 检查）...")
@@ -98,13 +145,9 @@ def main():
     print(f"有效源数量：{len(valid_results)} 条")
 
     if not valid_results:
-        print("警告：没有有效源！可能原因：")
-        print("1. 所有源接口超时/403/502")
-        print("2. 搜索关键词在这些源中完全搜不到内容")
-        print("3. 返回结构不匹配（缺少 list/vod_list 等字段）")
-        print("\n前 5 条诊断信息：")
+        print("警告：没有有效源！")
         for item in results[:5]:
-            print(f"{item.get('url')} | Enabled: {item['isEnabled']} | Searchable: {item['searchable']} | Delay: {item['delay']}ms")
+            print(f"{item.get('url')} | Enabled: {item['isEnabled']} | Searchable: {item['searchable']}")
 
     valid_results.sort(key=lambda x: -x['score'])
 
@@ -113,13 +156,14 @@ def main():
 
     for item in valid_results:
         raw_ad = item.get('adContext', '')
-        processed_ad = "未知" if not raw_ad or "无广告" in raw_ad else raw_ad
+        processed_ad = "无广告" if not raw_ad or "无广告" in raw_ad else raw_ad
 
+        # --- 保持你原有的分类逻辑并增加判断 ---
         if item.get('category') == 'NSFW':
             p = "NSFW 秘密通道"
         elif item.get('isOfficial'):
             p = "极速直连"
-        elif processed_ad == "未知" or "无广告" in raw_ad:
+        elif processed_ad == "无广告" or "未知" in raw_ad:
             p = "优质线路"
         else:
             p = "备用线路"
@@ -146,7 +190,7 @@ def main():
 
         final_ordered_results.append(new_item)
 
-    # 输出文件
+    # 输出 JSON 文件
     clean_data = [i for i in final_ordered_results if i.get('category') != 'NSFW']
     nsfw_data = [i for i in final_ordered_results if i.get('category') == 'NSFW']
 
@@ -159,10 +203,14 @@ def main():
     with open(FULL_OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(final_ordered_results, f, ensure_ascii=False, indent=2)
 
+    # --- 【新增调用】执行生成 README 功能 ---
+    generate_status_readme(final_ordered_results, clean_data, nsfw_data)
+
     print("\n✅ 完成！")
     print(f"常规版 (clean_status.json) : {len(clean_data)} 条")
     print(f"成人版 (nsfw_status.json)  : {len(nsfw_data)} 条")
     print(f"全量版 (full_status.json)   : {len(final_ordered_results)} 条")
+    print("README 看板已同步更新。")
 
 
 if __name__ == "__main__":
