@@ -200,6 +200,7 @@ def main():
     print(f"常规版 (clean_status.json) : {len(clean_data)} 条")
     print(f"成人版 (nsfw_status.json)  : {len(nsfw_data)} 条")
     print(f"全量版 (full_status.json)   : {len(final_ordered_results)} 条")
+    generate_readme(clean_data, nsfw_data, final_ordered_results)
 
 # ────────────────────────────────────────────────
 # 生成 README.md 看板
@@ -290,4 +291,3 @@ def generate_readme(clean_data, nsfw_data, full_data):
 
 if __name__ == "__main__":
     main()
-    generate_readme(clean_data, nsfw_data, final_ordered_results)
