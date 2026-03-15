@@ -59,7 +59,7 @@ def check_source(item):
     return res_item
 
 def main():
-    print("🚀 启动检测（已去除 m3u8 检查）...")
+    print("🚀 启动检测 ...")
     print(f"搜索关键词：{NORMAL_KEYWORD} (NSFW: {NSFW_KEYWORD})")
 
     if not os.path.exists(ORIGINAL_FILE):
@@ -109,14 +109,12 @@ def main():
         target_name = f"{p} {counters[p]:02d}"
         counters[p] += 1
 
-        # 最高效方式：先放 name，保证顺序最前
         new_item = {
             'name': target_name,
             'adContext': processed_ad,
         }
         new_item.update(item)  # 展开原始所有字段
 
-        # 如果担心原始 item 有 name 键，强制再放一次（实际你的 sources.json 没有）
         if 'name' in new_item and new_item['name'] != target_name:
             name_value = new_item.pop('name')
             new_item = {'name': target_name, **new_item}
