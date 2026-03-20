@@ -9,8 +9,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 208,
-    "score": 33880
+    "delay": 183,
+    "score": 34255
   },
   {
     "name": "优质线路 02",
@@ -22,8 +22,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 365,
-    "score": 31525
+    "delay": 293,
+    "score": 32605
   },
   {
     "name": "优质线路 03",
@@ -35,8 +35,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 403,
-    "score": 30955
+    "delay": 296,
+    "score": 32560
   },
   {
     "name": "优质线路 04",
@@ -48,8 +48,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 491,
-    "score": 29635
+    "delay": 390,
+    "score": 31150
   },
   {
     "name": "优质线路 05",
@@ -61,8 +61,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 515,
-    "score": 29275
+    "delay": 403,
+    "score": 30955
   },
   {
     "name": "优质线路 06",
@@ -74,8 +74,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 673,
-    "score": 26905
+    "delay": 586,
+    "score": 28210
+  },
+  {
+    "name": "备用线路 01",
+    "adContext": "开头广告/国内CDN/全网秒播",
+    "id": "hongniuzy_com",
+    "originalName": "红牛资源",
+    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 274,
+    "score": 26890
   },
   {
     "name": "优质线路 07",
@@ -87,8 +100,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 715,
-    "score": 26275
+    "delay": 691,
+    "score": 26635
   },
   {
     "name": "优质线路 08",
@@ -100,60 +113,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 755,
-    "score": 25675
-  },
-  {
-    "name": "极速直连 01",
-    "adContext": "无广告/高清无水印/秒播稳定",
-    "id": "1080zyk_com",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yzzy-api.com/inc/api_mac10.php",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 978,
-    "score": 23830
-  },
-  {
-    "name": "优质线路 09",
-    "adContext": "无广告/M3U8直链/HTTPS/自家CDN",
-    "id": "lzcaiji_com",
-    "originalName": "量子资源",
-    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1094,
-    "score": 20590
-  },
-  {
-    "name": "备用线路 01",
-    "adContext": "有跑马灯/广告中等/稳定性一般",
-    "id": "p2100_net",
-    "originalName": "飘零资源",
-    "url": "https://p2100.net/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 914,
-    "score": 17290
-  },
-  {
-    "name": "极速直连 02",
-    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
-    "id": "mtzy_me",
-    "originalName": "茅台资源",
-    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1123,
-    "score": 16655
+    "delay": 706,
+    "score": 26410
   },
   {
     "name": "备用线路 02",
@@ -165,34 +126,21 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1015,
-    "score": 15775
+    "delay": 334,
+    "score": 25990
   },
   {
-    "name": "备用线路 03",
-    "adContext": "有跑马灯/开头广告/秒拖但不稳",
-    "id": "zuida_xyz",
-    "originalName": "最大资源",
-    "url": "https://api.zuidapi.com/api.php/provide/vod",
+    "name": "优质线路 09",
+    "adContext": "无广告/M3U8直链/HTTPS/自家CDN",
+    "id": "lzcaiji_com",
+    "originalName": "量子资源",
+    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1186,
-    "score": 13210
-  },
-  {
-    "name": "备用线路 04",
-    "adContext": "有跑马灯/备用源/广告多",
-    "id": "zuidazy_co",
-    "originalName": "最大点播备用",
-    "url": "https://zuidazy.me/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1188,
-    "score": 13180
+    "delay": 926,
+    "score": 23110
   },
   {
     "name": "优质线路 10",
@@ -204,37 +152,63 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1655,
-    "score": 12175
+    "delay": 1036,
+    "score": 21460
+  },
+  {
+    "name": "备用线路 03",
+    "adContext": "有跑马灯/广告中等/稳定性一般",
+    "id": "p2100_net",
+    "originalName": "飘零资源",
+    "url": "https://p2100.net/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 734,
+    "score": 19990
+  },
+  {
+    "name": "极速直连 01",
+    "adContext": "无广告/高清无水印/秒播稳定",
+    "id": "1080zyk_com",
+    "originalName": "优质资源库1080zyk",
+    "url": "https://api.yzzy-api.com/inc/api_mac10.php",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1672,
+    "score": 13420
+  },
+  {
+    "name": "备用线路 04",
+    "adContext": "有跑马灯/备用源/广告多",
+    "id": "zuidazy_co",
+    "originalName": "最大点播备用",
+    "url": "https://zuidazy.me/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1176,
+    "score": 13360
   },
   {
     "name": "备用线路 05",
-    "adContext": "开头广告/国内CDN/全网秒播",
-    "id": "hongniuzy_com",
-    "originalName": "红牛资源",
-    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
+    "adContext": "有跑马灯/开头广告/秒拖但不稳",
+    "id": "zuida_xyz",
+    "originalName": "最大资源",
+    "url": "https://api.zuidapi.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1291,
-    "score": 11635
+    "delay": 1280,
+    "score": 11800
   },
   {
-    "name": "优质线路 11",
-    "adContext": "无广告/M3U8直链/高清稳定",
-    "id": "maoyanzy_com",
-    "originalName": "猫眼资源",
-    "url": "https://api.maoyanapi.top/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1775,
-    "score": 10375
-  },
-  {
-    "name": "极速直连 03",
+    "name": "极速直连 02",
     "adContext": "无广告/资源偏爱奇艺风格/更新较慢",
     "id": "iqiyizyapi_com",
     "originalName": "爱奇艺资源",
@@ -243,11 +217,11 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2024,
-    "score": 8140
+    "delay": 1972,
+    "score": 8920
   },
   {
-    "name": "优质线路 12",
+    "name": "优质线路 11",
     "adContext": "无广告/点播类强/资源偏老",
     "id": "jinyingzy_com",
     "originalName": "金鹰点播",
@@ -256,11 +230,24 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1944,
-    "score": 7840
+    "delay": 1885,
+    "score": 8725
   },
   {
-    "name": "极速直连 04",
+    "name": "优质线路 12",
+    "adContext": "无广告/M3U8直链/高清稳定",
+    "id": "maoyanzy_com",
+    "originalName": "猫眼资源",
+    "url": "https://api.maoyanapi.top/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1905,
+    "score": 8425
+  },
+  {
+    "name": "极速直连 03",
     "adContext": "跑马灯/开头广告/国内CDN",
     "id": "dbzy_tv",
     "originalName": "豆瓣资源",
@@ -269,7 +256,20 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2118,
-    "score": 730
+    "delay": 2649,
+    "score": -7235
+  },
+  {
+    "name": "极速直连 04",
+    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
+    "id": "mtzy_me",
+    "originalName": "茅台资源",
+    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2723,
+    "score": -7345
   }
 ]
