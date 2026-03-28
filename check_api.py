@@ -4,12 +4,13 @@ import concurrent.futures
 import time
 import os
 import urllib.parse
+import re
 
 # --- 配置 ---
 ORIGINAL_FILE = 'sources.json'
-CLEAN_OUTPUT = 'clean_status.json'   # 常规版 (无成人)
-NSFW_OUTPUT = 'nsfw_status.json'     # 成人版
-FULL_OUTPUT = 'full_status.json'     # 全量版
+CLEAN_OUTPUT = 'clean_status.json'
+NSFW_OUTPUT = 'nsfw_status.json'
+FULL_OUTPUT = 'full_status.json'
 README_FILE = 'README.md'
 TIMEOUT = 10
 
@@ -35,33 +36,65 @@ def calculate_score(item):
         score += 1500
     return score
 
+def validate_m3u8_content(url, headers):
+    """三级深度验证：检查文件头是否为 #EXTM3U"""
+    try:
+        # 使用流式请求验证前 7 个字节 [内部置信度高，标准 M3U8 校验]
+        resp = requests.get(url, timeout=5, headers=headers, stream=True)
+        if resp.status_code == 200:
+            content_start = resp.iter_content(chunk_size=7)
+            first_bytes = next(content_start, b"").decode('utf-8', errors='ignore')
+            return "#EXTM3U" in first_bytes
+    except:
+        pass
+    return False
+
 def check_source(item):
     res_item = item.copy()
     cat = res_item.get('category', 'General')
     search_word = NSFW_KEYWORD if cat == "NSFW" else NORMAL_KEYWORD
+    
     res_item['isEnabled'] = False
     res_item['searchable'] = False
     res_item['delay'] = 9999
+    
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    
     try:
         start_time = time.time()
+        # 第一级：执行详情搜索
         test_url = f"{item['url']}?wd={urllib.parse.quote(search_word)}&ac=detail"
-        resp = requests.get(test_url, timeout=TIMEOUT, headers=headers, allow_redirects=True)
+        resp = requests.get(test_url, timeout=TIMEOUT, headers=headers)
+        
         if resp.status_code == 200:
-            res_item['isEnabled'] = True
-            res_item['delay'] = int((time.time() - start_time) * 1000)
-            content = resp.text.strip().lower()
-            if any(k in content for k in ['"list":[{', '"vod_list":', '<list>', '"vod_id"', search_word.lower(), '"total":', '"pagecount":']):
-                res_item['searchable'] = True
+            data = resp.json()
+            vod_list = data.get('list', [])
+            
+            if vod_list and len(vod_list) > 0:
+                first_vod = vod_list[0]
+                play_from = str(first_vod.get('vod_play_from', '')).lower()
+                play_url = str(first_vod.get('vod_play_url', '')).lower()
+                
+                # 第二级：确认 vod_play_from 或 url 中包含 m3u8 标记
+                if 'm3u8' in play_from or '.m3u8' in play_url:
+                    # 正则提取第一个有效的 m3u8 地址
+                    urls = re.findall(r'https?://[^\s$,#]+?\.m3u8', play_url)
+                    if urls:
+                        target_m3u8 = urls[0]
+                        # 第三级：进入 m3u8 验证 #EXTM3U 文件头
+                        if validate_m3u8_content(target_m3u8, headers):
+                            res_item['isEnabled'] = True
+                            res_item['delay'] = int((time.time() - start_time) * 1000)
+                            res_item['searchable'] = True
     except:
         pass
+        
     res_item['score'] = calculate_score(res_item)
     return res_item
 
 def main():
-    print("🚀 启动检测 ...")
-    print(f"搜索关键词：{NORMAL_KEYWORD} (NSFW: {NSFW_KEYWORD})")
-
+    print(f"🚀 启动深度检测任务 (共 {len(json.load(open(ORIGINAL_FILE, 'r')) if os.path.exists(ORIGINAL_FILE) else [])} 条源) ...")
+    
     if not os.path.exists(ORIGINAL_FILE):
         print(f"❌ 未找到源文件：{ORIGINAL_FILE}")
         return
@@ -69,21 +102,12 @@ def main():
     with open(ORIGINAL_FILE, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
-    print(f"总共检测 {len(raw_data)} 条源...")
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+    # 针对深度检测（多级请求）使用 15 个并发以平衡速度与稳定性
+    with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
         results = list(executor.map(check_source, raw_data))
 
-    valid_results = [i for i in results if i['isEnabled'] and i['searchable']]
-    print(f"有效源数量：{len(valid_results)} 条")
-
-    if not valid_results:
-        print("警告：没有有效源！可能原因：1. 接口超时/403/502  2. 搜索无结果  3. 返回结构不匹配")
-        print("\n前5条诊断：")
-        for item in results[:5]:
-            print(f"{item.get('url')} | Enabled: {item['isEnabled']} | Searchable: {item['searchable']} | Delay: {item['delay']}ms")
-        return
-
+    # 仅保留通过三级验证的源
+    valid_results = [i for i in results if i['isEnabled']]
     valid_results.sort(key=lambda x: -x['score'])
 
     counters = {"极速直连": 1, "优质线路": 1, "备用线路": 1, "NSFW 秘密通道": 1}
@@ -92,122 +116,55 @@ def main():
     for item in valid_results:
         raw_ad = item.get('adContext', '')
         processed_ad = "未知" if not raw_ad or "无广告" in raw_ad.lower() else raw_ad
+        
+        if item.get('category') == 'NSFW': p = "NSFW 秘密通道"
+        elif item.get('isOfficial'): p = "极速直连"
+        elif processed_ad == "未知" or "无广告" in raw_ad.lower(): p = "优质线路"
+        else: p = "备用线路"
 
-        if item.get('category') == 'NSFW':
-            p = "NSFW 秘密通道"
-        elif item.get('isOfficial'):
-            p = "极速直连"
-        elif processed_ad == "未知" or "无广告" in raw_ad.lower():
-            p = "优质线路"
-        else:
-            p = "备用线路"
-
-        if p == "备用线路" and counters[p] > 5:
-            item['isEnabled'] = False
-            continue  # 跳过，不计数、不加入结果
+        # 限制备用线路数量
+        if p == "备用线路" and counters[p] > 5: continue
 
         target_name = f"{p} {counters[p]:02d}"
         counters[p] += 1
-
-        new_item = {
-            'name': target_name,
-            'adContext': processed_ad,
-        }
-        new_item.update(item)  # 展开原始所有字段
-
-        if 'name' in new_item and new_item['name'] != target_name:
-            name_value = new_item.pop('name')
-            new_item = {'name': target_name, **new_item}
-
+        
+        new_item = {'name': target_name, 'adContext': processed_ad}
+        new_item.update({k: v for k, v in item.items() if k not in ['name', 'adContext']})
         final_ordered_results.append(new_item)
 
-    clean_data = [i for i in final_ordered_results if i.get('category') != 'NSFW']
-    nsfw_data = [i for i in final_ordered_results if i.get('category') == 'NSFW']
+    # 保存 JSON 文件
+    output_configs = [
+        (CLEAN_OUTPUT, [i for i in final_ordered_results if i.get('category') != 'NSFW']),
+        (NSFW_OUTPUT, [i for i in final_ordered_results if i.get('category') == 'NSFW']),
+        (FULL_OUTPUT, final_ordered_results)
+    ]
+    for filename, data in output_configs:
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
-    with open(CLEAN_OUTPUT, 'w', encoding='utf-8') as f:
-        json.dump(clean_data, f, ensure_ascii=False, indent=2)
-
-    with open(NSFW_OUTPUT, 'w', encoding='utf-8') as f:
-        json.dump(nsfw_data, f, ensure_ascii=False, indent=2)
-
-    with open(FULL_OUTPUT, 'w', encoding='utf-8') as f:
-        json.dump(final_ordered_results, f, ensure_ascii=False, indent=2)
-
-    print("\n✅ 完成！")
-    print(f"常规版: {len(clean_data)} 条")
-    print(f"成人版: {len(nsfw_data)} 条")
-    print(f"全量版: {len(final_ordered_results)} 条")
-
-    # 生成 README（你指定的样式）
+    # 生成 README
     now = time.strftime("%Y-%m-%d %H:%M:%S")
-    lines = []
-    lines.append("# 🛰️ API 实时监控中心\n\n")
-    lines.append(f"更新时间：`{now}`\n\n")
+    lines = [f"# 🛰️ API 实时监控中心\n\n更新时间：`{now}`\n\n"]
+    
+    sections = [("⚡ 极速直连", "极速直连"), ("💎 优质线路", "优质线路"), ("🛠️ 备用线路", "备用线路")]
+    for title, key in sections:
+        sec_data = [x for x in final_ordered_results if key in x['name'] and x.get('category') != 'NSFW']
+        if sec_data:
+            lines.append(f"### {title}\n| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
+            for i, item in enumerate(sec_data, 1):
+                lines.append(f"| {i:02d} | {item['name']} | ✅ | 🔍 | {item['delay']}ms | {item['adContext']} | {item.get('originalName','未知')} |\n")
+            lines.append("\n")
 
-    # 极速直连
-    jisu = [x for x in clean_data if '极速直连' in x.get('name', '')]
-    if jisu:
-        lines.append("### ⚡ 极速直连\n")
-        lines.append("| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n")
-        lines.append("| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
-        for i, item in enumerate(jisu, 1):
-            status = "✅" if item.get('isEnabled') else "❌"
-            search_icon = "🔍" if item.get('searchable') else "✖"
-            delay_str = f"{item['delay']}ms" if item.get('delay', 9999) < 9999 else "N/A"
-            ad = item.get('adContext', '未知')
-            orig = item.get('originalName', '未知')
-            lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
-        lines.append("\n")
-
-    # 优质线路
-    youzhi = [x for x in clean_data if '优质线路' in x.get('name', '')]
-    if youzhi:
-        lines.append("### 💎 优质线路\n")
-        lines.append("| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n")
-        lines.append("| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
-        for i, item in enumerate(youzhi, 1):
-            status = "✅" if item.get('isEnabled') else "❌"
-            search_icon = "🔍" if item.get('searchable') else "✖"
-            delay_str = f"{item['delay']}ms" if item.get('delay', 9999) < 9999 else "N/A"
-            ad = item.get('adContext', '未知')
-            orig = item.get('originalName', '未知')
-            lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
-        lines.append("\n")
-
-    # 备用线路
-    beiyong = [x for x in clean_data if '备用线路' in x.get('name', '')]
-    if beiyong:
-        lines.append("### 🛠️ 备用线路\n")
-        lines.append("| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n")
-        lines.append("| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
-        for i, item in enumerate(beiyong, 1):
-            status = "✅" if item.get('isEnabled') else "❌"
-            search_icon = "🔍" if item.get('searchable') else "✖"
-            delay_str = f"{item['delay']}ms" if item.get('delay', 9999) < 9999 else "N/A"
-            ad = item.get('adContext', '未知')
-            orig = item.get('originalName', '未知')
-            lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
-        lines.append("\n")
-
-    # NSFW 折叠
+    nsfw_data = [i for i in final_ordered_results if i.get('category') == 'NSFW']
     if nsfw_data:
-        lines.append("### 🔞 NSFW 秘密通道\n")
-        lines.append("<details>\n<summary>点击展开</summary>\n\n")
-        lines.append("| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n")
-        lines.append("| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
+        lines.append("### 🔞 NSFW 秘密通道\n<details>\n<summary>点击展开</summary>\n\n| 序号 | 线路名称 | 状态 | 搜索 | 延迟 | 广告 | 原始名称 |\n| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n")
         for i, item in enumerate(nsfw_data, 1):
-            status = "✅" if item.get('isEnabled') else "❌"
-            search_icon = "🔍" if item.get('searchable') else "✖"
-            delay_str = f"{item['delay']}ms" if item.get('delay', 9999) < 9999 else "N/A"
-            ad = item.get('adContext', '未知')
-            orig = item.get('originalName', '未知')
-            lines.append(f"| {i:02d} | {item['name']} | {status} | {search_icon} | {delay_str} | {ad} | {orig} |\n")
+            lines.append(f"| {i:02d} | {item['name']} | ✅ | 🔍 | {item['delay']}ms | {item['adContext']} | {item.get('originalName','未知')} |\n")
         lines.append("\n</details>\n")
 
     with open(README_FILE, 'w', encoding='utf-8') as f:
         f.write("".join(lines))
-
-    print(f"README 已生成：{os.path.abspath(README_FILE)}")
+    print(f"✅ 检测完成！共发现 {len(final_ordered_results)} 条符合 m3u8 标准的有效源。")
 
 if __name__ == "__main__":
     main()
