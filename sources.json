@@ -8,7 +8,7 @@
   {"id": "dyttzyapi_com", "originalName": "电影天堂", "url": "http://caiji.dyttzyapi.com/api.php/provide/vod", "category": "General", "adContext": "纯净/无跑马灯/无插播/聚合干净", "isOfficial": false},
   {"id": "maoyanzy_com", "originalName": "猫眼资源", "url": "https://api.maoyanapi.top/api.php/provide/vod", "category": "General", "adContext": "无广告/M3U8直链/高清稳定", "isOfficial": false},
   {"id": "lzcaiji_com", "originalName": "量子资源", "url": "https://cj.lzcaiji.com/api.php/provide/vod", "category": "General", "adContext": "无广告/M3U8直链/HTTPS/自家CDN", "isOfficial": false},
-  {"id": "360zy_com", "originalName": "360资源", "url": "https://360zyzz.com/api.php/provide/vod", "category": "General", "adContext": "无广告/M3U8直链/中规中矩", "isOfficial": false},
+  {"id": "360zy_com", "originalName": "360资源", "url": "https://vod1.maowushi.com/api.php/provide/vod", "category": "General", "adContext": "无广告/M3U8直链/中规中矩", "isOfficial": false},
   {"id": "jszyapi_com", "originalName": "极速资源", "url": "https://jszyapi.com/api.php/provide/vod", "category": "General", "adContext": "无广告/响应极快/画质一般", "isOfficial": false},
   {"id": "moduzy_net", "originalName": "魔都资源", "url": "https://www.mdzyapi.com/api.php/provide/vod", "category": "General", "adContext": "M3U8直链/有跑马灯/广告中等", "isOfficial": false},
   {"id": "ffzyapi_com", "originalName": "非凡资源", "url": "https://api.ffzyapi.com/api.php/provide/vod", "category": "General", "adContext": "HTTPS/M3U8直链/偶尔开头广告", "isOfficial": false},
