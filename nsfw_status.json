@@ -317,9 +317,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 619,
+    "delay": 750,
     "check_status": "Passed",
-    "score": 23715
+    "score": 21750
   },
   {
     "name": "NSFW 秘密通道 24",
@@ -331,12 +331,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 651,
+    "delay": 866,
     "check_status": "Passed",
-    "score": 23235
+    "score": 20010
   },
   {
     "name": "NSFW 秘密通道 25",
+    "adContext": "成人内容/资源多/广告中等",
+    "id": "xxibaozyw_com",
+    "originalName": "细胞资源",
+    "url": "https://www.xxibaozyw.com/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 935,
+    "check_status": "Passed",
+    "score": 17975
+  },
+  {
+    "name": "NSFW 秘密通道 26",
     "adContext": "成人内容",
     "id": "apidanaizi_com",
     "originalName": "大奶子",
@@ -345,23 +359,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 753,
+    "delay": 1071,
     "check_status": "Passed",
-    "score": 21705
-  },
-  {
-    "name": "NSFW 秘密通道 26",
-    "adContext": "成人内容",
-    "id": "xiangjiaozyw_com",
-    "originalName": "香蕉资源",
-    "url": "https://www.xiangjiaozyw.com/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 861,
-    "check_status": "Passed",
-    "score": 20085
+    "score": 16935
   },
   {
     "name": "NSFW 秘密通道 27",
@@ -373,26 +373,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 925,
+    "delay": 1409,
     "check_status": "Passed",
-    "score": 19125
+    "score": 11865
   },
   {
     "name": "NSFW 秘密通道 28",
-    "adContext": "成人内容/资源多/广告中等",
-    "id": "xxibaozyw_com",
-    "originalName": "细胞资源",
-    "url": "https://www.xxibaozyw.com/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 885,
-    "check_status": "Passed",
-    "score": 18725
-  },
-  {
-    "name": "NSFW 秘密通道 29",
     "adContext": "成人内容/部分自产多",
     "id": "91md_me",
     "originalName": "麻豆视频",
@@ -401,12 +387,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1913,
+    "delay": 1552,
     "check_status": "Passed",
-    "score": 4305
+    "score": 9720
   },
   {
-    "name": "NSFW 秘密通道 30",
+    "name": "NSFW 秘密通道 29",
     "adContext": "成人内容/黑料为主",
     "id": "heiliaozy_cc",
     "originalName": "黑料资源",
@@ -415,8 +401,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2152,
+    "delay": 2084,
     "check_status": "Passed",
-    "score": 720
+    "score": 1740
   }
 ]
