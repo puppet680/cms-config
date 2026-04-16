@@ -58,20 +58,6 @@
   {
     "name": "优质线路 04",
     "adContext": "未知",
-    "id": "jszyapi_com",
-    "originalName": "极速资源",
-    "url": "https://jszyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 29500
-  },
-  {
-    "name": "优质线路 05",
-    "adContext": "未知",
     "id": "bfzy_tv",
     "originalName": "暴风资源",
     "url": "https://bfzyapi.com/api.php/provide/vod",
@@ -84,11 +70,25 @@
     "score": 29500
   },
   {
-    "name": "优质线路 06",
+    "name": "优质线路 05",
     "adContext": "未知",
     "id": "wwzy_tv",
     "originalName": "旺旺资源",
     "url": "https://api.wwzy.tv/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 29500
+  },
+  {
+    "name": "优质线路 06",
+    "adContext": "未知",
+    "id": "ukuapi88_com",
+    "originalName": "U酷影视",
+    "url": "https://api.ukuapi88.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
@@ -337,6 +337,20 @@
   },
   {
     "name": "NSFW 秘密通道 16",
+    "adContext": "成人内容/资源多/广告中等",
+    "id": "hsckzy_xyz",
+    "originalName": "黄色仓库",
+    "url": "https://hsckzy.xyz/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 24500
+  },
+  {
+    "name": "NSFW 秘密通道 17",
     "adContext": "成人内容/资源新/广告少",
     "id": "jkunzyapi_com",
     "originalName": "jkun资源",
@@ -350,7 +364,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 17",
+    "name": "NSFW 秘密通道 18",
     "adContext": "成人内容/备用线/广告中等",
     "id": "slapibf_com",
     "originalName": "森林资源",
@@ -364,7 +378,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 18",
+    "name": "NSFW 秘密通道 19",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "shayuapi_com",
     "originalName": "鲨鱼资源",
@@ -378,7 +392,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 19",
+    "name": "NSFW 秘密通道 20",
     "adContext": "成人内容/资源杂/广告中等",
     "id": "didizy_com",
     "originalName": "滴滴资源",
@@ -392,7 +406,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 20",
+    "name": "NSFW 秘密通道 21",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "thzy_me",
     "originalName": "桃花资源",
@@ -406,7 +420,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 21",
+    "name": "NSFW 秘密通道 22",
     "adContext": "成人内容/污染搜索/广告中等",
     "id": "siwazyw_tv",
     "originalName": "丝袜资源",
@@ -420,7 +434,7 @@
     "score": 24500
   },
   {
-    "name": "NSFW 秘密通道 22",
+    "name": "NSFW 秘密通道 23",
     "adContext": "成人内容/资源多/广告中等",
     "id": "xxibaozyw_com",
     "originalName": "细胞资源",
@@ -429,9 +443,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 559,
+    "delay": 552,
     "check_status": "Passed",
-    "score": 23615
+    "score": 23720
   },
   {
     "name": "备用线路 02",
@@ -504,20 +518,6 @@
     "score": 23500
   },
   {
-    "name": "NSFW 秘密通道 23",
-    "adContext": "成人内容",
-    "id": "xiangjiaozyw_com",
-    "originalName": "香蕉资源",
-    "url": "https://www.xiangjiaozyw.com/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 716,
-    "check_status": "Passed",
-    "score": 22260
-  },
-  {
     "name": "NSFW 秘密通道 24",
     "adContext": "成人内容",
     "id": "apidanaizi_com",
@@ -527,23 +527,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 738,
+    "delay": 721,
     "check_status": "Passed",
-    "score": 21930
+    "score": 22185
   },
   {
     "name": "NSFW 秘密通道 25",
     "adContext": "成人内容",
-    "id": "pgxdy_com",
-    "originalName": "黄AVZY",
-    "url": "https://www.pgxdy.com/api/json.php",
+    "id": "msnii_com",
+    "originalName": "美少女",
+    "url": "https://www.msnii.com/api/json.php",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 758,
+    "delay": 751,
     "check_status": "Passed",
-    "score": 21630
+    "score": 21735
   },
   {
     "name": "优质线路 08",
@@ -555,23 +555,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1118,
+    "delay": 1047,
     "check_status": "Passed",
-    "score": 20230
+    "score": 21295
   },
   {
     "name": "NSFW 秘密通道 26",
     "adContext": "成人内容",
-    "id": "msnii_com",
-    "originalName": "美少女",
-    "url": "https://www.msnii.com/api/json.php",
+    "id": "pgxdy_com",
+    "originalName": "黄AVZY",
+    "url": "https://www.pgxdy.com/api/json.php",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1068,
+    "delay": 881,
     "check_status": "Passed",
-    "score": 16980
+    "score": 19785
   },
   {
     "name": "NSFW 秘密通道 27",
@@ -583,23 +583,37 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1289,
+    "delay": 1114,
     "check_status": "Passed",
-    "score": 13665
+    "score": 16290
   },
   {
     "name": "NSFW 秘密通道 28",
-    "adContext": "成人内容/部分自产多",
-    "id": "91md_me",
-    "originalName": "麻豆视频",
-    "url": "https://91md.me/api.php/provide/vod",
+    "adContext": "成人内容/黑料为主",
+    "id": "heiliaozy_cc",
+    "originalName": "黑料资源",
+    "url": "https://www.heiliaozyapi.com/api.php/provide/vod",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1612,
+    "delay": 1584,
     "check_status": "Passed",
-    "score": 8820
+    "score": 9240
+  },
+  {
+    "name": "备用线路 07",
+    "adContext": "开头广告/高清画质/更新中规",
+    "id": "subozy_com",
+    "originalName": "速播资源",
+    "url": "https://subocaiji.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1515,
+    "check_status": "Passed",
+    "score": 8275
   },
   {
     "name": "优质线路 09",
@@ -611,51 +625,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1984,
+    "delay": 2073,
     "check_status": "Passed",
-    "score": 7240
+    "score": 5905
   },
   {
     "name": "NSFW 秘密通道 29",
-    "adContext": "成人内容/黑料为主",
-    "id": "heiliaozy_cc",
-    "originalName": "黑料资源",
-    "url": "https://www.heiliaozyapi.com/api.php/provide/vod",
+    "adContext": "成人内容/部分自产多",
+    "id": "91md_me",
+    "originalName": "麻豆视频",
+    "url": "https://91md.me/api.php/provide/vod",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1853,
+    "delay": 2209,
     "check_status": "Passed",
-    "score": 5205
-  },
-  {
-    "name": "备用线路 07",
-    "adContext": "开头广告/极速CDN/资源一般",
-    "id": "xinlangapi_com",
-    "originalName": "新浪资源",
-    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1724,
-    "check_status": "Passed",
-    "score": 5140
-  },
-  {
-    "name": "备用线路 08",
-    "adContext": "开头广告/高清画质/更新中规",
-    "id": "subozy_com",
-    "originalName": "速播资源",
-    "url": "https://subocaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1812,
-    "check_status": "Passed",
-    "score": 3820
+    "score": -135
   },
   {
     "name": "极速直连 02",
@@ -667,37 +653,9 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2699,
+    "delay": 2806,
     "check_status": "Passed",
-    "score": -6985
-  },
-  {
-    "name": "备用线路 09",
-    "adContext": "开头广告/资源更新快/稳定性中",
-    "id": "ryzyw_com",
-    "originalName": "如意资源",
-    "url": "https://cj.rycjapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 2787,
-    "check_status": "Passed",
-    "score": -10805
-  },
-  {
-    "name": "备用线路 10",
-    "adContext": "开头广告/国内CDN/全网秒播",
-    "id": "hongniuzy_com",
-    "originalName": "红牛资源",
-    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 2837,
-    "check_status": "Passed",
-    "score": -11555
+    "score": -8590
   },
   {
     "name": "极速直连 03",
@@ -709,9 +667,23 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3703,
+    "delay": 3291,
     "check_status": "Passed",
-    "score": -17045
+    "score": -10865
+  },
+  {
+    "name": "备用线路 08",
+    "adContext": "开头广告/资源更新快/稳定性中",
+    "id": "ryzyw_com",
+    "originalName": "如意资源",
+    "url": "https://cj.rycjapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2817,
+    "check_status": "Passed",
+    "score": -11255
   },
   {
     "name": "极速直连 04",
@@ -723,8 +695,36 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3646,
+    "delay": 3192,
     "check_status": "Passed",
-    "score": -22190
+    "score": -15380
+  },
+  {
+    "name": "备用线路 09",
+    "adContext": "开头广告/极速CDN/资源一般",
+    "id": "xinlangapi_com",
+    "originalName": "新浪资源",
+    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 3109,
+    "check_status": "Passed",
+    "score": -15635
+  },
+  {
+    "name": "备用线路 10",
+    "adContext": "开头广告/国内CDN/全网秒播",
+    "id": "hongniuzy_com",
+    "originalName": "红牛资源",
+    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 3248,
+    "check_status": "Passed",
+    "score": -17720
   }
 ]
