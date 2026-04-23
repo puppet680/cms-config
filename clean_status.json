@@ -126,20 +126,6 @@
     "score": 29500
   },
   {
-    "name": "优质线路 09",
-    "adContext": "未知",
-    "id": "wolongzyw_com",
-    "originalName": "卧龙资源",
-    "url": "https://wolongzyw.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 572,
-    "check_status": "Passed",
-    "score": 28420
-  },
-  {
     "name": "备用线路 01",
     "adContext": "动漫专区/M3U8直链/广告少",
     "id": "moduapi_cc",
@@ -224,35 +210,21 @@
     "score": 23500
   },
   {
-    "name": "优质线路 10",
+    "name": "优质线路 09",
     "adContext": "未知",
-    "id": "jinyingzy_com",
-    "originalName": "金鹰点播",
-    "url": "https://jinyingzy.com/api.php/provide/vod",
+    "id": "wolongzyw_com",
+    "originalName": "卧龙资源",
+    "url": "https://wolongzyw.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1685,
+    "delay": 1031,
     "check_status": "Passed",
-    "score": 11725
+    "score": 21535
   },
   {
     "name": "备用线路 07",
-    "adContext": "开头广告/极速CDN/资源一般",
-    "id": "xinlangapi_com",
-    "originalName": "新浪资源",
-    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1452,
-    "check_status": "Passed",
-    "score": 9220
-  },
-  {
-    "name": "备用线路 08",
     "adContext": "开头广告/高清画质/更新中规",
     "id": "subozy_com",
     "originalName": "速播资源",
@@ -261,26 +233,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1457,
+    "delay": 1475,
     "check_status": "Passed",
-    "score": 9145
+    "score": 8875
   },
   {
-    "name": "备用线路 09",
-    "adContext": "开头广告/资源更新快/稳定性中",
-    "id": "ryzyw_com",
-    "originalName": "如意资源",
-    "url": "https://cj.rycjapi.com/api.php/provide/vod",
+    "name": "备用线路 08",
+    "adContext": "开头广告/极速CDN/资源一般",
+    "id": "xinlangapi_com",
+    "originalName": "新浪资源",
+    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1866,
+    "delay": 2208,
     "check_status": "Passed",
-    "score": 3010
+    "score": -2120
   },
   {
-    "name": "备用线路 10",
+    "name": "备用线路 09",
     "adContext": "开头广告/国内CDN/全网秒播",
     "id": "hongniuzy_com",
     "originalName": "红牛资源",
@@ -289,9 +261,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1927,
+    "delay": 2406,
     "check_status": "Passed",
-    "score": 2095
+    "score": -5090
+  },
+  {
+    "name": "备用线路 10",
+    "adContext": "开头广告/资源更新快/稳定性中",
+    "id": "ryzyw_com",
+    "originalName": "如意资源",
+    "url": "https://cj.rycjapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2549,
+    "check_status": "Passed",
+    "score": -7235
   },
   {
     "name": "极速直连 02",
@@ -303,9 +289,9 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2692,
+    "delay": 3275,
     "check_status": "Passed",
-    "score": -1880
+    "score": -10625
   },
   {
     "name": "极速直连 03",
@@ -317,9 +303,9 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3535,
+    "delay": 3823,
     "check_status": "Passed",
-    "score": -19525
+    "score": -23845
   },
   {
     "name": "极速直连 04",
@@ -331,8 +317,8 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 7560,
+    "delay": 3799,
     "check_status": "Passed",
-    "score": -80900
+    "score": -24485
   }
 ]
