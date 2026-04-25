@@ -295,48 +295,6 @@
   },
   {
     "name": "NSFW 秘密通道 22",
-    "adContext": "成人内容/污染搜索/广告中等",
-    "id": "siwazyw_tv",
-    "originalName": "丝袜资源",
-    "url": "https://siwazyw.tv/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 24500
-  },
-  {
-    "name": "NSFW 秘密通道 23",
-    "adContext": "成人内容",
-    "id": "pgxdy_com",
-    "originalName": "黄AVZY",
-    "url": "https://www.pgxdy.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 758,
-    "check_status": "Passed",
-    "score": 21630
-  },
-  {
-    "name": "NSFW 秘密通道 24",
-    "adContext": "成人内容/白嫖风格",
-    "id": "kxgav_com",
-    "originalName": "白嫖资源",
-    "url": "https://www.kxgav.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 802,
-    "check_status": "Passed",
-    "score": 20970
-  },
-  {
-    "name": "NSFW 秘密通道 25",
     "adContext": "成人内容",
     "id": "apidanaizi_com",
     "originalName": "大奶子",
@@ -345,26 +303,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 806,
+    "delay": 621,
     "check_status": "Passed",
-    "score": 20910
+    "score": 23685
   },
   {
-    "name": "NSFW 秘密通道 26",
-    "adContext": "成人内容",
-    "id": "msnii_com",
-    "originalName": "美少女",
-    "url": "https://www.msnii.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 956,
-    "check_status": "Passed",
-    "score": 18660
-  },
-  {
-    "name": "NSFW 秘密通道 27",
+    "name": "NSFW 秘密通道 23",
     "adContext": "成人内容/资源多/广告中等",
     "id": "xxibaozyw_com",
     "originalName": "细胞资源",
@@ -373,12 +317,40 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 895,
+    "delay": 625,
     "check_status": "Passed",
-    "score": 18575
+    "score": 22625
   },
   {
-    "name": "NSFW 秘密通道 28",
+    "name": "NSFW 秘密通道 24",
+    "adContext": "成人内容",
+    "id": "pgxdy_com",
+    "originalName": "黄AVZY",
+    "url": "https://www.pgxdy.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 796,
+    "check_status": "Passed",
+    "score": 21060
+  },
+  {
+    "name": "NSFW 秘密通道 25",
+    "adContext": "成人内容",
+    "id": "msnii_com",
+    "originalName": "美少女",
+    "url": "https://www.msnii.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1077,
+    "check_status": "Passed",
+    "score": 16845
+  },
+  {
+    "name": "NSFW 秘密通道 26",
     "adContext": "成人内容",
     "id": "xiangjiaozyw_com",
     "originalName": "香蕉资源",
@@ -387,12 +359,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 991,
+    "delay": 1108,
     "check_status": "Passed",
-    "score": 18135
+    "score": 16380
   },
   {
-    "name": "NSFW 秘密通道 29",
+    "name": "NSFW 秘密通道 27",
+    "adContext": "成人内容/白嫖风格",
+    "id": "kxgav_com",
+    "originalName": "白嫖资源",
+    "url": "https://www.kxgav.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1196,
+    "check_status": "Passed",
+    "score": 15060
+  },
+  {
+    "name": "NSFW 秘密通道 28",
     "adContext": "成人内容/部分自产多",
     "id": "91md_me",
     "originalName": "麻豆视频",
@@ -401,12 +387,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1591,
+    "delay": 1801,
     "check_status": "Passed",
-    "score": 9135
+    "score": 5985
   },
   {
-    "name": "NSFW 秘密通道 30",
+    "name": "NSFW 秘密通道 29",
     "adContext": "成人内容/黑料为主",
     "id": "heiliaozy_cc",
     "originalName": "黑料资源",
@@ -415,8 +401,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1645,
+    "delay": 2008,
     "check_status": "Passed",
-    "score": 8325
+    "score": 2880
   }
 ]
