@@ -14,6 +14,20 @@
     "score": 31000
   },
   {
+    "name": "极速直连 02",
+    "adContext": "未知",
+    "id": "iqiyizyapi_com",
+    "originalName": "爱奇艺资源",
+    "url": "https://iqiyizyapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 31000
+  },
+  {
     "name": "优质线路 01",
     "adContext": "未知",
     "id": "ikunzy_com",
@@ -219,9 +233,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 999,
+    "delay": 817,
     "check_status": "Passed",
-    "score": 16015
+    "score": 18745
+  },
+  {
+    "name": "优质线路 09",
+    "adContext": "未知",
+    "id": "guangsuapi_com",
+    "originalName": "光速资源",
+    "url": "https://api.guangsuapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2050,
+    "check_status": "Passed",
+    "score": 6250
   },
   {
     "name": "备用线路 08",
@@ -233,12 +261,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1489,
+    "delay": 1787,
     "check_status": "Passed",
-    "score": 8665
+    "score": 4195
   },
   {
-    "name": "优质线路 09",
+    "name": "优质线路 10",
     "adContext": "未知",
     "id": "jinyingzy_com",
     "originalName": "金鹰点播",
@@ -247,9 +275,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2133,
+    "delay": 2288,
     "check_status": "Passed",
-    "score": 5005
+    "score": 2680
   },
   {
     "name": "备用线路 09",
@@ -261,68 +289,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2305,
+    "delay": 2309,
     "check_status": "Passed",
-    "score": -3575
+    "score": -3635
   },
   {
     "name": "备用线路 10",
-    "adContext": "开头广告/国内CDN/全网秒播",
-    "id": "hongniuzy_com",
-    "originalName": "红牛资源",
-    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
+    "adContext": "开头广告/资源更新快/稳定性中",
+    "id": "ryzyw_com",
+    "originalName": "如意资源",
+    "url": "https://cj.rycjapi.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3036,
+    "delay": 2447,
     "check_status": "Passed",
-    "score": -14540
-  },
-  {
-    "name": "极速直连 02",
-    "adContext": "未知",
-    "id": "iqiyizyapi_com",
-    "originalName": "爱奇艺资源",
-    "url": "https://iqiyizyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 3619,
-    "check_status": "Passed",
-    "score": -15785
-  },
-  {
-    "name": "优质线路 10",
-    "adContext": "未知",
-    "id": "guangsuapi_com",
-    "originalName": "光速资源",
-    "url": "https://api.guangsuapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 3999,
-    "check_status": "Passed",
-    "score": -22985
+    "score": -5705
   },
   {
     "name": "极速直连 03",
-    "adContext": "跑马灯/开头广告/国内CDN",
-    "id": "dbzy_tv",
-    "originalName": "豆瓣资源",
-    "url": "https://caiji.dbzy5.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 4103,
-    "check_status": "Passed",
-    "score": -29045
-  },
-  {
-    "name": "极速直连 04",
     "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
     "id": "mtzy_me",
     "originalName": "茅台资源",
@@ -331,8 +317,22 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 4348,
+    "delay": 3087,
     "check_status": "Passed",
-    "score": -31720
+    "score": -12805
+  },
+  {
+    "name": "极速直连 04",
+    "adContext": "跑马灯/开头广告/国内CDN",
+    "id": "dbzy_tv",
+    "originalName": "豆瓣资源",
+    "url": "https://caiji.dbzy5.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 3883,
+    "check_status": "Passed",
+    "score": -25745
   }
 ]
