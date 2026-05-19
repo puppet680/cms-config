@@ -58,20 +58,6 @@
   {
     "name": "优质线路 04",
     "adContext": "未知",
-    "id": "jszyapi_com",
-    "originalName": "极速资源",
-    "url": "https://jszyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 29500
-  },
-  {
-    "name": "优质线路 05",
-    "adContext": "未知",
     "id": "bfzy_tv",
     "originalName": "暴风资源",
     "url": "https://bfzyapi.com/api.php/provide/vod",
@@ -84,11 +70,25 @@
     "score": 29500
   },
   {
-    "name": "优质线路 06",
+    "name": "优质线路 05",
     "adContext": "未知",
     "id": "wwzy_tv",
     "originalName": "旺旺资源",
     "url": "https://api.wwzy.tv/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 29500
+  },
+  {
+    "name": "优质线路 06",
+    "adContext": "未知",
+    "id": "ukuapi88_com",
+    "originalName": "U酷影视",
+    "url": "https://api.ukuapi88.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
@@ -205,23 +205,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 537,
+    "delay": 987,
     "check_status": "Passed",
-    "score": 22945
-  },
-  {
-    "name": "备用线路 08",
-    "adContext": "开头广告/国内CDN/全网秒播",
-    "id": "hongniuzy_com",
-    "originalName": "红牛资源",
-    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1390,
-    "check_status": "Passed",
-    "score": 10150
+    "score": 16195
   },
   {
     "name": "优质线路 08",
@@ -233,12 +219,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1858,
+    "delay": 1792,
     "check_status": "Passed",
-    "score": 9130
+    "score": 10120
   },
   {
-    "name": "备用线路 09",
+    "name": "备用线路 08",
     "adContext": "开头广告/高清画质/更新中规",
     "id": "subozy_com",
     "originalName": "速播资源",
@@ -247,9 +233,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1476,
+    "delay": 1508,
     "check_status": "Passed",
-    "score": 8860
+    "score": 8380
   },
   {
     "name": "极速直连 02",
@@ -261,12 +247,12 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2140,
+    "delay": 2365,
     "check_status": "Passed",
-    "score": 6400
+    "score": 3025
   },
   {
-    "name": "备用线路 10",
+    "name": "备用线路 09",
     "adContext": "开头广告/资源更新快/稳定性中",
     "id": "ryzyw_com",
     "originalName": "如意资源",
@@ -275,23 +261,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1796,
+    "delay": 2001,
     "check_status": "Passed",
-    "score": 4060
+    "score": 985
   },
   {
-    "name": "优质线路 09",
-    "adContext": "未知",
-    "id": "guangsuapi_com",
-    "originalName": "光速资源",
-    "url": "https://api.guangsuapi.com/api.php/provide/vod",
+    "name": "备用线路 10",
+    "adContext": "开头广告/极速CDN/资源一般",
+    "id": "xinlangapi_com",
+    "originalName": "新浪资源",
+    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2310,
+    "delay": 2092,
     "check_status": "Passed",
-    "score": 2350
+    "score": -380
   },
   {
     "name": "极速直连 03",
@@ -303,22 +289,22 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2660,
+    "delay": 2617,
     "check_status": "Passed",
-    "score": -7400
+    "score": -6755
   },
   {
-    "name": "极速直连 04",
-    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
-    "id": "mtzy_me",
-    "originalName": "茅台资源",
-    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
+    "name": "优质线路 09",
+    "adContext": "未知",
+    "id": "guangsuapi_com",
+    "originalName": "光速资源",
+    "url": "https://api.guangsuapi.com/api.php/provide/vod",
     "category": "General",
-    "isOfficial": true,
+    "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2870,
+    "delay": 4065,
     "check_status": "Passed",
-    "score": -9550
+    "score": -23975
   }
 ]
