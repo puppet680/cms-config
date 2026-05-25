@@ -44,20 +44,6 @@
   {
     "name": "NSFW 秘密通道 04",
     "adContext": "成人内容",
-    "id": "xiaojizy_live",
-    "originalName": "小鸡资源",
-    "url": "https://api.xiaojizy.live/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 25500
-  },
-  {
-    "name": "NSFW 秘密通道 05",
-    "adContext": "成人内容",
     "id": "lbapi9_com",
     "originalName": "乐播资源",
     "url": "https://lbapi9.com/api.php/provide/vod",
@@ -70,7 +56,7 @@
     "score": 25500
   },
   {
-    "name": "NSFW 秘密通道 06",
+    "name": "NSFW 秘密通道 05",
     "adContext": "成人内容",
     "id": "naixxzy_com",
     "originalName": "奶香资源",
@@ -84,7 +70,7 @@
     "score": 25500
   },
   {
-    "name": "NSFW 秘密通道 07",
+    "name": "NSFW 秘密通道 06",
     "adContext": "成人内容",
     "id": "apilj_com",
     "originalName": "辣椒资源",
@@ -98,7 +84,7 @@
     "score": 25500
   },
   {
-    "name": "NSFW 秘密通道 08",
+    "name": "NSFW 秘密通道 07",
     "adContext": "成人内容",
     "id": "doudouzy_com",
     "originalName": "豆豆资源",
@@ -112,7 +98,7 @@
     "score": 25500
   },
   {
-    "name": "NSFW 秘密通道 09",
+    "name": "NSFW 秘密通道 08",
     "adContext": "成人内容/精品为主",
     "id": "jingpinx_com",
     "originalName": "精品资源",
@@ -126,11 +112,25 @@
     "score": 25500
   },
   {
-    "name": "NSFW 秘密通道 10",
+    "name": "NSFW 秘密通道 09",
     "adContext": "成人内容",
     "id": "souavzyw_com",
     "originalName": "souavZY",
     "url": "https://api.souavzyw.net/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 25500
+  },
+  {
+    "name": "NSFW 秘密通道 10",
+    "adContext": "成人内容",
+    "id": "xiangjiaozyw_com",
+    "originalName": "香蕉资源",
+    "url": "https://www.xiangjiaozyw.com/api.php/provide/vod",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
@@ -296,6 +296,20 @@
   {
     "name": "NSFW 秘密通道 22",
     "adContext": "成人内容",
+    "id": "xiaojizy_live",
+    "originalName": "小鸡资源",
+    "url": "https://api.xiaojizy.live/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 575,
+    "check_status": "Passed",
+    "score": 24375
+  },
+  {
+    "name": "NSFW 秘密通道 23",
+    "adContext": "成人内容",
     "id": "apidanaizi_com",
     "originalName": "大奶子",
     "url": "https://apidanaizi.com/api.php/provide/vod",
@@ -303,40 +317,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 700,
+    "delay": 595,
     "check_status": "Passed",
-    "score": 22500
-  },
-  {
-    "name": "NSFW 秘密通道 23",
-    "adContext": "成人内容",
-    "id": "pgxdy_com",
-    "originalName": "黄AVZY",
-    "url": "https://www.pgxdy.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 795,
-    "check_status": "Passed",
-    "score": 21075
+    "score": 24075
   },
   {
     "name": "NSFW 秘密通道 24",
-    "adContext": "成人内容/白嫖风格",
-    "id": "kxgav_com",
-    "originalName": "白嫖资源",
-    "url": "https://www.kxgav.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 909,
-    "check_status": "Passed",
-    "score": 19365
-  },
-  {
-    "name": "NSFW 秘密通道 25",
     "adContext": "成人内容",
     "id": "msnii_com",
     "originalName": "美少女",
@@ -345,23 +331,37 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 952,
+    "delay": 714,
     "check_status": "Passed",
-    "score": 18720
+    "score": 22290
   },
   {
-    "name": "NSFW 秘密通道 26",
-    "adContext": "成人内容/黑料为主",
-    "id": "heiliaozy_cc",
-    "originalName": "黑料资源",
-    "url": "https://www.heiliaozyapi.com/api.php/provide/vod",
+    "name": "NSFW 秘密通道 25",
+    "adContext": "成人内容/白嫖风格",
+    "id": "kxgav_com",
+    "originalName": "白嫖资源",
+    "url": "https://www.kxgav.com/api/json.php",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1716,
+    "delay": 768,
     "check_status": "Passed",
-    "score": 7260
+    "score": 21480
+  },
+  {
+    "name": "NSFW 秘密通道 26",
+    "adContext": "成人内容",
+    "id": "pgxdy_com",
+    "originalName": "黄AVZY",
+    "url": "https://www.pgxdy.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 938,
+    "check_status": "Passed",
+    "score": 18930
   },
   {
     "name": "NSFW 秘密通道 27",
@@ -373,8 +373,22 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1742,
+    "delay": 1726,
     "check_status": "Passed",
-    "score": 6870
+    "score": 7110
+  },
+  {
+    "name": "NSFW 秘密通道 28",
+    "adContext": "成人内容/黑料为主",
+    "id": "heiliaozy_cc",
+    "originalName": "黑料资源",
+    "url": "https://www.heiliaozyapi.com/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2142,
+    "check_status": "Passed",
+    "score": 870
   }
 ]
