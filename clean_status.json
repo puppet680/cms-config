@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 120
+    "priority": 126
   },
   {
     "name": "优质线路 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 120
+    "priority": 126
   },
   {
     "name": "优质线路 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 120
+    "priority": 126
   },
   {
     "name": "极速直连 01",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 01",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 02",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 03",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 04",
@@ -109,7 +109,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 05",
@@ -123,7 +123,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 100
+    "priority": 106
   },
   {
     "name": "备用线路 06",
@@ -137,6 +137,20 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
+    "priority": 106
+  },
+  {
+    "name": "极速直连 02",
+    "adContext": "未知",
+    "id": "iqiyizyapi_com",
+    "originalName": "爱奇艺资源",
+    "url": "https://iqiyizyapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": true,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "66.7%",
     "priority": 100
   },
   {
@@ -150,7 +164,21 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "50.0%",
-    "priority": 95
+    "stability": "66.7%",
+    "priority": 100
+  },
+  {
+    "name": "极速直连 03",
+    "adContext": "未知",
+    "id": "1080zyk_com",
+    "originalName": "优质资源库1080zyk",
+    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
+    "category": "General",
+    "isOfficial": true,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "33.3%",
+    "priority": 75
   }
 ]
