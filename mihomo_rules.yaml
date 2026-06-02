@@ -1,9 +1,12 @@
 # >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 START <<<<<
-# 生成时间: 2026-06-02 14:42:57 (Beijing Time)
+# 生成时间: 2026-06-02 19:37:41 (Beijing Time)
 ^.+\.bfvvs\.com$
 ^.+\.bpzy\d+\.com$
 ^.+\.cdn\d+\.com$
 ^.+\.dbzy\d+\.com$
+^.+\.ddapi\.cc$
+^.+\.didiv\d+\.com$
+^.+\.douapi\.cc$
 ^.+\.fhbbff\.com$
 ^.+\.gsuus\.com$
 ^.+\.guangsuapi\.com$
@@ -17,6 +20,7 @@
 ^.+\.kxgav\.com$
 ^.+\.lajiao\d+\.com$
 ^.+\.lbsl\d+\.com$
+^.+\.ly\d+\.com$
 ^.+\.maotaizy\.cc$
 ^.+\.maoyanapi\.top$
 ^.+\.maoyanplay\.top$
@@ -33,9 +37,9 @@
 ^.+\.rycjapi\.com$
 ^.+\.ryplay\d+\.com$
 ^.+\.senlin\d+\.com$
+^.+\.sex\d+sex\d+\.com$
 ^.+\.slapibf\.com$
 ^.+\.souavzyw\.net$
-^.+\.sysl\d+\.com$
 ^.+\.v\d+p\.com$
 ^.+\.xluuss\.com$
 ^\d+api\.com$
@@ -49,6 +53,7 @@
 ^hhzyapi\.com$
 ^hsckzy\.xyz$
 ^ikunzyapi\.com$
+^iqiyizyapi\.com$
 ^jinyingzy\.com$
 ^jkhabkrqjbj\.com$
 ^jkunzyapi\.com$
@@ -56,9 +61,11 @@
 ^lbapi\d+\.com$
 ^lbapiby\.com$
 ^lsbbf\d+\.com$
-^shayuapi\.com$
+^naixxzy\.com$
 ^subocaiji\.com$
 ^thm\d+u\d+\.vip$
 ^thzy\d+\.me$
 ^voddadaizi\d+\.com$
+^vostrely\.com$
+^xingba\d+\.com$
 # >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 END <<<<<
