@@ -167,12 +167,10 @@ def domain_to_mihomo_regex(domain):
     # 3. 转义点号和横杠，防止正则解析出错
     escaped = domain.replace('.', r'\.').replace('-', r'\-')
     
-    # 4. 关键：把域名中间或结尾的数字，替换为 \d+ (匹配任意数字)
-    # 为了防止把前缀(如 2605)也误伤，我们通常只模糊化主体部分的数字
-    regex_str = re.sub(r'\d+', r'\d+', escaped)
+    # 4. 关键修复：使用 lambda 彻底避免 re.sub 针对 \d 的后向引用转义报错
+    regex_str = re.sub(r'\d+', lambda m: r'\d+', escaped)
     
     # 5. 如果域名开头有 www. 或 api. 等子域名，将其转化为通用前缀匹配 `^.+\.`
-    # 这样无论是 www.hongniuzy2.com 还是 cdn.hongniuzy2.com 都能直连
     parts = regex_str.split(r'\.')
     if len(parts) > 2:
         # 去掉原本固定的前缀，改用 ^.+\. 开头
