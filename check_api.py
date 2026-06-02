@@ -175,9 +175,9 @@ def domain_to_mihomo_regex(domain):
     if len(parts) > 2:
         # 去掉原本固定的前缀，改用 ^.+\. 开头
         main_body = r"\.".join(parts[-2:])
-        return f'"^.+\.{main_body}$"'
+        return f"^.+\.{main_body}$"
         
-    return f'"^{regex_str}$"'
+    return f"^{regex_str}$"
 
 def main():
     if not os.path.exists(ORIGINAL_FILE):
