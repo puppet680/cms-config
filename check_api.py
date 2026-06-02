@@ -146,8 +146,13 @@ def generate_table_rows(data_list):
     return "".join(rows)
 
 def domain_to_mihomo_regex(domain):
+    """将标准域名转换为 Mihomo 规范的数字通配正则"""
+    # 先对特殊符号进行转义
     escaped = domain.replace('.', r'\.').replace('-', r'\-')
+    
+    # 核心修正：将数字替换为符合正则语法的 '\\d+'，确保 \d+ 留在规则里
     regex_str = re.sub(r'\d+', r'\\d+', escaped)
+    
     return f'  - DOMAIN-REGEX,"^{regex_str}$",DIRECT'
 
 def main():
