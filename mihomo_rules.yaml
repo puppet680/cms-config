@@ -1,17 +1,16 @@
 # >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 START <<<<<
-# 生成时间: 2026-06-02 13:59:53
+# 生成时间: 2026-06-02 14:04:19
   - DOMAIN-REGEX,"^Naixxzy\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+\.fhbbff\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+\.lajiao\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+\.lbsl\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+\.senlin\d+\.com$",DIRECT
-  - DOMAIN-REGEX,"^\d+\.sysl\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+\.v\d+p\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+api\.com$",DIRECT
   - DOMAIN-REGEX,"^\d+md\.me$",DIRECT
-  - DOMAIN-REGEX,"^api\.ddapi\.cc$",DIRECT
   - DOMAIN-REGEX,"^api\.douapi\.cc$",DIRECT
   - DOMAIN-REGEX,"^api\.guangsuapi\.com$",DIRECT
+  - DOMAIN-REGEX,"^api\.maoyanapi\.top$",DIRECT
   - DOMAIN-REGEX,"^api\.souavzyw\.net$",DIRECT
   - DOMAIN-REGEX,"^apidanaizi\.com$",DIRECT
   - DOMAIN-REGEX,"^apilj\.com$",DIRECT
@@ -22,7 +21,6 @@
   - DOMAIN-REGEX,"^bf\d+\.qrtuv\.com$",DIRECT
   - DOMAIN-REGEX,"^bfikuncdn\.com$",DIRECT
   - DOMAIN-REGEX,"^caiji\.dbzy\d+\.com$",DIRECT
-  - DOMAIN-REGEX,"^caiji\.maotaizy\.cc$",DIRECT
   - DOMAIN-REGEX,"^caiji\.moduapi\.cc$",DIRECT
   - DOMAIN-REGEX,"^cdn\.ryplay\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^cj\.rycjapi\.com$",DIRECT
@@ -33,7 +31,6 @@
   - DOMAIN-REGEX,"^hsckzy\.xyz$",DIRECT
   - DOMAIN-REGEX,"^hsm\d+\.hwzcfz\.com$",DIRECT
   - DOMAIN-REGEX,"^ikunzyapi\.com$",DIRECT
-  - DOMAIN-REGEX,"^iqiyizyapi\.com$",DIRECT
   - DOMAIN-REGEX,"^jinyingzy\.com$",DIRECT
   - DOMAIN-REGEX,"^jkhabkrqjbj\.com$",DIRECT
   - DOMAIN-REGEX,"^jkunzyapi\.com$",DIRECT
@@ -43,10 +40,9 @@
   - DOMAIN-REGEX,"^lsbbf\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^picc\.sex\d+sex\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^play\.hhuus\.com$",DIRECT
-  - DOMAIN-REGEX,"^play\.ly\d+\.com:\d+$",DIRECT
+  - DOMAIN-REGEX,"^play\.maoyanplay\.top$",DIRECT
   - DOMAIN-REGEX,"^play\.modujx\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^play\.xluuss\.com$",DIRECT
-  - DOMAIN-REGEX,"^shayuapi\.com$",DIRECT
   - DOMAIN-REGEX,"^subocaiji\.com$",DIRECT
   - DOMAIN-REGEX,"^t\d+\.cdn\d+\.com$",DIRECT
   - DOMAIN-REGEX,"^thm\d+u\d+\.vip$",DIRECT
@@ -67,5 +63,4 @@
   - DOMAIN-REGEX,"^www\.msnii\.com$",DIRECT
   - DOMAIN-REGEX,"^www\.pgxdy\.com$",DIRECT
   - DOMAIN-REGEX,"^xingba\d+\.com$",DIRECT
-  - DOMAIN-REGEX,"^ygp\.myqqdd\.com$",DIRECT
 # >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 END <<<<<
