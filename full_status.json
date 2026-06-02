@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 132
+    "priority": 138
   },
   {
     "name": "优质线路 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 132
+    "priority": 138
   },
   {
     "name": "优质线路 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 132
+    "priority": 138
   },
   {
     "name": "NSFW 秘密通道 01",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 02",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 03",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 04",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 05",
@@ -109,7 +109,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 06",
@@ -123,7 +123,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 07",
@@ -137,7 +137,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 08",
@@ -151,7 +151,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 09",
@@ -165,7 +165,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 10",
@@ -179,7 +179,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 11",
@@ -193,7 +193,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 12",
@@ -207,7 +207,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 13",
@@ -221,7 +221,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 14",
@@ -235,7 +235,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "NSFW 秘密通道 15",
@@ -249,7 +249,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 122
+    "priority": 128
   },
   {
     "name": "极速直连 01",
@@ -263,7 +263,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 01",
@@ -277,7 +277,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 02",
@@ -291,7 +291,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 03",
@@ -305,7 +305,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 04",
@@ -319,7 +319,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 05",
@@ -333,7 +333,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "备用线路 06",
@@ -347,7 +347,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "NSFW 秘密通道 16",
@@ -361,7 +361,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "NSFW 秘密通道 17",
@@ -375,24 +375,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "NSFW 秘密通道 18",
-    "adContext": "成人内容/资源多/广告中等",
-    "id": "hsckzy_xyz",
-    "originalName": "黄色仓库",
-    "url": "https://hsckzy.xyz/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "100.0%",
-    "priority": 112
-  },
-  {
-    "name": "NSFW 秘密通道 19",
     "adContext": "成人内容/资源新/广告少",
     "id": "jkunzyapi_com",
     "originalName": "jkun资源",
@@ -403,10 +389,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
-    "name": "NSFW 秘密通道 20",
+    "name": "NSFW 秘密通道 19",
     "adContext": "成人内容/备用线/广告中等",
     "id": "slapibf_com",
     "originalName": "森林资源",
@@ -417,10 +403,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
-    "name": "NSFW 秘密通道 21",
+    "name": "NSFW 秘密通道 20",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "thzy_me",
     "originalName": "桃花资源",
@@ -431,7 +417,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 112
+    "priority": 118
   },
   {
     "name": "优质线路 04",
@@ -444,25 +430,11 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "75.0%",
-    "priority": 106
+    "stability": "80.0%",
+    "priority": 112
   },
   {
-    "name": "极速直连 02",
-    "adContext": "未知",
-    "id": "iqiyizyapi_com",
-    "originalName": "爱奇艺资源",
-    "url": "https://iqiyizyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "75.0%",
-    "priority": 105
-  },
-  {
-    "name": "NSFW 秘密通道 22",
+    "name": "NSFW 秘密通道 21",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "shayuapi_com",
     "originalName": "鲨鱼资源",
@@ -472,11 +444,11 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "75.0%",
-    "priority": 85
+    "stability": "80.0%",
+    "priority": 91
   },
   {
-    "name": "NSFW 秘密通道 23",
+    "name": "NSFW 秘密通道 22",
     "adContext": "成人内容/资源杂/广告中等",
     "id": "didizy_com",
     "originalName": "滴滴资源",
@@ -486,63 +458,21 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "75.0%",
-    "priority": 85
+    "stability": "80.0%",
+    "priority": 91
   },
   {
-    "name": "极速直连 03",
-    "adContext": "未知",
-    "id": "1080zyk_com",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
+    "name": "极速直连 02",
+    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
+    "id": "mtzy_me",
+    "originalName": "茅台资源",
+    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
     "category": "General",
     "isOfficial": true,
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "50.0%",
-    "priority": 80
-  },
-  {
-    "name": "优质线路 05",
-    "adContext": "未知",
-    "id": "lzcaiji_com",
-    "originalName": "量子资源",
-    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "25.0%",
-    "priority": 55
-  },
-  {
-    "name": "优质线路 06",
-    "adContext": "未知",
-    "id": "bfzy_tv",
-    "originalName": "暴风资源",
-    "url": "https://bfzyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "25.0%",
-    "priority": 55
-  },
-  {
-    "name": "优质线路 07",
-    "adContext": "未知",
-    "id": "lzizy_net",
-    "originalName": "量子影视备用",
-    "url": "https://cj.lziapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "25.0%",
-    "priority": 55
+    "stability": "40.0%",
+    "priority": 40
   }
 ]
