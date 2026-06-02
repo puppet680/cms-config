@@ -151,10 +151,27 @@ def generate_table_rows(data_list):
     return "".join(rows)
 
 def domain_to_mihomo_regex(domain):
-    """将标准域名优雅转换为 Mihomo 规范的数字正则通配符，并安全保留 \\d+"""
-    escaped = domain.replace('.', r'\.').replace('-', r'\-')
-    regex_str = re.sub(r'\d+', r'\\d+', escaped)
-    return f'  - DOMAIN-REGEX,"^{regex_str}$"'
+    """
+    将标准域名转换为 Mihomo 规范的通配符格式：
+    1. 纯 IP 地址：保持原样
+    2. 带有数字变体的渠道域名（如 cdn123.com）：保留或做泛域名处理
+    3. 标准域名：转化为 "+.domain.com" 格式，完美兼容子域名直连
+    """
+    # 过滤掉可能存在的特殊字符或空字符串
+    domain = domain.strip().lower()
+    
+    # 检查是否是纯 IP 地址 (v4)
+    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(:\d+)?$', domain):
+        return f'"{domain}"'
+        
+    # 如果域名本身已经含有通配符，直接返回
+    if domain.startswith('+.') or domain.startswith('*.'):
+        return f'"{domain}"'
+
+    # 核心逻辑：苹果 CMS 采集站经常有类似 sub.domain.com 或 api.m3u8.com
+    # 为了保证直连覆盖率，通常提取其主域名并加上 "+."
+    # 如果你想保持原域名并加上 "+."，使用下面这行：
+    return f'"+.{domain}"'
 
 def main():
     if not os.path.exists(ORIGINAL_FILE):
