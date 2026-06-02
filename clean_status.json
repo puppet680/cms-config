@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 145
+    "priority": 152
   },
   {
     "name": "优质线路 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 145
+    "priority": 152
   },
   {
     "name": "优质线路 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 145
+    "priority": 152
   },
   {
     "name": "极速直连 01",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "备用线路 01",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "备用线路 02",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "备用线路 03",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "备用线路 04",
@@ -109,7 +109,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "备用线路 05",
@@ -123,7 +123,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 125
+    "priority": 132
   },
   {
     "name": "优质线路 04",
@@ -136,77 +136,35 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "83.3%",
-    "priority": 118
+    "stability": "85.7%",
+    "priority": 125
+  },
+  {
+    "name": "备用线路 06",
+    "adContext": "开头广告/国内CDN/全网秒播",
+    "id": "hongniuzy_com",
+    "originalName": "红牛资源",
+    "url": "https://www.hongniuzy2.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "85.7%",
+    "priority": 103
   },
   {
     "name": "极速直连 02",
-    "adContext": "未知",
-    "id": "iqiyizyapi_com",
-    "originalName": "爱奇艺资源",
-    "url": "https://iqiyizyapi.com/api.php/provide/vod",
+    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
+    "id": "mtzy_me",
+    "originalName": "茅台资源",
+    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
     "category": "General",
     "isOfficial": true,
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "66.7%",
-    "priority": 90
-  },
-  {
-    "name": "极速直连 03",
-    "adContext": "未知",
-    "id": "1080zyk_com",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
-    "category": "General",
-    "isOfficial": true,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "50.0%",
-    "priority": 65
-  },
-  {
-    "name": "优质线路 05",
-    "adContext": "未知",
-    "id": "lzcaiji_com",
-    "originalName": "量子资源",
-    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "33.3%",
-    "priority": 40
-  },
-  {
-    "name": "优质线路 06",
-    "adContext": "未知",
-    "id": "bfzy_tv",
-    "originalName": "暴风资源",
-    "url": "https://bfzyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "33.3%",
-    "priority": 40
-  },
-  {
-    "name": "优质线路 07",
-    "adContext": "未知",
-    "id": "lzizy_net",
-    "originalName": "量子影视备用",
-    "url": "https://cj.lziapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "33.3%",
-    "priority": 40
+    "stability": "42.9%",
+    "priority": 25
   }
 ]
