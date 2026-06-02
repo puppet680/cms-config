@@ -8,11 +8,11 @@ import re
 
 # --- 配置 ---
 ORIGINAL_FILE = 'sources.json'
-HISTORY_FILE = 'history_30days.json'  # 新增：用于在 GitHub Actions 中持久化 30 天状态
+HISTORY_FILE = 'history_30days.json'  # 持久化 30 天状态，确保增量排位
 CLEAN_OUTPUT = 'clean_status.json'
 NSFW_OUTPUT = 'nsfw_status.json'
 FULL_OUTPUT = 'full_status.json'
-MIHOMO_OUTPUT = 'mihomo_rules.yaml'
+MIHOMO_OUTPUT = 'mihomo_rules.yaml'    # Mihomo 正则直连规则输出
 README_FILE = 'README.md'
 TIMEOUT = 12 
 
@@ -21,6 +21,7 @@ NORMAL_KEYWORD = "庆余年"
 NSFW_KEYWORD = "臀"
 
 def validate_m3u8_content(url, headers):
+    """深度预检：确保链接不仅存在，而且是真实的 M3U8 流媒体格式"""
     try:
         resp = requests.get(url, timeout=5, headers=headers, stream=True, allow_redirects=True)
         if resp.status_code == 200:
@@ -32,6 +33,7 @@ def validate_m3u8_content(url, headers):
     return False
 
 def check_source(item):
+    """单节点测试核心逻辑"""
     res_item = item.copy()
     cat = res_item.get('category', 'General')
     search_word = NSFW_KEYWORD if cat == "NSFW" else NORMAL_KEYWORD
@@ -54,6 +56,7 @@ def check_source(item):
                 first_vod = vod_list[0]
                 play_url = str(first_vod.get('vod_play_url', ''))
                 
+                # 强效清洗并精确定位 m3u8/mp4 核心线路，彻底无视前面的 .jpg 封面图干扰
                 clean_url_pool = play_url.replace('\\', '')
                 urls = re.findall(r'https?://[^\"\$#\s]+\.(?:m3u8|mp4)[^\"\$#\s]*', clean_url_pool)
                 
@@ -64,6 +67,7 @@ def check_source(item):
                     if validate_m3u8_content(target_m3u8, headers):
                         res_item['check_status'] = "Passed"
                         
+                        # 收集成功节点的【接口域名】与【播放域名】
                         extracted_domains = []
                         for u in [item['url'], target_m3u8]:
                             match = re.search(r'https?://([^/]+)', u)
@@ -85,6 +89,7 @@ def load_history():
     return {}
 
 def update_history_and_calculate_priority(current_results, history):
+    """核心算法：通过 30 天历史增量计算评分，实现稳定源置顶、波动源下沉"""
     updated_history = {}
     processed_results = []
 
@@ -92,7 +97,7 @@ def update_history_and_calculate_priority(current_results, history):
         url = item['url']
         is_passed = (item['check_status'] == "Passed")
         
-        # 读取历史数据，没有则初始化
+        # 读取或初始化历史节点
         hist = history.get(url, {
             "priority": 100,
             "consecutive_success": 0,
@@ -105,34 +110,34 @@ def update_history_and_calculate_priority(current_results, history):
         if is_passed:
             hist["success_checks"] += 1
             hist["consecutive_success"] += 1
-            # 成功则平稳递增，连续成功加权奖励，上限 150
+            # 连续成功获得额外分值加权奖励，积分上限 150
             bonus = 5 + min(hist["consecutive_success"] // 3, 5)
             hist["priority"] = min(hist["priority"] + bonus, 150)
             item['isEnabled'] = True
         else:
             hist["consecutive_success"] = 0
-            # 失败采取重罚，让其迅速下沉
+            # 出现波动执行重罚（扣 20 分），让其瞬间排名垫底
             hist["priority"] = hist["priority"] - 20
             item['isEnabled'] = False
 
-        # 计算稳定率
+        # 计算并附加30天稳定率
         stability_rate = (hist["success_checks"] / hist["total_checks"]) * 100
         item['stability'] = f"{stability_rate:.1f}%"
         item['priority'] = hist["priority"]
         
-        # 广告标签加分/扣分（转换为对 priority 的修正）
+        # 广告偏好修正
         ad_text = (item.get('adContext') or '').lower()
         if "无广告" in ad_text or "纯净" in ad_text:
             item['priority'] += 10
         elif "广告" in ad_text:
             item['priority'] -= 10
 
-        # 老化淘汰机制：如果分数跌破 20分（连续失联数天），彻底从列表中除名
+        # 老化淘汰阀值：连续多次失联导致分数低于或等于 20 分的死源，直接除名
         if hist["priority"] > 20:
             updated_history[url] = hist
             processed_results.append(item)
             
-    # 保存更新后的历史状态文件（供下次 GitHub Actions 读取）
+    # 将增量计算推回历史记录文件
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(updated_history, f, ensure_ascii=False, indent=2)
         
@@ -146,14 +151,10 @@ def generate_table_rows(data_list):
     return "".join(rows)
 
 def domain_to_mihomo_regex(domain):
-    """将标准域名转换为 Mihomo 规范的数字通配正则"""
-    # 先对特殊符号进行转义
+    """将标准域名优雅转换为 Mihomo 规范的数字正则通配符，并安全保留 \\d+"""
     escaped = domain.replace('.', r'\.').replace('-', r'\-')
-    
-    # 核心修正：将数字替换为符合正则语法的 '\\d+'，确保 \d+ 留在规则里
     regex_str = re.sub(r'\d+', r'\\d+', escaped)
-    
-    return f'  - DOMAIN-REGEX,"^{regex_str}$",DIRECT'
+    return f'  - DOMAIN-REGEX,"^{regex_str}$"'
 
 def main():
     if not os.path.exists(ORIGINAL_FILE):
@@ -163,17 +164,17 @@ def main():
     with open(ORIGINAL_FILE, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
-    print(f"🚀 开始多线程体检...")
+    print(f"🚀 开始多线程交叉并行体检...")
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = list(executor.map(check_source, raw_data))
 
-    # 载入 30 天历史数据
+    # 载入 30 天持久化历史
     history = load_history()
     
-    # 结合历史计算 Priority
+    # 融合历史动态计分
     scored_results = update_history_and_calculate_priority(results, history)
 
-    # 筛选可用源并基于 priority 降序排序（稳定源自然置顶，波动源迅速下沉）
+    # 基于 priority 权重值做全局降序排列
     valid_results = [i for i in scored_results if i['isEnabled']]
     valid_results.sort(key=lambda x: -x['priority'])
 
@@ -195,6 +196,13 @@ def main():
         target_name = f"{p} {counters[p]:02d}"
         counters[p] += 1
         
+        # 🛡️ 核心打破死循环：无条件将 sources.json 中的源站接口加入直连池，防止因分流失效造成全军覆没
+        if 'url' in item:
+            match = re.search(r'https?://([^/]+)', item['url'])
+            if match:
+                active_domains.add(match.group(1))
+        
+        # 成功通过的节点，额外剥离出其底层视频流播放域名
         if item['check_status'] == "Passed" and 'detected_domains' in item:
             active_domains.update(item['detected_domains'])
         
@@ -202,6 +210,7 @@ def main():
         new_item.update({k: v for k, v in item.items() if k not in ['name', 'adContext', 'detected_domains']})
         final_ordered_results.append(new_item)
 
+    # 归档数据文件
     clean_data = [i for i in final_ordered_results if i.get('category') != 'NSFW']
     nsfw_data = [i for i in final_ordered_results if i.get('category') == 'NSFW']
 
@@ -209,10 +218,10 @@ def main():
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-    # 导出 Mihomo 规则
+    # 自动生成并固化 Mihomo (Clash Meta) 专属正则直连文件
     mihomo_rules = [
         "# >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 START <<<<<",
-        f"# 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}"
+        f"# 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')} (Beijing Time)"
     ]
     formatted_regex_rules = sorted(list(set(domain_to_mihomo_regex(d) for d in active_domains)))
     mihomo_rules.extend(formatted_regex_rules)
@@ -221,10 +230,10 @@ def main():
     with open(MIHOMO_OUTPUT, 'w', encoding='utf-8') as f:
         f.write("\n".join(mihomo_rules) + "\n")
 
-    # README 渲染（原“延迟”列升级为“稳定率”列）
+    # 全新渲染 README.md 展示报告（原延迟列全面进化为“30天稳定率”）
     now = time.strftime("%Y-%m-%d %H:%M:%S")
     header = "| 序号 | 线路名称 | 预检 | 搜索 | 30天稳定率 | 广告 | 原始名称 |\n| :--- | :--- | :---: | :---: | :---: | :--- | :--- |\n"
-    lines = [f"# 🛰️ API 实时监控中心\n\n更新时间：`{now}` (基于历史数据动态置顶)\n\n"]
+    lines = [f"# 🛰️ API 实时监控中心\n\n更新时间：`{now}` (基于历史健康度动态置顶)\n\n"]
     
     sections = [("⚡ 极速直连", "极速直连"), ("💎 优质线路", "优质线路"), ("🛠️ 备用线路", "备用线路")]
     for title, key in sections:
@@ -241,7 +250,7 @@ def main():
     with open(README_FILE, 'w', encoding='utf-8') as f:
         f.write("".join(lines))
         
-    print(f"✅ 历史数据同步完毕！常规源: {len(clean_data)}, NSFW源: {len(nsfw_data)}")
+    print(f"✅ 历史数据与分流规则同步完毕！常规源: {len(clean_data)}, NSFW源: {len(nsfw_data)}")
 
 if __name__ == "__main__":
     main()
