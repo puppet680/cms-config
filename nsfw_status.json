@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 04",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 05",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 06",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 07",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 08",
@@ -109,7 +109,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 09",
@@ -123,7 +123,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 10",
@@ -137,7 +137,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 11",
@@ -151,7 +151,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 12",
@@ -165,7 +165,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 13",
@@ -179,7 +179,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 14",
@@ -193,7 +193,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 15",
@@ -207,7 +207,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 128
+    "priority": 135
   },
   {
     "name": "NSFW 秘密通道 16",
@@ -221,7 +221,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 118
+    "priority": 125
   },
   {
     "name": "NSFW 秘密通道 17",
@@ -235,7 +235,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 118
+    "priority": 125
   },
   {
     "name": "NSFW 秘密通道 18",
@@ -249,7 +249,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 118
+    "priority": 125
   },
   {
     "name": "NSFW 秘密通道 19",
@@ -263,7 +263,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 118
+    "priority": 125
   },
   {
     "name": "NSFW 秘密通道 20",
@@ -277,10 +277,24 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 118
+    "priority": 125
   },
   {
     "name": "NSFW 秘密通道 21",
+    "adContext": "成人内容/资源多/广告中等",
+    "id": "hsckzy_xyz",
+    "originalName": "黄色仓库",
+    "url": "https://hsckzy.xyz/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "83.3%",
+    "priority": 97
+  },
+  {
+    "name": "NSFW 秘密通道 22",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "shayuapi_com",
     "originalName": "鲨鱼资源",
@@ -290,11 +304,11 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "80.0%",
-    "priority": 91
+    "stability": "83.3%",
+    "priority": 97
   },
   {
-    "name": "NSFW 秘密通道 22",
+    "name": "NSFW 秘密通道 23",
     "adContext": "成人内容/资源杂/广告中等",
     "id": "didizy_com",
     "originalName": "滴滴资源",
@@ -304,7 +318,21 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "80.0%",
-    "priority": 91
+    "stability": "83.3%",
+    "priority": 97
+  },
+  {
+    "name": "NSFW 秘密通道 24",
+    "adContext": "成人内容",
+    "id": "doudouzy_com",
+    "originalName": "豆豆资源",
+    "url": "https://api.douapi.cc/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "66.7%",
+    "priority": 81
   }
 ]
