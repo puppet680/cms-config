@@ -152,26 +152,34 @@ def generate_table_rows(data_list):
 
 def domain_to_mihomo_regex(domain):
     """
-    将标准域名转换为 Mihomo 规范的通配符格式：
-    1. 纯 IP 地址：保持原样
-    2. 带有数字变体的渠道域名（如 cdn123.com）：保留或做泛域名处理
-    3. 标准域名：转化为 "+.domain.com" 格式，完美兼容子域名直连
+    将带有数字变体的域名，完美转化为 Mihomo 适用的 DOMAIN-REGEX 正则表达式
+    示例：www.hongniuzy2.com -> "^.+\.hongniuzy\d+\.com$"
     """
-    # 过滤掉可能存在的特殊字符或空字符串
+    # 1. 统一小写并剥离端口
     domain = domain.strip().lower()
-    
-    # 检查是否是纯 IP 地址 (v4)
-    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(:\d+)?$', domain):
-        return f'"{domain}"'
+    if ":" in domain:
+        domain = domain.split(":")[0]
         
-    # 如果域名本身已经含有通配符，直接返回
-    if domain.startswith('+.') or domain.startswith('*.'):
+    # 2. 如果是纯 IP，直接返回
+    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', domain):
         return f'"{domain}"'
 
-    # 核心逻辑：苹果 CMS 采集站经常有类似 sub.domain.com 或 api.m3u8.com
-    # 为了保证直连覆盖率，通常提取其主域名并加上 "+."
-    # 如果你想保持原域名并加上 "+."，使用下面这行：
-    return f'"+.{domain}"'
+    # 3. 转义点号和横杠，防止正则解析出错
+    escaped = domain.replace('.', r'\.').replace('-', r'\-')
+    
+    # 4. 关键：把域名中间或结尾的数字，替换为 \d+ (匹配任意数字)
+    # 为了防止把前缀(如 2605)也误伤，我们通常只模糊化主体部分的数字
+    regex_str = re.sub(r'\d+', r'\d+', escaped)
+    
+    # 5. 如果域名开头有 www. 或 api. 等子域名，将其转化为通用前缀匹配 `^.+\.`
+    # 这样无论是 www.hongniuzy2.com 还是 cdn.hongniuzy2.com 都能直连
+    parts = regex_str.split(r'\.')
+    if len(parts) > 2:
+        # 去掉原本固定的前缀，改用 ^.+\. 开头
+        main_body = r"\.".join(parts[-2:])
+        return f'"^.+\.{main_body}$"'
+        
+    return f'"^{regex_str}$"'
 
 def main():
     if not os.path.exists(ORIGINAL_FILE):
