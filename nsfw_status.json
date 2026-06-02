@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 04",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 05",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 06",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 07",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 08",
@@ -109,24 +109,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
     "name": "NSFW 秘密通道 09",
-    "adContext": "成人内容",
-    "id": "doudouzy_com",
-    "originalName": "豆豆资源",
-    "url": "https://api.douapi.cc/api.php/provide/vod",
-    "category": "NSFW",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "100.0%",
-    "priority": 116
-  },
-  {
-    "name": "NSFW 秘密通道 10",
     "adContext": "成人内容/黑料为主",
     "id": "heiliaozy_cc",
     "originalName": "黑料资源",
@@ -137,10 +123,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 11",
+    "name": "NSFW 秘密通道 10",
     "adContext": "成人内容/精品为主",
     "id": "jingpinx_com",
     "originalName": "精品资源",
@@ -151,10 +137,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 12",
+    "name": "NSFW 秘密通道 11",
     "adContext": "成人内容",
     "id": "souavzyw_com",
     "originalName": "souavZY",
@@ -165,10 +151,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 13",
+    "name": "NSFW 秘密通道 12",
     "adContext": "成人内容",
     "id": "msnii_com",
     "originalName": "美少女",
@@ -179,10 +165,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 14",
+    "name": "NSFW 秘密通道 13",
     "adContext": "成人内容",
     "id": "pgxdy_com",
     "originalName": "黄AVZY",
@@ -193,10 +179,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 15",
+    "name": "NSFW 秘密通道 14",
     "adContext": "成人内容/白嫖风格",
     "id": "kxgav_com",
     "originalName": "白嫖资源",
@@ -207,10 +193,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 16",
+    "name": "NSFW 秘密通道 15",
     "adContext": "成人内容/403常见/可能失效",
     "id": "xingba111_com",
     "originalName": "杏吧资源",
@@ -221,10 +207,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 116
+    "priority": 122
   },
   {
-    "name": "NSFW 秘密通道 17",
+    "name": "NSFW 秘密通道 16",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "155zy2_com",
     "originalName": "155资源",
@@ -235,10 +221,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 18",
+    "name": "NSFW 秘密通道 17",
     "adContext": "成人内容/番号为主/广告少",
     "id": "fhapi9_com",
     "originalName": "番号资源",
@@ -249,10 +235,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 19",
+    "name": "NSFW 秘密通道 18",
     "adContext": "成人内容/资源多/广告中等",
     "id": "hsckzy_xyz",
     "originalName": "黄色仓库",
@@ -263,10 +249,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 20",
+    "name": "NSFW 秘密通道 19",
     "adContext": "成人内容/资源新/广告少",
     "id": "jkunzyapi_com",
     "originalName": "jkun资源",
@@ -277,10 +263,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 21",
+    "name": "NSFW 秘密通道 20",
     "adContext": "成人内容/备用线/广告中等",
     "id": "slapibf_com",
     "originalName": "森林资源",
@@ -291,10 +277,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 22",
+    "name": "NSFW 秘密通道 21",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "thzy_me",
     "originalName": "桃花资源",
@@ -305,10 +291,10 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
-    "name": "NSFW 秘密通道 23",
+    "name": "NSFW 秘密通道 22",
     "adContext": "成人内容/资源丰富/广告中等",
     "id": "shayuapi_com",
     "originalName": "鲨鱼资源",
@@ -318,11 +304,11 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "66.7%",
-    "priority": 80
+    "stability": "75.0%",
+    "priority": 85
   },
   {
-    "name": "NSFW 秘密通道 24",
+    "name": "NSFW 秘密通道 23",
     "adContext": "成人内容/资源杂/广告中等",
     "id": "didizy_com",
     "originalName": "滴滴资源",
@@ -332,7 +318,7 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "66.7%",
-    "priority": 80
+    "stability": "75.0%",
+    "priority": 85
   }
 ]

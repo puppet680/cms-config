@@ -11,7 +11,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 126
+    "priority": 132
   },
   {
     "name": "优质线路 02",
@@ -25,7 +25,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 126
+    "priority": 132
   },
   {
     "name": "优质线路 03",
@@ -39,7 +39,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 126
+    "priority": 132
   },
   {
     "name": "极速直连 01",
@@ -53,7 +53,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 01",
@@ -67,7 +67,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 02",
@@ -81,7 +81,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 03",
@@ -95,7 +95,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 04",
@@ -109,7 +109,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 05",
@@ -123,7 +123,7 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
-    "priority": 106
+    "priority": 112
   },
   {
     "name": "备用线路 06",
@@ -137,6 +137,20 @@
     "check_status": "Passed",
     "isEnabled": true,
     "stability": "100.0%",
+    "priority": 112
+  },
+  {
+    "name": "优质线路 04",
+    "adContext": "未知",
+    "id": "maoyanzy_com",
+    "originalName": "猫眼资源",
+    "url": "https://api.maoyanapi.top/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "75.0%",
     "priority": 106
   },
   {
@@ -150,22 +164,8 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "66.7%",
-    "priority": 100
-  },
-  {
-    "name": "优质线路 04",
-    "adContext": "未知",
-    "id": "maoyanzy_com",
-    "originalName": "猫眼资源",
-    "url": "https://api.maoyanapi.top/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "searchable": true,
-    "check_status": "Passed",
-    "isEnabled": true,
-    "stability": "66.7%",
-    "priority": 100
+    "stability": "75.0%",
+    "priority": 105
   },
   {
     "name": "极速直连 03",
@@ -178,7 +178,49 @@
     "searchable": true,
     "check_status": "Passed",
     "isEnabled": true,
-    "stability": "33.3%",
-    "priority": 75
+    "stability": "50.0%",
+    "priority": 80
+  },
+  {
+    "name": "优质线路 05",
+    "adContext": "未知",
+    "id": "lzcaiji_com",
+    "originalName": "量子资源",
+    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "25.0%",
+    "priority": 55
+  },
+  {
+    "name": "优质线路 06",
+    "adContext": "未知",
+    "id": "bfzy_tv",
+    "originalName": "暴风资源",
+    "url": "https://bfzyapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "25.0%",
+    "priority": 55
+  },
+  {
+    "name": "优质线路 07",
+    "adContext": "未知",
+    "id": "lzizy_net",
+    "originalName": "量子影视备用",
+    "url": "https://cj.lziapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "searchable": true,
+    "check_status": "Passed",
+    "isEnabled": true,
+    "stability": "25.0%",
+    "priority": 55
   }
 ]
