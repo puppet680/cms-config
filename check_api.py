@@ -151,23 +151,19 @@ def generate_table_rows(data_list):
     return "".join(rows)
 
 def domain_to_mihomo_regex(domain):
-    """
-    将带有数字变体的域名，完美转化为 Mihomo 适用的 DOMAIN-REGEX 正则表达式
-    示例：www.hongniuzy2.com -> "^.+\.hongniuzy\d+\.com$"
-    """
     # 1. 统一小写并剥离端口
     domain = domain.strip().lower()
     if ":" in domain:
         domain = domain.split(":")[0]
         
-    # 2. 如果是纯 IP，直接返回
+    # 2. 如果是纯 IP，直接返回纯文本 IP，不加双引号
     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', domain):
-        return f'"{domain}"'
+        return domain
 
     # 3. 转义点号和横杠，防止正则解析出错
     escaped = domain.replace('.', r'\.').replace('-', r'\-')
     
-    # 4. 关键修复：使用 lambda 彻底避免 re.sub 针对 \d 的后向引用转义报错
+    # 4. 使用 lambda 避免 re.sub 针对 \d 的后向引用转义报错
     regex_str = re.sub(r'\d+', lambda m: r'\d+', escaped)
     
     # 5. 如果域名开头有 www. 或 api. 等子域名，将其转化为通用前缀匹配 `^.+\.`
