@@ -2,6 +2,20 @@
   {
     "name": "极速直连 01",
     "adContext": "未知",
+    "id": "1080zyk_com",
+    "originalName": "优质资源库1080zyk",
+    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 31000
+  },
+  {
+    "name": "极速直连 02",
+    "adContext": "未知",
     "id": "iqiyizyapi_com",
     "originalName": "爱奇艺资源",
     "url": "https://iqiyizyapi.com/api.php/provide/vod",
@@ -112,6 +126,20 @@
     "score": 29500
   },
   {
+    "name": "极速直连 03",
+    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
+    "id": "mtzy_me",
+    "originalName": "茅台资源",
+    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 9999,
+    "check_status": "Untested (Geo-blocked?)",
+    "score": 26000
+  },
+  {
     "name": "备用线路 01",
     "adContext": "动漫专区/M3U8直链/广告少",
     "id": "moduapi_cc",
@@ -205,23 +233,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1197,
+    "delay": 1132,
     "check_status": "Passed",
-    "score": 13045
-  },
-  {
-    "name": "备用线路 08",
-    "adContext": "开头广告/高清画质/更新中规",
-    "id": "subozy_com",
-    "originalName": "速播资源",
-    "url": "https://subocaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 1838,
-    "check_status": "Passed",
-    "score": 3430
+    "score": 14020
   },
   {
     "name": "优质线路 08",
@@ -233,26 +247,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2310,
+    "delay": 2284,
     "check_status": "Passed",
-    "score": 2350
+    "score": 2740
   },
   {
-    "name": "备用线路 09",
-    "adContext": "开头广告/资源更新快/稳定性中",
-    "id": "ryzyw_com",
-    "originalName": "如意资源",
-    "url": "https://cj.rycjapi.com/api.php/provide/vod",
+    "name": "备用线路 08",
+    "adContext": "开头广告/高清画质/更新中规",
+    "id": "subozy_com",
+    "originalName": "速播资源",
+    "url": "https://subocaiji.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2720,
+    "delay": 1932,
     "check_status": "Passed",
-    "score": -9800
+    "score": 2020
   },
   {
-    "name": "备用线路 10",
+    "name": "备用线路 09",
     "adContext": "开头广告/国内CDN/全网秒播",
     "id": "hongniuzy_com",
     "originalName": "红牛资源",
@@ -261,37 +275,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3268,
+    "delay": 2543,
     "check_status": "Passed",
-    "score": -18020
+    "score": -7145
   },
   {
-    "name": "极速直连 02",
-    "adContext": "未知",
-    "id": "1080zyk_com",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
+    "name": "备用线路 10",
+    "adContext": "开头广告/资源更新快/稳定性中",
+    "id": "ryzyw_com",
+    "originalName": "如意资源",
+    "url": "https://cj.rycjapi.com/api.php/provide/vod",
     "category": "General",
-    "isOfficial": true,
+    "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3902,
+    "delay": 2834,
     "check_status": "Passed",
-    "score": -20030
-  },
-  {
-    "name": "极速直连 03",
-    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
-    "id": "mtzy_me",
-    "originalName": "茅台资源",
-    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 4113,
-    "check_status": "Passed",
-    "score": -28195
+    "score": -11510
   },
   {
     "name": "极速直连 04",
@@ -303,8 +303,8 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 4112,
+    "delay": 5720,
     "check_status": "Passed",
-    "score": -29180
+    "score": -53300
   }
 ]
