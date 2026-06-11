@@ -296,16 +296,16 @@
   {
     "name": "NSFW 秘密通道 22",
     "adContext": "成人内容",
-    "id": "msnii_com",
-    "originalName": "美少女",
-    "url": "https://www.msnii.com/api/json.php",
+    "id": "pgxdy_com",
+    "originalName": "黄AVZY",
+    "url": "https://www.pgxdy.com/api/json.php",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 665,
+    "delay": 807,
     "check_status": "Passed",
-    "score": 23025
+    "score": 20895
   },
   {
     "name": "NSFW 秘密通道 23",
@@ -317,26 +317,12 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 783,
+    "delay": 839,
     "check_status": "Passed",
-    "score": 21255
+    "score": 20415
   },
   {
     "name": "NSFW 秘密通道 24",
-    "adContext": "成人内容",
-    "id": "pgxdy_com",
-    "originalName": "黄AVZY",
-    "url": "https://www.pgxdy.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 868,
-    "check_status": "Passed",
-    "score": 19980
-  },
-  {
-    "name": "NSFW 秘密通道 25",
     "adContext": "成人内容/白嫖风格",
     "id": "kxgav_com",
     "originalName": "白嫖资源",
@@ -345,9 +331,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 943,
+    "delay": 910,
     "check_status": "Passed",
-    "score": 18855
+    "score": 19350
+  },
+  {
+    "name": "NSFW 秘密通道 25",
+    "adContext": "成人内容",
+    "id": "msnii_com",
+    "originalName": "美少女",
+    "url": "https://www.msnii.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1155,
+    "check_status": "Passed",
+    "score": 15675
   },
   {
     "name": "NSFW 秘密通道 26",
@@ -359,8 +359,22 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1930,
+    "delay": 1623,
     "check_status": "Passed",
-    "score": 4050
+    "score": 8655
+  },
+  {
+    "name": "NSFW 秘密通道 27",
+    "adContext": "成人内容/部分自产多",
+    "id": "91md_me",
+    "originalName": "麻豆视频",
+    "url": "https://91md.me/api.php/provide/vod",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1757,
+    "check_status": "Passed",
+    "score": 6645
   }
 ]
