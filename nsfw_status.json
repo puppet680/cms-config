@@ -281,34 +281,20 @@
   },
   {
     "name": "NSFW 秘密通道 21",
-    "adContext": "成人内容/资源多/广告中等",
-    "id": "xxibaozyw_com",
-    "originalName": "细胞资源",
-    "url": "https://www.xxibaozyw.com/api.php/provide/vod",
+    "adContext": "成人内容",
+    "id": "msnii_com",
+    "originalName": "美少女",
+    "url": "https://www.msnii.com/api/json.php",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 24500
+    "delay": 645,
+    "check_status": "Passed",
+    "score": 23325
   },
   {
     "name": "NSFW 秘密通道 22",
-    "adContext": "成人内容",
-    "id": "pgxdy_com",
-    "originalName": "黄AVZY",
-    "url": "https://www.pgxdy.com/api/json.php",
-    "category": "NSFW",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 807,
-    "check_status": "Passed",
-    "score": 20895
-  },
-  {
-    "name": "NSFW 秘密通道 23",
     "adContext": "成人内容",
     "id": "apidanaizi_com",
     "originalName": "大奶子",
@@ -317,9 +303,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 839,
+    "delay": 678,
     "check_status": "Passed",
-    "score": 20415
+    "score": 22830
+  },
+  {
+    "name": "NSFW 秘密通道 23",
+    "adContext": "成人内容",
+    "id": "pgxdy_com",
+    "originalName": "黄AVZY",
+    "url": "https://www.pgxdy.com/api/json.php",
+    "category": "NSFW",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 766,
+    "check_status": "Passed",
+    "score": 21510
   },
   {
     "name": "NSFW 秘密通道 24",
@@ -331,23 +331,23 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 910,
+    "delay": 851,
     "check_status": "Passed",
-    "score": 19350
+    "score": 20235
   },
   {
     "name": "NSFW 秘密通道 25",
-    "adContext": "成人内容",
-    "id": "msnii_com",
-    "originalName": "美少女",
-    "url": "https://www.msnii.com/api/json.php",
+    "adContext": "成人内容/资源多/广告中等",
+    "id": "xxibaozyw_com",
+    "originalName": "细胞资源",
+    "url": "https://www.xxibaozyw.com/api.php/provide/vod",
     "category": "NSFW",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1155,
+    "delay": 905,
     "check_status": "Passed",
-    "score": 15675
+    "score": 18425
   },
   {
     "name": "NSFW 秘密通道 26",
@@ -359,9 +359,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1623,
+    "delay": 1706,
     "check_status": "Passed",
-    "score": 8655
+    "score": 7410
   },
   {
     "name": "NSFW 秘密通道 27",
@@ -373,8 +373,8 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1757,
+    "delay": 2333,
     "check_status": "Passed",
-    "score": 6645
+    "score": -1995
   }
 ]

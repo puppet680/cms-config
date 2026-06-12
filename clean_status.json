@@ -1,19 +1,5 @@
 [
   {
-    "name": "极速直连 01",
-    "adContext": "未知",
-    "id": "1080zyk_com",
-    "originalName": "优质资源库1080zyk",
-    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 31000
-  },
-  {
     "name": "优质线路 01",
     "adContext": "未知",
     "id": "ikunzy_com",
@@ -44,20 +30,6 @@
   {
     "name": "优质线路 03",
     "adContext": "未知",
-    "id": "lzcaiji_com",
-    "originalName": "量子资源",
-    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 29500
-  },
-  {
-    "name": "优质线路 04",
-    "adContext": "未知",
     "id": "jszyapi_com",
     "originalName": "极速资源",
     "url": "https://jszyapi.com/api.php/provide/vod",
@@ -70,21 +42,7 @@
     "score": 29500
   },
   {
-    "name": "优质线路 05",
-    "adContext": "未知",
-    "id": "bfzy_tv",
-    "originalName": "暴风资源",
-    "url": "https://bfzyapi.com/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 29500
-  },
-  {
-    "name": "优质线路 06",
+    "name": "优质线路 04",
     "adContext": "未知",
     "id": "ukuapi88_com",
     "originalName": "U酷影视",
@@ -98,7 +56,7 @@
     "score": 29500
   },
   {
-    "name": "优质线路 07",
+    "name": "优质线路 05",
     "adContext": "未知",
     "id": "lzizy_net",
     "originalName": "量子影视备用",
@@ -107,23 +65,9 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 29500
-  },
-  {
-    "name": "极速直连 02",
-    "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
-    "id": "mtzy_me",
-    "originalName": "茅台资源",
-    "url": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "category": "General",
-    "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true,
-    "delay": 9999,
-    "check_status": "Untested (Geo-blocked?)",
-    "score": 26000
+    "delay": 630,
+    "check_status": "Passed",
+    "score": 27550
   },
   {
     "name": "备用线路 01",
@@ -210,18 +154,46 @@
     "score": 23500
   },
   {
-    "name": "备用线路 07",
-    "adContext": "开头广告/三网直连/秒拖",
-    "id": "haohuazy_com",
-    "originalName": "豪华资源",
-    "url": "https://hhzyapi.com/api.php/provide/vod",
+    "name": "优质线路 06",
+    "adContext": "未知",
+    "id": "bfzy_tv",
+    "originalName": "暴风资源",
+    "url": "https://bfzyapi.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1303,
+    "delay": 1242,
     "check_status": "Passed",
-    "score": 11455
+    "score": 18370
+  },
+  {
+    "name": "优质线路 07",
+    "adContext": "未知",
+    "id": "guangsuapi_com",
+    "originalName": "光速资源",
+    "url": "https://api.guangsuapi.com/api.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1958,
+    "check_status": "Passed",
+    "score": 7630
+  },
+  {
+    "name": "备用线路 07",
+    "adContext": "开头广告/极速CDN/资源一般",
+    "id": "xinlangapi_com",
+    "originalName": "新浪资源",
+    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "category": "General",
+    "isOfficial": false,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 1786,
+    "check_status": "Passed",
+    "score": 4210
   },
   {
     "name": "备用线路 08",
@@ -233,23 +205,37 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 1749,
+    "delay": 1808,
     "check_status": "Passed",
-    "score": 4765
+    "score": 3880
   },
   {
     "name": "优质线路 08",
     "adContext": "未知",
-    "id": "guangsuapi_com",
-    "originalName": "光速资源",
-    "url": "https://api.guangsuapi.com/api.php/provide/vod",
+    "id": "lzcaiji_com",
+    "originalName": "量子资源",
+    "url": "https://cj.lzcaiji.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2269,
+    "delay": 2407,
     "check_status": "Passed",
-    "score": 2965
+    "score": 895
+  },
+  {
+    "name": "极速直连 01",
+    "adContext": "未知",
+    "id": "1080zyk_com",
+    "originalName": "优质资源库1080zyk",
+    "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
+    "category": "General",
+    "isOfficial": true,
+    "isEnabled": true,
+    "searchable": true,
+    "delay": 2812,
+    "check_status": "Passed",
+    "score": -3680
   },
   {
     "name": "备用线路 09",
@@ -261,26 +247,26 @@
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2251,
+    "delay": 2415,
     "check_status": "Passed",
-    "score": -2765
+    "score": -5225
   },
   {
     "name": "备用线路 10",
-    "adContext": "开头广告/极速CDN/资源一般",
-    "id": "xinlangapi_com",
-    "originalName": "新浪资源",
-    "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "adContext": "开头广告/资源更新快/稳定性中",
+    "id": "ryzyw_com",
+    "originalName": "如意资源",
+    "url": "https://cj.rycjapi.com/api.php/provide/vod",
     "category": "General",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true,
-    "delay": 2305,
+    "delay": 2579,
     "check_status": "Passed",
-    "score": -3575
+    "score": -7685
   },
   {
-    "name": "极速直连 03",
+    "name": "极速直连 02",
     "adContext": "跑马灯/开头广告/国内CDN",
     "id": "dbzy_tv",
     "originalName": "豆瓣资源",
@@ -289,12 +275,12 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3155,
+    "delay": 2779,
     "check_status": "Passed",
-    "score": -14825
+    "score": -9185
   },
   {
-    "name": "极速直连 04",
+    "name": "极速直连 03",
     "adContext": "未知",
     "id": "iqiyizyapi_com",
     "originalName": "爱奇艺资源",
@@ -303,8 +289,8 @@
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true,
-    "delay": 3614,
+    "delay": 4860,
     "check_status": "Passed",
-    "score": -15710
+    "score": -34400
   }
 ]
