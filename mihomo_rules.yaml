@@ -1,71 +1,110 @@
-# >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 START <<<<<
-# 生成时间: 2026-06-02 19:37:41 (Beijing Time)
-^.+\.bfvvs\.com$
-^.+\.bpzy\d+\.com$
-^.+\.cdn\d+\.com$
-^.+\.dbzy\d+\.com$
-^.+\.ddapi\.cc$
-^.+\.didiv\d+\.com$
-^.+\.douapi\.cc$
-^.+\.fhbbff\.com$
-^.+\.gsuus\.com$
-^.+\.guangsuapi\.com$
-^.+\.hav\d+\.com$
-^.+\.heiliaozyapi\.com$
-^.+\.hhuus\.com$
-^.+\.hongniuzy\d+\.com$
-^.+\.hwzcfz\.com$
-^.+\.ijycnd\.com$
-^.+\.jingpinx\.com$
-^.+\.kxgav\.com$
-^.+\.lajiao\d+\.com$
-^.+\.lbsl\d+\.com$
-^.+\.ly\d+\.com$
-^.+\.maotaizy\.cc$
-^.+\.maoyanapi\.top$
-^.+\.maoyanplay\.top$
-^.+\.mdzyapi\.com$
-^.+\.moduapi\.cc$
-^.+\.modujx\d+\.com$
-^.+\.msn\d+\.com$
-^.+\.msnii\.com$
-^.+\.myqqdd\.com$
-^.+\.oag\d+h\.com$
-^.+\.pgxdy\.com$
-^.+\.qrtuv\.com$
-^.+\.qugt\.com$
-^.+\.rycjapi\.com$
-^.+\.ryplay\d+\.com$
-^.+\.senlin\d+\.com$
-^.+\.sex\d+sex\d+\.com$
-^.+\.slapibf\.com$
-^.+\.souavzyw\.net$
-^.+\.v\d+p\.com$
-^.+\.xluuss\.com$
-^\d+api\.com$
-^\d+md\.me$
-^apidanaizi\.com$
-^apilj\.com$
-^apilsbzy\d+\.com$
-^apiyutu\.com$
-^bfikuncdn\.com$
-^fhapi\d+\.com$
-^hhzyapi\.com$
-^hsckzy\.xyz$
-^ikunzyapi\.com$
-^iqiyizyapi\.com$
-^jinyingzy\.com$
-^jkhabkrqjbj\.com$
-^jkunzyapi\.com$
-^jpxm\d+u\d+\.com$
-^lbapi\d+\.com$
-^lbapiby\.com$
-^lsbbf\d+\.com$
-^naixxzy\.com$
-^subocaiji\.com$
-^thm\d+u\d+\.vip$
-^thzy\d+\.me$
-^voddadaizi\d+\.com$
-^vostrely\.com$
-^xingba\d+\.com$
-# >>>>> Mihomo (Clash Meta) 苹果CMS正则直连规则 END <<<<<
+# Mihomo (Clash) Rule-Provider
+# 自动更新时间: 2026-06-13 10:46:46
+payload:
+  - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
+  - DOMAIN-REGEX,^.*bf\d+\..*$
+  - DOMAIN-REGEX,^.*bpzy\d+\..*$
+  - DOMAIN-REGEX,^.*dbzy\d+\..*$
+  - DOMAIN-REGEX,^.*didiv\d+\..*$
+  - DOMAIN-REGEX,^.*fhapi\d+\..*$
+  - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
+  - DOMAIN-REGEX,^.*hsm\d+\..*$
+  - DOMAIN-REGEX,^.*jpxm\d+\..*$
+  - DOMAIN-REGEX,^.*lajiao\d+\..*$
+  - DOMAIN-REGEX,^.*lbapi\d+\..*$
+  - DOMAIN-REGEX,^.*lbsl\d+\..*$
+  - DOMAIN-REGEX,^.*lsbbf\d+\..*$
+  - DOMAIN-REGEX,^.*ly\d+\..*$
+  - DOMAIN-REGEX,^.*lzcdn\d+\..*$
+  - DOMAIN-REGEX,^.*modujx\d+\..*$
+  - DOMAIN-REGEX,^.*play-cdn\d+\..*$
+  - DOMAIN-REGEX,^.*ryplay\d+\..*$
+  - DOMAIN-REGEX,^.*senlin\d+\..*$
+  - DOMAIN-REGEX,^.*sex\d+\..*$
+  - DOMAIN-REGEX,^.*sysl\d+\..*$
+  - DOMAIN-REGEX,^.*thm\d+\..*$
+  - DOMAIN-REGEX,^.*thzy\d+\..*$
+  - DOMAIN-REGEX,^.*ukuapi\d+\..*$
+  - DOMAIN-REGEX,^.*ukubf\d+\..*$
+  - DOMAIN-REGEX,^.*video\d+\..*$
+  - DOMAIN-REGEX,^.*vodcnd\d+\..*$
+  - DOMAIN-REGEX,^.*voddadaizi\d+\..*$
+  - DOMAIN-REGEX,^.*xingba\d+\..*$
+  - DOMAIN-REGEX,^.*xjzym\d+\..*$
+  - DOMAIN-SUFFIX,155api.com
+  - DOMAIN-SUFFIX,360zyzz.com
+  - DOMAIN-SUFFIX,91md.me
+  - DOMAIN-SUFFIX,aosikazy.com
+  - DOMAIN-SUFFIX,apibdzy.com
+  - DOMAIN-SUFFIX,apidanaizi.com
+  - DOMAIN-SUFFIX,apilj.com
+  - DOMAIN-SUFFIX,apiyhzy.com
+  - DOMAIN-SUFFIX,apiyutu.com
+  - DOMAIN-SUFFIX,bfikuncdn.com
+  - DOMAIN-SUFFIX,bfllvip.com
+  - DOMAIN-SUFFIX,bfvvs.com
+  - DOMAIN-SUFFIX,bfzyapi.com
+  - DOMAIN-SUFFIX,cdn2020.com
+  - DOMAIN-SUFFIX,dadiapi.com
+  - DOMAIN-SUFFIX,ddapi.cc
+  - DOMAIN-SUFFIX,douapi.cc
+  - DOMAIN-SUFFIX,dyttzyapi.com
+  - DOMAIN-SUFFIX,ffzyapi.com
+  - DOMAIN-SUFFIX,fhbbff.com
+  - DOMAIN-SUFFIX,gakkxx.top
+  - DOMAIN-SUFFIX,gsuus.com
+  - DOMAIN-SUFFIX,guangsuapi.com
+  - DOMAIN-SUFFIX,guoluche.com
+  - DOMAIN-SUFFIX,heiliaozyapi.com
+  - DOMAIN-SUFFIX,hhuus.com
+  - DOMAIN-SUFFIX,hhzyapi.com
+  - DOMAIN-SUFFIX,hsckzy.xyz
+  - DOMAIN-SUFFIX,ikunzyapi.com
+  - DOMAIN-SUFFIX,iqiyizyapi.com
+  - DOMAIN-SUFFIX,jingpinx.com
+  - DOMAIN-SUFFIX,jinyingzy.com
+  - DOMAIN-SUFFIX,jisuzyv.com
+  - DOMAIN-SUFFIX,jkhabkrqjbj.com
+  - DOMAIN-SUFFIX,jkunzyapi.com
+  - DOMAIN-SUFFIX,jszyapi.com
+  - DOMAIN-SUFFIX,kuaichezy.org
+  - DOMAIN-SUFFIX,kxgav.com
+  - DOMAIN-SUFFIX,lbapiby.com
+  - DOMAIN-SUFFIX,lovedan.net
+  - DOMAIN-SUFFIX,lzcaiji.com
+  - DOMAIN-SUFFIX,lziapi.com
+  - DOMAIN-SUFFIX,maotaizy.cc
+  - DOMAIN-SUFFIX,maoyanapi.top
+  - DOMAIN-SUFFIX,maoyanplay.top
+  - DOMAIN-SUFFIX,mdzyapi.com
+  - DOMAIN-SUFFIX,moduapi.cc
+  - DOMAIN-SUFFIX,msnii.com
+  - DOMAIN-SUFFIX,myqqdd.com
+  - DOMAIN-SUFFIX,naixxzy.com
+  - DOMAIN-SUFFIX,p2100.net
+  - DOMAIN-SUFFIX,pgxdy.com
+  - DOMAIN-SUFFIX,ppqrrs.com
+  - DOMAIN-SUFFIX,qugt.com
+  - DOMAIN-SUFFIX,rycjapi.com
+  - DOMAIN-SUFFIX,sdzyapi.com
+  - DOMAIN-SUFFIX,semaozy.net
+  - DOMAIN-SUFFIX,shayuapi.com
+  - DOMAIN-SUFFIX,siwazyw.tv
+  - DOMAIN-SUFFIX,slapibf.com
+  - DOMAIN-SUFFIX,souavzyw.net
+  - DOMAIN-SUFFIX,subocaiji.com
+  - DOMAIN-SUFFIX,suoniapi.com
+  - DOMAIN-SUFFIX,tyyszyapi.com
+  - DOMAIN-SUFFIX,v155p.com
+  - DOMAIN-SUFFIX,vostrely.com
+  - DOMAIN-SUFFIX,wujinapi.me
+  - DOMAIN-SUFFIX,xiangjiaozyw.com
+  - DOMAIN-SUFFIX,xiaojizy.live
+  - DOMAIN-SUFFIX,xinlangapi.com
+  - DOMAIN-SUFFIX,xluuss.com
+  - DOMAIN-SUFFIX,xxibaozyw.com
+  - DOMAIN-SUFFIX,yayazy.net
+  - DOMAIN-SUFFIX,yyzy-tv.vip
+  - DOMAIN-SUFFIX,zuidapi.com
+  - DOMAIN-SUFFIX,zuidazy.me
+  - DOMAIN-SUFFIX,zuidazym3u8.com

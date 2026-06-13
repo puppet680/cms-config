@@ -1,72 +1,82 @@
-# 🛰️ API 实时监控中心
+# 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-06-12 18:01:00` (GitHub 环境预检)
+更新时间：`2026-06-13 10:46:46` (基于状态码 200 活跃预检)
 
-### ⚡ 极速直连
-| 序号 | 线路名称 | 预检 | 搜索 | 延迟 | 广告 | 原始名称 |
-| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| 01 | 极速直连 01 | ✅ | 🔍 | 2812ms | 未知 | 优质资源库1080zyk |
-| 02 | 极速直连 02 | ✅ | 🔍 | 2779ms | 跑马灯/开头广告/国内CDN | 豆瓣资源 |
-| 03 | 极速直连 03 | ✅ | 🔍 | 4860ms | 未知 | 爱奇艺资源 |
+### ⚡ 常规过滤线路明细
+| 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| ✅ 有效 | 优质库1080zyk | `https://api.yyzy-tv.vip/inc/api_mac10.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 爱奇艺 | `https://iqiyizyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 豆瓣 | `https://caiji.dbzy5.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 茅台 | `https://caiji.maotaizy.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | iKun | `https://ikunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 电影天堂 | `http://caiji.dyttzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 猫眼 | `https://api.maoyanapi.top/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 量子 | `https://cj.lzcaiji.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 360 | `https://360zyzz.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 极速 | `https://jszyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 魔都 | `https://www.mdzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 非凡 | `https://api.ffzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 暴风 | `https://bfzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 最大 | `https://api.zuidapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 无尽 | `https://api.wujinapi.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 新浪 | `https://api.xinlangapi.com/xinlangapi.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 天涯 | `https://tyyszyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 速播 | `https://subocaiji.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 金鹰点播 | `https://jinyingzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 飘零 | `https://p2100.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | U酷影视 | `https://api.ukuapi88.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 光速 | `https://api.guangsuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 红牛 | `https://www.hongniuzy2.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 魔都动漫 | `https://caiji.moduapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 如意 | `https://cj.rycjapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 豪华 | `https://hhzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 百度云zy | `https://api.apibdzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ❌ 失效 | 艾旦影视 | `https://lovedan.net/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 量子影视备用 | `https://cj.lziapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 最大点播备用 | `https://zuidazy.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 鸭鸭 | `https://cj.yayazy.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 索尼 | `https://suoniapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 快车 | `https://caiji.kuaichezy.org/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 闪电 | `https://xsd.sdzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 樱花 | `https://m3u8.apiyhzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 
-### 💎 优质线路
-| 序号 | 线路名称 | 预检 | 搜索 | 延迟 | 广告 | 原始名称 |
-| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| 01 | 优质线路 01 | ⏳ | 🔍 | N/A | 未知 | iKun资源 |
-| 02 | 优质线路 02 | ⏳ | 🔍 | N/A | 未知 | 猫眼资源 |
-| 03 | 优质线路 03 | ⏳ | 🔍 | N/A | 未知 | 极速资源 |
-| 04 | 优质线路 04 | ⏳ | 🔍 | N/A | 未知 | U酷影视 |
-| 05 | 优质线路 05 | ✅ | 🔍 | 630ms | 未知 | 量子影视备用 |
-| 06 | 优质线路 06 | ✅ | 🔍 | 1242ms | 未知 | 暴风资源 |
-| 07 | 优质线路 07 | ✅ | 🔍 | 1958ms | 未知 | 光速资源 |
-| 08 | 优质线路 08 | ✅ | 🔍 | 2407ms | 未知 | 量子资源 |
-
-### 🛠️ 备用线路
-| 序号 | 线路名称 | 预检 | 搜索 | 延迟 | 广告 | 原始名称 |
-| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| 01 | 备用线路 01 | ⏳ | 🔍 | N/A | 动漫专区/M3U8直链/广告少 | 魔都动漫 |
-| 02 | 备用线路 02 | ⏳ | 🔍 | N/A | M3U8直链/有跑马灯/广告中等 | 魔都资源 |
-| 03 | 备用线路 03 | ⏳ | 🔍 | N/A | 有跑马灯/开头广告/秒拖但不稳 | 最大资源 |
-| 04 | 备用线路 04 | ⏳ | 🔍 | N/A | 开头广告/国内CDN/秒播率中 | 无尽资源 |
-| 05 | 备用线路 05 | ⏳ | 🔍 | N/A | 有跑马灯/广告中等/稳定性一般 | 飘零资源 |
-| 06 | 备用线路 06 | ⏳ | 🔍 | N/A | 有跑马灯/备用源/广告多 | 最大点播备用 |
-| 07 | 备用线路 07 | ✅ | 🔍 | 1786ms | 开头广告/极速CDN/资源一般 | 新浪资源 |
-| 08 | 备用线路 08 | ✅ | 🔍 | 1808ms | 开头广告/高清画质/更新中规 | 速播资源 |
-| 09 | 备用线路 09 | ✅ | 🔍 | 2415ms | 开头广告/国内CDN/全网秒播 | 红牛资源 |
-| 10 | 备用线路 10 | ✅ | 🔍 | 2579ms | 开头广告/资源更新快/稳定性中 | 如意资源 |
-
-### 🔞 NSFW 秘密通道
+### 🔞 NSFW 秘密通道线路明细
 <details>
-<summary>点击展开 (敏感内容)</summary>
+<summary>展开敏感统计内容</summary>
 
-| 序号 | 线路名称 | 预检 | 搜索 | 延迟 | 广告 | 原始名称 |
-| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| 01 | NSFW 秘密通道 01 | ⏳ | 🔍 | N/A | 成人内容/AI生成 | AIvin |
-| 02 | NSFW 秘密通道 02 | ⏳ | 🔍 | N/A | 成人内容 | 玉兔资源 |
-| 03 | NSFW 秘密通道 03 | ⏳ | 🔍 | N/A | 成人内容/资源杂 | 老色逼 |
-| 04 | NSFW 秘密通道 04 | ⏳ | 🔍 | N/A | 成人内容 | 小鸡资源 |
-| 05 | NSFW 秘密通道 05 | ⏳ | 🔍 | N/A | 成人内容 | 乐播资源 |
-| 06 | NSFW 秘密通道 06 | ⏳ | 🔍 | N/A | 成人内容 | 奶香资源 |
-| 07 | NSFW 秘密通道 07 | ⏳ | 🔍 | N/A | 成人内容 | 辣椒资源 |
-| 08 | NSFW 秘密通道 08 | ⏳ | 🔍 | N/A | 成人内容 | 豆豆资源 |
-| 09 | NSFW 秘密通道 09 | ⏳ | 🔍 | N/A | 成人内容/精品为主 | 精品资源 |
-| 10 | NSFW 秘密通道 10 | ⏳ | 🔍 | N/A | 成人内容 | souavZY |
-| 11 | NSFW 秘密通道 11 | ⏳ | 🔍 | N/A | 成人内容 | 香蕉资源 |
-| 12 | NSFW 秘密通道 12 | ⏳ | 🔍 | N/A | 成人内容/403常见/可能失效 | 杏吧资源 |
-| 13 | NSFW 秘密通道 13 | ⏳ | 🔍 | N/A | 成人内容/资源丰富/广告中等 | 155资源 |
-| 14 | NSFW 秘密通道 14 | ⏳ | 🔍 | N/A | 成人内容/番号为主/广告少 | 番号资源 |
-| 15 | NSFW 秘密通道 15 | ⏳ | 🔍 | N/A | 成人内容/资源多/广告中等 | 黄色仓库 |
-| 16 | NSFW 秘密通道 16 | ⏳ | 🔍 | N/A | 成人内容/资源新/广告少 | jkun资源 |
-| 17 | NSFW 秘密通道 17 | ⏳ | 🔍 | N/A | 成人内容/备用线/广告中等 | 森林资源 |
-| 18 | NSFW 秘密通道 18 | ⏳ | 🔍 | N/A | 成人内容/资源丰富/广告中等 | 鲨鱼资源 |
-| 19 | NSFW 秘密通道 19 | ⏳ | 🔍 | N/A | 成人内容/资源杂/广告中等 | 滴滴资源 |
-| 20 | NSFW 秘密通道 20 | ⏳ | 🔍 | N/A | 成人内容/资源丰富/广告中等 | 桃花资源 |
-| 21 | NSFW 秘密通道 21 | ✅ | 🔍 | 645ms | 成人内容 | 美少女 |
-| 22 | NSFW 秘密通道 22 | ✅ | 🔍 | 678ms | 成人内容 | 大奶子 |
-| 23 | NSFW 秘密通道 23 | ✅ | 🔍 | 766ms | 成人内容 | 黄AVZY |
-| 24 | NSFW 秘密通道 24 | ✅ | 🔍 | 851ms | 成人内容/白嫖风格 | 白嫖资源 |
-| 25 | NSFW 秘密通道 25 | ✅ | 🔍 | 905ms | 成人内容/资源多/广告中等 | 细胞资源 |
-| 26 | NSFW 秘密通道 26 | ✅ | 🔍 | 1706ms | 成人内容/黑料为主 | 黑料资源 |
-| 27 | NSFW 秘密通道 27 | ✅ | 🔍 | 2333ms | 成人内容/部分自产多 | 麻豆视频 |
+| 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| ✅ 有效 | 麻豆 - NSFW | `https://91md.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | AIvin - NSFW | `http://lbapiby.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 155 - NSFW | `https://155api.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 玉兔 - NSFW | `https://apiyutu.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 番号 - NSFW | `http://fhapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 小鸡 - NSFW | `https://api.xiaojizy.live/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 大奶子 - NSFW | `https://apidanaizi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | jkun - NSFW | `https://jkunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 乐播 - NSFW | `https://lbapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 奶香 - NSFW | `https://Naixxzy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 森林 - NSFW | `https://beiyong.slapibf.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 辣椒 - NSFW | `https://apilj.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 鲨鱼 - NSFW | `https://shayuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 豆豆 - NSFW | `https://api.douapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 滴滴 - NSFW | `https://api.ddapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 黑料 - NSFW | `https://www.heiliaozyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 桃花 - NSFW | `https://thzy1.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 精品 - NSFW | `https://www.jingpinx.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | souavZY - NSFW | `https://api.souavzyw.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 香蕉 - NSFW | `https://www.xiangjiaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 美少女 - NSFW | `https://www.msnii.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 白嫖 - NSFW | `https://www.kxgav.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 杏吧 - NSFW | `https://xingba222.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 色猫 - NSFW | `https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 奥斯卡 - NSFW | `https://aosikazy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 
 </details>
