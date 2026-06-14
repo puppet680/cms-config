@@ -116,8 +116,8 @@
     "category": "NSFW",
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "slapibf_com",
@@ -126,8 +126,8 @@
     "category": "NSFW",
     "adContext": "成人内容/备用线/广告中等",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "apilj_com",
