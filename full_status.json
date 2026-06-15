@@ -206,8 +206,8 @@
     "category": "General",
     "adContext": "无广告/丰富/偶尔卡",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "guangsuapi_com",
@@ -426,8 +426,8 @@
     "category": "NSFW",
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "apidanaizi_com",
@@ -496,8 +496,8 @@
     "category": "NSFW",
     "adContext": "成人内容/丰富/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "doudouzy_com",
@@ -566,8 +566,8 @@
     "category": "NSFW",
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "xiangjiaozyw_com",
