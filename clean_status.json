@@ -246,8 +246,8 @@
     "category": "General",
     "adContext": "开头广告/更新快/稳定性中",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "haohuazy_com",

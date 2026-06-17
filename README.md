@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-06-16 19:29:50` (基于状态码 200 活跃预检)
+更新时间：`2026-06-17 18:10:10` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -29,7 +29,7 @@
 | ✅ 有效 | 光速 | `https://api.guangsuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 红牛 | `https://www.hongniuzy2.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 魔都动漫 | `https://caiji.moduapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 如意 | `https://cj.rycjapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 如意 | `https://cj.rycjapi.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 豪华 | `https://hhzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ❌ 失效 | 百度云zy | `https://api.apibdzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ❌ 失效 | 艾旦影视 | `https://lovedan.net/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
@@ -54,7 +54,7 @@
 | ✅ 有效 | 番号 - NSFW | `http://fhapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 小鸡 - NSFW | `https://api.xiaojizy.live/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 大奶子 - NSFW | `https://apidanaizi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | jkun - NSFW | `https://jkunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 乐播 - NSFW | `https://lbapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -68,8 +68,8 @@
 | ✅ 有效 | 桃花 - NSFW | `https://thzy1.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 精品 - NSFW | `https://www.jingpinx.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | souavZY - NSFW | `https://api.souavzyw.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
-| ✅ 有效 | 香蕉 - NSFW | `https://www.xiangjiaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ✅ 有效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 香蕉 - NSFW | `https://www.xiangjiaozyw.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 美少女 - NSFW | `https://www.msnii.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 白嫖 - NSFW | `https://www.kxgav.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
