@@ -26,8 +26,8 @@
     "category": "General",
     "adContext": "跑马灯/开头广告/国内CDN",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "mtzy_me",
@@ -36,8 +36,8 @@
     "category": "General",
     "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ikunzy_com",
@@ -206,8 +206,8 @@
     "category": "General",
     "adContext": "无广告/丰富/偶尔卡",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "guangsuapi_com",
