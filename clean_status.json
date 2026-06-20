@@ -4,7 +4,7 @@
     "name": "优质库1080zyk",
     "url": "https://api.yyzy-tv.vip/inc/api_mac10.php",
     "category": "General",
-    "adContext": "无广告/高清无水印/秒播稳定",
+    "adContext": "无广告/高清无水印/秒播稳定/搜索污染",
     "isOfficial": true,
     "isEnabled": true,
     "searchable": true
@@ -26,8 +26,8 @@
     "category": "General",
     "adContext": "跑马灯/开头广告/国内CDN",
     "isOfficial": true,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "mtzy_me",
@@ -36,8 +36,8 @@
     "category": "General",
     "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
     "isOfficial": true,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "ikunzy_com",
@@ -64,7 +64,7 @@
     "name": "猫眼",
     "url": "https://api.maoyanapi.top/api.php/provide/vod",
     "category": "General",
-    "adContext": "无广告/M3U8直链/高清稳定",
+    "adContext": "切片/M3U8直链/高清稳定",
     "isOfficial": false,
     "isEnabled": true,
     "searchable": true
@@ -281,7 +281,7 @@
   },
   {
     "id": "lzizy_net",
-    "name": "量子影视备用",
+    "name": "量子备用",
     "url": "https://cj.lziapi.com/api.php/provide/vod",
     "category": "General",
     "adContext": "无广告/量子备用线/速度快",
@@ -291,7 +291,7 @@
   },
   {
     "id": "zuidazy_co",
-    "name": "最大点播备用",
+    "name": "最大备用",
     "url": "https://zuidazy.me/api.php/provide/vod",
     "category": "General",
     "adContext": "有跑马灯/备用源/广告多",
