@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-06-22 19:19:27` (基于状态码 200 活跃预检)
+更新时间：`2026-06-23 17:46:08` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -68,7 +68,7 @@
 | ✅ 有效 | 桃花 - NSFW | `https://thzy1.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 精品 - NSFW | `https://www.jingpinx.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | souavZY - NSFW | `https://api.souavzyw.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 香蕉 - NSFW | `https://www.xiangjiaozyw.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 美少女 - NSFW | `https://www.msnii.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |

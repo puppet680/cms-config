@@ -216,8 +216,8 @@
     "category": "NSFW",
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "xiangjiaozyw_com",
