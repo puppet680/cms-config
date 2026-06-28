@@ -36,8 +36,8 @@
     "category": "General",
     "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ikunzy_com",
