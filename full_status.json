@@ -26,8 +26,8 @@
     "category": "General",
     "adContext": "跑马灯/开头广告/国内CDN",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "mtzy_me",
@@ -36,8 +36,8 @@
     "category": "General",
     "adContext": "开头5-10秒广告/蓝光秒拖/顶级画质",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ikunzy_com",
@@ -426,8 +426,8 @@
     "category": "NSFW",
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "apidanaizi_com",
