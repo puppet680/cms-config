@@ -96,8 +96,8 @@
     "category": "General",
     "adContext": "无广告/响应极快/画质一般",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "moduzy_net",
