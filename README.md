@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-07-04 16:56:13` (基于状态码 200 活跃预检)
+更新时间：`2026-07-05 17:00:08` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -77,6 +77,6 @@
 | ✅ 有效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 色猫 - NSFW | `https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 奥斯卡 - NSFW | `https://aosikazy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 
 </details>
