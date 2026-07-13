@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-07-12 16:51:33` (基于状态码 200 活跃预检)
+更新时间：`2026-07-13 17:49:38` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -54,7 +54,7 @@
 | ✅ 有效 | 番号 - NSFW | `http://fhapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 小鸡 - NSFW | `https://api.xiaojizy.live/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 大奶子 - NSFW | `https://apidanaizi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | jkun - NSFW | `https://jkunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 乐播 - NSFW | `https://lbapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -77,6 +77,6 @@
 | ✅ 有效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 色猫 - NSFW | `https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 奥斯卡 - NSFW | `https://aosikazy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 
 </details>
