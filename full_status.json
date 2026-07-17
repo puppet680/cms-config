@@ -447,8 +447,8 @@
     "retry": 0,
     "adContext": "成人内容/杂",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "xiaojizy_live",
@@ -568,8 +568,8 @@
     "retry": 0,
     "adContext": "成人内容/杂/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "heiliaozy_cc",

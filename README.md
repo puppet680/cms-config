@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-07-16 17:06:46` (基于状态码 200 活跃预检)
+更新时间：`2026-07-17 17:04:26` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -52,7 +52,7 @@
 | ✅ 有效 | 155 - NSFW | `https://155api.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 玉兔 - NSFW | `https://apiyutu.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 番号 - NSFW | `http://fhapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 小鸡 - NSFW | `https://api.xiaojizy.live/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 大奶子 - NSFW | `https://apidanaizi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -63,7 +63,7 @@
 | ✅ 有效 | 辣椒 - NSFW | `https://apilj.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 鲨鱼 - NSFW | `https://shayuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 豆豆 - NSFW | `https://api.douapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 滴滴 - NSFW | `https://api.ddapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 滴滴 - NSFW | `https://api.ddapi.cc/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 黑料 - NSFW | `https://www.heiliaozyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 桃花 - NSFW | `https://thzy1.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 精品 - NSFW | `https://www.jingpinx.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
