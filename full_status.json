@@ -7,8 +7,8 @@
     "retry": 0,
     "adContext": "无广告/高清无水印/秒播稳定/搜索污染",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "iqiyizyapi_com",
@@ -469,8 +469,8 @@
     "retry": 0,
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "apidanaizi_com",
