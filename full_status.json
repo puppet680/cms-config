@@ -7,8 +7,8 @@
     "retry": 0,
     "adContext": "无广告/高清无水印/秒播稳定/搜索污染",
     "isOfficial": true,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "iqiyizyapi_com",
