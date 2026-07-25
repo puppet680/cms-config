@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-07-24 17:22:22` (基于状态码 200 活跃预检)
+更新时间：`2026-07-25 16:49:53` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -48,16 +48,16 @@
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | ✅ 有效 | 麻豆 - NSFW | `https://91md.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | AIvin - NSFW | `http://lbapiby.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | AIvin - NSFW | `http://lbapiby.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 155 - NSFW | `https://155api.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 玉兔 - NSFW | `https://apiyutu.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 番号 - NSFW | `http://fhapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 老色逼 - NSFW | `https://apilsbzy1.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 小鸡 - NSFW | `https://api.xiaojizy.live/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 黄色仓库 - NSFW | `https://hsckzy.xyz/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 大奶子 - NSFW | `https://apidanaizi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | jkun - NSFW | `https://jkunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 乐播 - NSFW | `https://lbapi9.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 乐播 - NSFW | `https://lbapi9.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 奶香 - NSFW | `https://Naixxzy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 森林 - NSFW | `https://beiyong.slapibf.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 辣椒 - NSFW | `https://apilj.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
