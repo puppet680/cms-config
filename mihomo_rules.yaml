@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-07-28 17:21:00
+# 自动更新时间: 2026-07-29 17:07:05
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -16,17 +16,16 @@ payload:
   - DOMAIN-REGEX,^.*ly\d+\..*$
   - DOMAIN-REGEX,^.*lzcdn\d+\..*$
   - DOMAIN-REGEX,^.*modujx\d+\..*$
-  - DOMAIN-REGEX,^.*msn\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
   - DOMAIN-REGEX,^.*sex\d+\..*$
-  - DOMAIN-REGEX,^.*sysl\d+\..*$
   - DOMAIN-REGEX,^.*thm\d+\..*$
   - DOMAIN-REGEX,^.*thzy\d+\..*$
   - DOMAIN-REGEX,^.*ukuapi\d+\..*$
   - DOMAIN-REGEX,^.*ukubf\d+\..*$
   - DOMAIN-REGEX,^.*video\d+\..*$
   - DOMAIN-REGEX,^.*voddadaizi\d+\..*$
+  - DOMAIN-REGEX,^.*xibaom\d+\..*$
   - DOMAIN-REGEX,^.*xingba\d+\..*$
   - DOMAIN-REGEX,^.*xjzym\d+\..*$
   - DOMAIN-SUFFIX,155api.com
@@ -49,7 +48,6 @@ payload:
   - DOMAIN-SUFFIX,dyttzyapi.com
   - DOMAIN-SUFFIX,ffzyapi.com
   - DOMAIN-SUFFIX,fhbbff.com
-  - DOMAIN-SUFFIX,gakkxx.top
   - DOMAIN-SUFFIX,gsuus.com
   - DOMAIN-SUFFIX,guangsuapi.com
   - DOMAIN-SUFFIX,guoluche.com
