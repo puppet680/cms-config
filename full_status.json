@@ -73,8 +73,8 @@
     "retry": 0,
     "adContext": "切片/M3U8直链/高清稳定",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "lzcaiji_com",
@@ -634,8 +634,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "msnii_com",
