@@ -62,8 +62,8 @@
     "retry": 0,
     "adContext": "纯净/无跑马灯/无插播/聚合干净",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "maoyanzy_com",

@@ -62,8 +62,8 @@
     "retry": 0,
     "adContext": "纯净/无跑马灯/无插播/聚合干净",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "maoyanzy_com",
@@ -458,8 +458,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "hsckzy_xyz",
@@ -546,8 +546,8 @@
     "retry": 0,
     "adContext": "成人内容/丰富/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "doudouzy_com",
