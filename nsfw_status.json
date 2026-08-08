@@ -18,8 +18,8 @@
     "retry": 0,
     "adContext": "成人内容/AI生成",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "155zy2_com",
@@ -84,8 +84,8 @@
     "retry": 0,
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "apidanaizi_com",
@@ -117,8 +117,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "naixxzy_com",
@@ -249,8 +249,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "msnii_com",
