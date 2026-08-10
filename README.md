@@ -1,12 +1,12 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-08-09 16:25:05` (基于状态码 200 活跃预检)
+更新时间：`2026-08-10 16:45:09` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | ✅ 有效 | 优质库1080zyk | `https://api.yyzy-tv.vip/inc/api_mac10.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 爱奇艺 | `https://iqiyizyapi.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 爱奇艺 | `https://iqiyizyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 豆瓣 | `https://caiji.dbzy5.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 茅台 | `https://caiji.maotaizy.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | iKun | `https://ikunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -23,7 +23,7 @@
 | ✅ 有效 | 新浪 | `https://api.xinlangapi.com/xinlangapi.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 天涯 | `https://tyyszyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 速播 | `https://subocaiji.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 金鹰点播 | `https://jinyingzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 金鹰点播 | `https://jinyingzy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ❌ 失效 | 飘零 | `https://p2100.net/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | U酷影视 | `https://api.ukuapi88.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 光速 | `https://api.guangsuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
