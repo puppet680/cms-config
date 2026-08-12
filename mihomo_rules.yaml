@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-08-11 16:51:09
+# 自动更新时间: 2026-08-12 16:50:22
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -9,7 +9,6 @@ payload:
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
   - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
-  - DOMAIN-REGEX,^.*lajiao\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbsl\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
