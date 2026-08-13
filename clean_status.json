@@ -7,8 +7,8 @@
     "retry": 0,
     "adContext": "无广告/高清无水印/秒播稳定/搜索污染",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "iqiyizyapi_com",
@@ -62,8 +62,8 @@
     "retry": 0,
     "adContext": "纯净/无跑马灯/无插播/聚合干净",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "maoyanzy_com",
@@ -128,8 +128,8 @@
     "retry": 0,
     "adContext": "HTTPS/M3U8直链/偶尔开头广告",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "bfzy_tv",
@@ -271,8 +271,8 @@
     "retry": 0,
     "adContext": "开头广告/更新快/稳定性中",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "haohuazy_com",
