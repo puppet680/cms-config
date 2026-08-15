@@ -150,8 +150,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "shayuapi_com",
