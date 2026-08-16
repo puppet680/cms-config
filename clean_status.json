@@ -18,8 +18,8 @@
     "retry": 0,
     "adContext": "无广告/偏爱奇艺风格/更新较慢",
     "isOfficial": true,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "dbzy_tv",
@@ -62,8 +62,8 @@
     "retry": 0,
     "adContext": "纯净/无跑马灯/无插播/聚合干净",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "maoyanzy_com",
