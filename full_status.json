@@ -161,8 +161,8 @@
     "retry": 0,
     "adContext": "开头广告/国内CDN/秒播率中",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "xinlangapi_com",
@@ -392,8 +392,8 @@
     "retry": 0,
     "adContext": "成人内容/部分自产多",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "lbapiby_com",
@@ -634,8 +634,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "msnii_com",
