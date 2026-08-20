@@ -7,8 +7,8 @@
     "retry": 0,
     "adContext": "成人内容/部分自产多",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "lbapiby_com",
@@ -249,8 +249,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "msnii_com",
