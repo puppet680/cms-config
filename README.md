@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-08-20 16:25:01` (基于状态码 200 活跃预检)
+更新时间：`2026-08-21 16:23:16` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -15,7 +15,7 @@
 | ✅ 有效 | 量子 | `https://cj.lzcaiji.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 360 | `https://360zyzz.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 极速 | `https://jszyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 魔都 | `https://www.mdzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 魔都 | `https://www.mdzyapi.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 非凡 | `https://api.ffzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 暴风 | `https://bfzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 最大 | `https://api.zuidapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -28,7 +28,7 @@
 | ✅ 有效 | U酷影视 | `https://api.ukuapi88.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 光速 | `https://api.guangsuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 红牛 | `https://www.hongniuzy2.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 魔都动漫 | `https://caiji.moduapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 魔都动漫 | `https://caiji.moduapi.cc/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 如意 | `https://cj.rycjapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 豪华 | `https://hhzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ❌ 失效 | 百度云zy | `https://api.apibdzy.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |

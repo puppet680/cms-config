@@ -117,8 +117,8 @@
     "retry": 0,
     "adContext": "M3U8直链/有跑马灯/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ffzyapi_com",
@@ -260,8 +260,8 @@
     "retry": 0,
     "adContext": "动漫专区/M3U8直链/广告少",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ryzyw_com",
