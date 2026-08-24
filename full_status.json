@@ -18,8 +18,8 @@
     "retry": 0,
     "adContext": "无广告/偏爱奇艺风格/更新较慢",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "dbzy_tv",
@@ -51,8 +51,8 @@
     "retry": 0,
     "adContext": "无广告/新颖/偶尔卡顿",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "dyttzyapi_com",
@@ -117,8 +117,8 @@
     "retry": 0,
     "adContext": "M3U8直链/有跑马灯/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ffzyapi_com",
@@ -260,8 +260,8 @@
     "retry": 0,
     "adContext": "动漫专区/M3U8直链/广告少",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "ryzyw_com",
@@ -491,8 +491,8 @@
     "retry": 0,
     "adContext": "成人内容/新/广告少",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "lbapi9_com",
@@ -711,8 +711,8 @@
     "retry": 0,
     "adContext": "成人内容/禁止搜索",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "siwazyw_tv",
