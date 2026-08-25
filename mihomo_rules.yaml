@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-08-24 16:29:27
+# 自动更新时间: 2026-08-25 16:27:25
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -12,9 +12,11 @@ payload:
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lajiao\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
+  - DOMAIN-REGEX,^.*lbbf\d+\..*$
   - DOMAIN-REGEX,^.*lbsl\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
   - DOMAIN-REGEX,^.*lzcdn\d+\..*$
+  - DOMAIN-REGEX,^.*modujx\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
   - DOMAIN-REGEX,^.*sex\d+\..*$
@@ -39,6 +41,7 @@ payload:
   - DOMAIN-SUFFIX,apilj.com
   - DOMAIN-SUFFIX,apiyhzy.com
   - DOMAIN-SUFFIX,apiyutu.com
+  - DOMAIN-SUFFIX,bfikuncdn.com
   - DOMAIN-SUFFIX,bfllvip.com
   - DOMAIN-SUFFIX,bfvvs.com
   - DOMAIN-SUFFIX,bfzyapi.com
@@ -63,6 +66,7 @@ payload:
   - DOMAIN-SUFFIX,jingpinx.com
   - DOMAIN-SUFFIX,jinyingzy.com
   - DOMAIN-SUFFIX,jisuzyv.com
+  - DOMAIN-SUFFIX,jkhabkrqjbj.com
   - DOMAIN-SUFFIX,jkunzyapi.com
   - DOMAIN-SUFFIX,jszyapi.com
   - DOMAIN-SUFFIX,kuaichezy.org
