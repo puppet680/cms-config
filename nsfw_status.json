@@ -18,8 +18,8 @@
     "retry": 0,
     "adContext": "成人内容/AI生成",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "155zy2_com",
@@ -150,8 +150,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "shayuapi_com",

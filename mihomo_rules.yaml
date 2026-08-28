@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-08-26 16:42:43
+# 自动更新时间: 2026-08-28 00:42:33
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -10,9 +10,9 @@ payload:
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
   - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
+  - DOMAIN-REGEX,^.*lajiao\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbbf\d+\..*$
-  - DOMAIN-REGEX,^.*lbsl\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
   - DOMAIN-REGEX,^.*ly\d+\..*$
   - DOMAIN-REGEX,^.*lzcdn\d+\..*$
@@ -66,7 +66,6 @@ payload:
   - DOMAIN-SUFFIX,jingpinx.com
   - DOMAIN-SUFFIX,jinyingzy.com
   - DOMAIN-SUFFIX,jisuzyv.com
-  - DOMAIN-SUFFIX,jkhabkrqjbj.com
   - DOMAIN-SUFFIX,jkunzyapi.com
   - DOMAIN-SUFFIX,jszyapi.com
   - DOMAIN-SUFFIX,kuaichezy.org
@@ -93,6 +92,7 @@ payload:
   - DOMAIN-SUFFIX,siwazyw.tv
   - DOMAIN-SUFFIX,slapibf.com
   - DOMAIN-SUFFIX,souavzyw.net
+  - DOMAIN-SUFFIX,sryndbsfvd.com
   - DOMAIN-SUFFIX,subocaiji.com
   - DOMAIN-SUFFIX,suoniapi.com
   - DOMAIN-SUFFIX,tyyszyapi.com
