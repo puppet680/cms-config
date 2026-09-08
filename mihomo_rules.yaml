@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-09-07 19:30:54
+# 自动更新时间: 2026-09-08 19:10:27
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -19,7 +19,6 @@ payload:
   - DOMAIN-REGEX,^.*modujx\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
-  - DOMAIN-REGEX,^.*sex\d+\..*$
   - DOMAIN-REGEX,^.*sl\d+\..*$
   - DOMAIN-REGEX,^.*sysl\d+\..*$
   - DOMAIN-REGEX,^.*thm\d+\..*$
@@ -35,6 +34,7 @@ payload:
   - DOMAIN-SUFFIX,1bbffvip.com
   - DOMAIN-SUFFIX,360zyzz.com
   - DOMAIN-SUFFIX,91md.me
+  - DOMAIN-SUFFIX,97img.com
   - DOMAIN-SUFFIX,aosikazy.com
   - DOMAIN-SUFFIX,apibdzy.com
   - DOMAIN-SUFFIX,apidanaizi.com
@@ -46,7 +46,6 @@ payload:
   - DOMAIN-SUFFIX,bfllvip.com
   - DOMAIN-SUFFIX,bfvvs.com
   - DOMAIN-SUFFIX,bfzyapi.com
-  - DOMAIN-SUFFIX,cdn2020.com
   - DOMAIN-SUFFIX,dadiapi.com
   - DOMAIN-SUFFIX,ddapi.cc
   - DOMAIN-SUFFIX,douapi.cc
@@ -83,7 +82,6 @@ payload:
   - DOMAIN-SUFFIX,naixxzy.com
   - DOMAIN-SUFFIX,p2100.net
   - DOMAIN-SUFFIX,pgxdy.com
-  - DOMAIN-SUFFIX,ppqrrs.com
   - DOMAIN-SUFFIX,qugt.com
   - DOMAIN-SUFFIX,rycjapi.com
   - DOMAIN-SUFFIX,sdzyapi.com

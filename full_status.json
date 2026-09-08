@@ -161,8 +161,8 @@
     "retry": 0,
     "adContext": "开头广告/国内CDN/秒播率中",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "xinlangapi_com",
@@ -678,8 +678,8 @@
     "retry": 0,
     "adContext": "成人内容/403常见/可能失效",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "dadizy11_com",

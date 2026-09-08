@@ -293,8 +293,8 @@
     "retry": 0,
     "adContext": "成人内容/403常见/可能失效",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "dadizy11_com",
