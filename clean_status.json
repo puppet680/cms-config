@@ -216,8 +216,8 @@
     "retry": 0,
     "adContext": "有跑马灯/广告中等/稳定性一般",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "ukuapi88_com",
