@@ -1,8 +1,7 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-09-26 18:53:49
+# 自动更新时间: 2026-09-27 19:26:19
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
-  - DOMAIN-REGEX,^.*bf\d+\..*$
   - DOMAIN-REGEX,^.*dbzy\d+\..*$
   - DOMAIN-REGEX,^.*didibo\d+\..*$
   - DOMAIN-REGEX,^.*ffzy-online\d+\..*$
