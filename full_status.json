@@ -73,8 +73,8 @@
     "retry": 0,
     "adContext": "切片/M3U8直链/高清稳定",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "lzcaiji_com",
@@ -194,8 +194,8 @@
     "retry": 0,
     "adContext": "开头广告/高清画质/更新中规",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "jinyingzy_com",
@@ -469,8 +469,8 @@
     "retry": 0,
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "apidanaizi_com",
