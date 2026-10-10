@@ -711,8 +711,8 @@
     "retry": 0,
     "adContext": "成人内容/禁止搜索",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "siwazyw_tv",
