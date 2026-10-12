@@ -425,8 +425,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "fhapi9_com",
@@ -447,8 +447,8 @@
     "retry": 0,
     "adContext": "成人内容/杂",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "xiaojizy_live",
@@ -711,8 +711,8 @@
     "retry": 0,
     "adContext": "成人内容/禁止搜索",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "siwazyw_tv",
