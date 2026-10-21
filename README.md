@@ -1,12 +1,12 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-10-20 19:46:55` (基于状态码 200 活跃预检)
+更新时间：`2026-10-21 19:51:06` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | ✅ 有效 | 优质库1080zyk | `https://api.yyzy-tv.vip/inc/api_mac10.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 爱奇艺 | `https://iqiyizyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 爱奇艺 | `https://iqiyizyapi.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 豆瓣 | `https://caiji.dbzy5.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 茅台 | `https://caiji.maotaizy.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | iKun | `https://ikunzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -61,7 +61,7 @@
 | ✅ 有效 | 奶香 - NSFW | `https://Naixxzy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 森林 - NSFW | `https://beiyong.slapibf.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 辣椒 - NSFW | `https://apilj.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 鲨鱼 - NSFW | `https://shayuapi.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 鲨鱼 - NSFW | `https://shayuapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 豆豆 - NSFW | `https://api.douapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 滴滴 - NSFW | `https://api.ddapi.cc/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 黑料 - NSFW | `https://www.heiliaozyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -74,7 +74,7 @@
 | ✅ 有效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 白嫖 - NSFW | `https://www.kxgav.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 杏吧 - NSFW | `https://xingba222.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 色猫 - NSFW | `https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 奥斯卡 - NSFW | `https://aosikazy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ❌ 失效 | 丝袜 - NSFW | `https://siwazyw.tv/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |

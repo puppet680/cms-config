@@ -18,8 +18,8 @@
     "retry": 0,
     "adContext": "无广告/偏爱奇艺风格/更新较慢",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "dbzy_tv",
@@ -546,8 +546,8 @@
     "retry": 0,
     "adContext": "成人内容/丰富/广告中等",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "doudouzy_com",
@@ -689,8 +689,8 @@
     "retry": 0,
     "adContext": "成人内容/污染搜索",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "semaozy1_com",
