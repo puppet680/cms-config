@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-10-24 18:30:26
+# 自动更新时间: 2026-10-25 18:39:34
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -9,7 +9,6 @@ payload:
   - DOMAIN-REGEX,^.*fhapi\d+\..*$
   - DOMAIN-REGEX,^.*hav\d+\..*$
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
-  - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lajiao\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
@@ -44,6 +43,7 @@ payload:
   - DOMAIN-SUFFIX,bfbfhao.com
   - DOMAIN-SUFFIX,bfikuncdn.com
   - DOMAIN-SUFFIX,bfllvip.com
+  - DOMAIN-SUFFIX,bfvvs.com
   - DOMAIN-SUFFIX,bfzyapi.com
   - DOMAIN-SUFFIX,cdn2020.com
   - DOMAIN-SUFFIX,dadiapi.com
@@ -52,6 +52,7 @@ payload:
   - DOMAIN-SUFFIX,dytt-tvs.com
   - DOMAIN-SUFFIX,dyttzyapi.com
   - DOMAIN-SUFFIX,ffzyapi.com
+  - DOMAIN-SUFFIX,gsuus.com
   - DOMAIN-SUFFIX,guangsuapi.com
   - DOMAIN-SUFFIX,guoluche.com
   - DOMAIN-SUFFIX,heiliaozyapi.com
@@ -66,6 +67,7 @@ payload:
   - DOMAIN-SUFFIX,jkunzyapi.com
   - DOMAIN-SUFFIX,jszyapi.com
   - DOMAIN-SUFFIX,kuaichezy.org
+  - DOMAIN-SUFFIX,kuktxu.com
   - DOMAIN-SUFFIX,kxgav.com
   - DOMAIN-SUFFIX,lbapiby.com
   - DOMAIN-SUFFIX,lovedan.net
