@@ -29,8 +29,8 @@
     "retry": 0,
     "adContext": "跑马灯/开头广告/国内CDN",
     "isOfficial": true,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "mtzy_me",
@@ -139,8 +139,8 @@
     "retry": 0,
     "adContext": "无广告/独家/秒拖强",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "zuida_xyz",
