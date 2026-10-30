@@ -139,8 +139,8 @@
     "retry": 0,
     "adContext": "无广告/独家/秒拖强",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "zuida_xyz",
