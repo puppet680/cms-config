@@ -293,8 +293,8 @@
     "retry": 0,
     "adContext": "有跑马灯/百度云风格/广告中等",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "lovedan_net",
@@ -304,8 +304,8 @@
     "retry": 0,
     "adContext": "无广告/偏小众/更新慢",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "lzizy_net",
