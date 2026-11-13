@@ -1,8 +1,9 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-11-12 21:59:26
+# 自动更新时间: 2026-11-13 21:45:06
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
+  - DOMAIN-REGEX,^.*bpzy\d+\..*$
   - DOMAIN-REGEX,^.*bvvvvvvvvv\d+\..*$
   - DOMAIN-REGEX,^.*dbzy\d+\..*$
   - DOMAIN-REGEX,^.*didibo\d+\..*$
@@ -107,4 +108,3 @@ payload:
   - DOMAIN-SUFFIX,yyzy-tv.vip
   - DOMAIN-SUFFIX,zuidapi.com
   - DOMAIN-SUFFIX,zuidazy.me
-  - DOMAIN-SUFFIX,zuidazym3u8.com

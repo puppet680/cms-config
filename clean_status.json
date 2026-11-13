@@ -150,8 +150,8 @@
     "retry": 0,
     "adContext": "有跑马灯/开头广告/秒拖但不稳",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "wujinzy_me",
@@ -326,8 +326,8 @@
     "retry": 0,
     "adContext": "有跑马灯/备用源/广告多",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "yayazy_com",
@@ -359,8 +359,8 @@
     "retry": 0,
     "adContext": "开头广告/影视每日更新/中规",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "shandianzy_com",
