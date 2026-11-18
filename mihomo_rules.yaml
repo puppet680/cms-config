@@ -1,19 +1,20 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-11-17 23:16:02
+# 自动更新时间: 2026-11-18 22:47:55
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
+  - DOMAIN-REGEX,^.*cdnlz\d+\..*$
   - DOMAIN-REGEX,^.*dbzy\d+\..*$
   - DOMAIN-REGEX,^.*didibo\d+\..*$
+  - DOMAIN-REGEX,^.*dyttplay\d+\..*$
   - DOMAIN-REGEX,^.*ffzy-online\d+\..*$
   - DOMAIN-REGEX,^.*fhapi\d+\..*$
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
-  - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbbf\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
-  - DOMAIN-REGEX,^.*lzcdn\d+\..*$
+  - DOMAIN-REGEX,^.*ly\d+\..*$
   - DOMAIN-REGEX,^.*modujx\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
@@ -48,10 +49,8 @@ payload:
   - DOMAIN-SUFFIX,dadiapi.com
   - DOMAIN-SUFFIX,ddapi.cc
   - DOMAIN-SUFFIX,douapi.cc
-  - DOMAIN-SUFFIX,dytt-tvs.com
   - DOMAIN-SUFFIX,dyttzyapi.com
   - DOMAIN-SUFFIX,ffzyapi.com
-  - DOMAIN-SUFFIX,gsuus.com
   - DOMAIN-SUFFIX,guangsuapi.com
   - DOMAIN-SUFFIX,guoluche.com
   - DOMAIN-SUFFIX,heiliaozyapi.com
