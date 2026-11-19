@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-11-18 22:47:55
+# 自动更新时间: 2026-11-19 22:51:15
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -10,12 +10,14 @@ payload:
   - DOMAIN-REGEX,^.*ffzy-online\d+\..*$
   - DOMAIN-REGEX,^.*fhapi\d+\..*$
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
+  - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbbf\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
   - DOMAIN-REGEX,^.*ly\d+\..*$
   - DOMAIN-REGEX,^.*modujx\d+\..*$
+  - DOMAIN-REGEX,^.*msn\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
   - DOMAIN-REGEX,^.*sl\d+\..*$
@@ -34,6 +36,7 @@ payload:
   - DOMAIN-SUFFIX,360zyzz.com
   - DOMAIN-SUFFIX,3sybf.com
   - DOMAIN-SUFFIX,91md.me
+  - DOMAIN-SUFFIX,97img.com
   - DOMAIN-SUFFIX,aosikazy.com
   - DOMAIN-SUFFIX,apibdzy.com
   - DOMAIN-SUFFIX,apidanaizi.com
@@ -45,7 +48,6 @@ payload:
   - DOMAIN-SUFFIX,bfllvip.com
   - DOMAIN-SUFFIX,bfvvs.com
   - DOMAIN-SUFFIX,bfzyapi.com
-  - DOMAIN-SUFFIX,cdn2020.com
   - DOMAIN-SUFFIX,dadiapi.com
   - DOMAIN-SUFFIX,ddapi.cc
   - DOMAIN-SUFFIX,douapi.cc
@@ -62,11 +64,9 @@ payload:
   - DOMAIN-SUFFIX,iqiyizyapi.com
   - DOMAIN-SUFFIX,jingpinx.com
   - DOMAIN-SUFFIX,jinyingzy.com
-  - DOMAIN-SUFFIX,jisuzyv.com
   - DOMAIN-SUFFIX,jkunzyapi.com
   - DOMAIN-SUFFIX,jszyapi.com
   - DOMAIN-SUFFIX,kuaichezy.org
-  - DOMAIN-SUFFIX,kuktxu.com
   - DOMAIN-SUFFIX,kxgav.com
   - DOMAIN-SUFFIX,lbapiby.com
   - DOMAIN-SUFFIX,ljljbf.com
@@ -83,7 +83,6 @@ payload:
   - DOMAIN-SUFFIX,p2100.net
   - DOMAIN-SUFFIX,pgxdy.com
   - DOMAIN-SUFFIX,ppqrrs.com
-  - DOMAIN-SUFFIX,qugt.com
   - DOMAIN-SUFFIX,rycjapi.com
   - DOMAIN-SUFFIX,sdzyapi.com
   - DOMAIN-SUFFIX,semaozy.net
