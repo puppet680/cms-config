@@ -106,8 +106,8 @@
     "retry": 0,
     "adContext": "无广告/响应极快/画质一般",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "moduzy_net",
@@ -238,8 +238,8 @@
     "retry": 0,
     "adContext": "无广告/响应快/画质中上",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "hongniuzy_com",
