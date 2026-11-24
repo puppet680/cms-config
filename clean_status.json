@@ -161,8 +161,8 @@
     "retry": 0,
     "adContext": "开头广告/国内CDN/秒播率中",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "xinlangapi_com",

@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-11-22 21:26:01
+# 自动更新时间: 2026-11-24 02:42:22
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -10,6 +10,7 @@ payload:
   - DOMAIN-REGEX,^.*ffzy-online\d+\..*$
   - DOMAIN-REGEX,^.*fhapi\d+\..*$
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
+  - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbbf\d+\..*$
@@ -84,7 +85,6 @@ payload:
   - DOMAIN-SUFFIX,naixxzy.com
   - DOMAIN-SUFFIX,p2100.net
   - DOMAIN-SUFFIX,pgxdy.com
-  - DOMAIN-SUFFIX,ppqrrs.com
   - DOMAIN-SUFFIX,qugt.com
   - DOMAIN-SUFFIX,rycjapi.com
   - DOMAIN-SUFFIX,sdzyapi.com
