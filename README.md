@@ -1,6 +1,6 @@
 # 🛰️ API 实时监控中心 & 规则订阅
 
-更新时间：`2026-11-25 00:16:40` (基于状态码 200 活跃预检)
+更新时间：`2026-11-25 23:56:00` (基于状态码 200 活跃预检)
 
 ### ⚡ 常规过滤线路明细
 | 状态 | 资源名称 | 地址 API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
@@ -32,7 +32,7 @@
 | ✅ 有效 | 如意 | `https://cj.rycjapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 豪华 | `https://hhzyapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 百度云zy | `https://api.apibdzy.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ❌ 失效 | 艾旦影视 | `https://lovedan.net/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ✅ 有效 | 艾旦影视 | `https://lovedan.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 量子备用 | `https://cj.lziapi.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 最大备用 | `https://zuidazy.me/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 鸭鸭 | `https://cj.yayazy.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
@@ -70,9 +70,9 @@
 | ✅ 有效 | souavZY - NSFW | `https://api.souavzyw.net/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ❌ 失效 | 细胞 - NSFW | `https://www.xxibaozyw.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ❌ 失效 | 香蕉 - NSFW | `https://www.xiangjiaozyw.com/api.php/provide/vod` | ❌ | 0 | 1 | **0.0%** | ❌ |
-| ✅ 有效 | 美少女 - NSFW | `https://www.msnii.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
-| ✅ 有效 | 白嫖 - NSFW | `https://www.kxgav.com/api/json.php` | ✅ | 1 | 0 | **100.0%** | ✅ |
+| ❌ 失效 | 美少女 - NSFW | `https://www.msnii.com/api/json.php` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ❌ 失效 | 黄AVZY - NSFW | `https://www.pgxdy.com/api/json.php` | ❌ | 0 | 1 | **0.0%** | ❌ |
+| ❌ 失效 | 白嫖 - NSFW | `https://www.kxgav.com/api/json.php` | ❌ | 0 | 1 | **0.0%** | ❌ |
 | ✅ 有效 | 杏吧 - NSFW | `https://xingba222.com/api.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 大地 - NSFW | `https://dadiapi.com/feifei` | ✅ | 1 | 0 | **100.0%** | ✅ |
 | ✅ 有效 | 色猫 - NSFW | `https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod` | ✅ | 1 | 0 | **100.0%** | ✅ |
