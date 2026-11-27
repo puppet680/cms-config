@@ -1,5 +1,5 @@
 # Mihomo (Clash) Rule-Provider
-# 自动更新时间: 2026-11-25 23:56:00
+# 自动更新时间: 2026-11-27 00:12:37
 payload:
   - DOMAIN-REGEX,^.*apilsbzy\d+\..*$
   - DOMAIN-REGEX,^.*bf\d+\..*$
@@ -10,13 +10,13 @@ payload:
   - DOMAIN-REGEX,^.*ffzy-online\d+\..*$
   - DOMAIN-REGEX,^.*fhapi\d+\..*$
   - DOMAIN-REGEX,^.*hongniuzy\d+\..*$
-  - DOMAIN-REGEX,^.*hsm\d+\..*$
   - DOMAIN-REGEX,^.*jpxm\d+\..*$
   - DOMAIN-REGEX,^.*lbapi\d+\..*$
   - DOMAIN-REGEX,^.*lbbf\d+\..*$
   - DOMAIN-REGEX,^.*lsbbf\d+\..*$
   - DOMAIN-REGEX,^.*ly\d+\..*$
   - DOMAIN-REGEX,^.*modujx\d+\..*$
+  - DOMAIN-REGEX,^.*msn\d+\..*$
   - DOMAIN-REGEX,^.*play-cdn\d+\..*$
   - DOMAIN-REGEX,^.*ryplay\d+\..*$
   - DOMAIN-REGEX,^.*sl\d+\..*$
@@ -24,6 +24,7 @@ payload:
   - DOMAIN-REGEX,^.*thzy\d+\..*$
   - DOMAIN-REGEX,^.*ukuapi\d+\..*$
   - DOMAIN-REGEX,^.*ukubf\d+\..*$
+  - DOMAIN-REGEX,^.*video\d+\..*$
   - DOMAIN-REGEX,^.*vod\d+\..*$
   - DOMAIN-REGEX,^.*voddadaizi\d+\..*$
   - DOMAIN-REGEX,^.*xb\d+\..*$
@@ -55,15 +56,12 @@ payload:
   - DOMAIN-SUFFIX,guangsuapi.com
   - DOMAIN-SUFFIX,guoluche.com
   - DOMAIN-SUFFIX,heiliaozyapi.com
-  - DOMAIN-SUFFIX,hhuus.com
   - DOMAIN-SUFFIX,hhzyapi.com
   - DOMAIN-SUFFIX,hsckzy.xyz
-  - DOMAIN-SUFFIX,ijycnd.com
   - DOMAIN-SUFFIX,ikunzyapi.com
   - DOMAIN-SUFFIX,iqiyizyapi.com
   - DOMAIN-SUFFIX,jingpinx.com
   - DOMAIN-SUFFIX,jinyingzy.com
-  - DOMAIN-SUFFIX,jisuzyv.com
   - DOMAIN-SUFFIX,jkunzyapi.com
   - DOMAIN-SUFFIX,jszyapi.com
   - DOMAIN-SUFFIX,kuaichezy.org

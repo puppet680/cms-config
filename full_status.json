@@ -106,8 +106,8 @@
     "retry": 0,
     "adContext": "无广告/响应极快/画质一般",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "moduzy_net",
@@ -469,8 +469,8 @@
     "retry": 0,
     "adContext": "成人内容/多/广告中等",
     "isOfficial": false,
-    "isEnabled": true,
-    "searchable": true
+    "isEnabled": false,
+    "searchable": false
   },
   {
     "id": "apidanaizi_com",
@@ -645,8 +645,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "pgxdy_com",
@@ -656,8 +656,8 @@
     "retry": 0,
     "adContext": "成人内容",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "kxgav_com",
@@ -667,8 +667,8 @@
     "retry": 0,
     "adContext": "成人内容/白嫖风格",
     "isOfficial": false,
-    "isEnabled": false,
-    "searchable": false
+    "isEnabled": true,
+    "searchable": true
   },
   {
     "id": "xingba111_com",
